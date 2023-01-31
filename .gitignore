@@ -130,9 +130,6 @@ dist
 .env
 .netlify
 
-# Env
-.env
-
 # Testing
 reports
 coverage

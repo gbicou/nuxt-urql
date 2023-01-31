@@ -2,7 +2,10 @@
   <div>
     <h3>Countries (fetching = {{ fetching }})</h3>
     <ul>
-      <li v-for="c of countries" :key="c.code">
+      <li
+        v-for="c of countries"
+        :key="c.code"
+      >
         {{ c.name }}
         <code>{{ c.code }}</code>
       </li>
