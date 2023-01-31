@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "my-module-playground",
+  "scripts": {
+    "codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "@pothos/core": "^3.24.0",
+    "@urql/exchange-graphcache": "^5.0.8",
+    "@urql/vue": "^1.0.4",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.4.1",
+    "iso-3166-1-ts": "^0.2.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.16.4",
+    "@graphql-codegen/near-operation-file-preset": "^2.5.0",
+    "@graphql-codegen/schema-ast": "^2.6.1",
+    "@graphql-codegen/typed-document-node": "^2.3.12",
+    "@graphql-codegen/typescript": "^2.8.7",
+    "@graphql-codegen/typescript-operations": "^2.5.12",
+    "@graphql-codegen/typescript-urql": "^3.7.3",
+    "@graphql-codegen/typescript-urql-graphcache": "^2.4.3",
+    "@graphql-codegen/urql-introspection": "^2.2.1",
+    "@graphql-typed-document-node/core": "^3.1.1",
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1"
+  }
+}

@@ -1,0 +1,16 @@
+"""A country record"""
+type Country {
+  """ISO code"""
+  code: String!
+
+  """Name of country"""
+  name: String!
+}
+
+type Query {
+  """all countries"""
+  countries: [Country!]!
+
+  """package version"""
+  version: String!
+}
