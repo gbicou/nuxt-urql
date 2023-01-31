@@ -11,14 +11,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed, useQuery } from "#imports";
-import { CountriesDocument } from "~/gql/queries/countries";
+import {useQuery} from "@urql/vue";
+import {computed} from "#imports";
+import {CountriesDocument} from "~/gql/queries/countries";
 
 const { data, fetching } = await useQuery({
-  query: CountriesDocument,
-});
+  query: CountriesDocument
+})
 
-const countries = computed(() => data.value?.countries ?? []);
+const countries = computed(() => data.value?.countries ?? [])
+
 </script>
 
 <style scoped>
@@ -26,7 +28,7 @@ code {
   display: inline-block;
   background-color: #e2e2e2;
   color: #303030;
-  padding: 0.1em 0.3em;
-  border-radius: 0.4em;
+  padding: .1em .3em;
+  border-radius: .4em;
 }
 </style>

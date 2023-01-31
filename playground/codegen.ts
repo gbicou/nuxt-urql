@@ -1,34 +1,41 @@
-import { CodegenConfig } from "@graphql-codegen/cli";
-import { schema } from "./server/api/graphql";
+import { CodegenConfig } from '@graphql-codegen/cli'
+import { schema } from "./server/gql/schema";
 import { printSchema } from "graphql";
 
 const config: CodegenConfig = {
   schema: printSchema(schema),
-  documents: ["gql/**/*.graphql"],
+  documents: ['gql/**/*.graphql'],
   config: {
     useTypeImports: true,
-    preResolveTypes: false,
+    preResolveTypes: false
   },
   generates: {
-    "./gql/schema.graphql": {
-      plugins: ["schema-ast"],
+    './gql/schema.graphql': {
+      plugins: ['schema-ast'],
     },
-    "./gql/types.ts": {
-      plugins: ["typescript", "typescript-urql-graphcache"],
+    './gql/types.ts': {
+      plugins: [
+        'typescript',
+        'typescript-urql-graphcache'
+      ]
     },
-    "./gql/": {
-      preset: "near-operation-file",
+    './gql/': {
+      preset: 'near-operation-file',
       presetConfig: {
-        baseTypesPath: "types.ts",
-        extension: ".ts",
+        baseTypesPath: 'types.ts',
+        extension: '.ts'
       },
-      plugins: ["typescript-operations", "typed-document-node"],
+      plugins: [
+        'typescript-operations',
+        'typed-document-node'
+      ]
     },
-    "./gql/introspection.ts": {
-      plugins: ["urql-introspection"],
-    },
-  },
-  hooks: { afterOneFileWrite: ["eslint --fix", "prettier -w"] },
-};
+    './gql/introspection.ts': {
+      plugins: [
+        'urql-introspection'
+      ]
+    }
+  }
+}
 
-export default config;
+export default config

@@ -8,9 +8,9 @@ type Country {
 }
 
 type Query {
-  """All countries"""
+  """all countries"""
   countries: [Country!]!
 
-  """Package version"""
+  """package version"""
   version: String!
 }

@@ -1,5 +1,7 @@
-import UrqlModule from "../../../src/module";
+import MyModule from '../../../src/module'
 
 export default defineNuxtConfig({
-  modules: [UrqlModule],
-});
+  modules: [
+    MyModule
+  ]
+})
