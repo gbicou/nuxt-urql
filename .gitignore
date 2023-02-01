@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -103,58 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
-=======
-# Dependencies
-node_modules
 
-# Logs
-*.log*
-
-# Temp directories
-.temp
-.tmp
-.cache
-
-# Yarn
-**/.yarn/cache
-**/.yarn/*state*
-
-# Generated dirs
-dist
-
-# Nuxt
-.nuxt
-.output
-.vercel_build_output
-.build-*
-.env
-.netlify
-
-# Testing
-reports
-coverage
-*.lcov
-.nyc_output
-
-# VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-
-# Intellij idea
-*.iml
 .idea
-
-# OSX
-.DS_Store
-.AppleDouble
-.LSOverride
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
->>>>>>> 83b95bd (init)
