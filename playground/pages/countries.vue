@@ -14,8 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import {useQuery} from "@urql/vue";
-import {computed} from "#imports";
+import {computed, useQuery} from "#imports";
 import {CountriesDocument} from "~/gql/queries/countries";
 
 const { data, fetching } = await useQuery({

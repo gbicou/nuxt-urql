@@ -10,19 +10,19 @@ builder.objectType(Country, {
   description: "A country record",
   fields: (t) => ({
     code: t.exposeString('alpha2', { description: 'ISO code' }),
-    name: t.exposeString('name', { description: 'Name of country' })
+    name: t.exposeString('name', { description: 'Name of country' }),
   })
 })
 
 builder.queryType({
   fields: (t) => ({
     version: t.string({
-      description: 'package version',
+      description: 'Package version',
       resolve: () => version,
     }),
     countries: t.field({
       type: [Country],
-      description: 'all countries',
+      description: 'All countries',
       resolve: () => records
     })
   }),
