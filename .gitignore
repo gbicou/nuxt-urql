@@ -21,7 +21,6 @@ dist
 .output
 .vercel_build_output
 .build-*
-.env
 .netlify
 
 # Env
@@ -33,12 +32,9 @@ coverage
 *.lcov
 .nyc_output
 
-<<<<<<< HEAD
 # TernJS port file
 .tern-port
 
-.idea
-=======
 # VSCode
 .vscode/*
 !.vscode/settings.json
@@ -60,4 +56,3 @@ coverage
 Network Trash Folder
 Temporary Items
 .apdisk
->>>>>>> 050caee (init)
