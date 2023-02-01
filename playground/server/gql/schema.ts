@@ -1,4 +1,5 @@
 import SchemaBuilder from '@pothos/core';
+import { version } from '../../../package.json'
 import { records, type ISO_3166_1_Record } from 'iso-3166-1-ts'
 
 const builder = new SchemaBuilder({})
@@ -17,7 +18,7 @@ builder.queryType({
   fields: (t) => ({
     version: t.string({
       description: 'Package version',
-      resolve: () => '1.0.0',
+      resolve: () => version,
     }),
     countries: t.field({
       type: [Country],
