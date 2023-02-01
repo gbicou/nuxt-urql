@@ -5,6 +5,7 @@
     "codegen": "graphql-codegen"
   },
   "dependencies": {
+    "@graphql-yoga/urql-exchange": "^1.4.1",
     "@pothos/core": "^3.24.0",
     "@urql/exchange-graphcache": "^5.0.8",
     "graphql": "^16.6.0",
