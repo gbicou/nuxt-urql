@@ -39,6 +39,4 @@ const yoga = createYoga({
   graphqlEndpoint: "/api/graphql",
 });
 
-export default defineEventHandler((event) =>
-  yoga.handle(event.node.req, event.node.res, event.context)
-);
+export default defineEventHandler((event) => yoga.handle(event.node.req, event.node.res, event.context));

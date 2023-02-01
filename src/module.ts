@@ -1,11 +1,4 @@
-import {
-  defineNuxtModule,
-  addPlugin,
-  createResolver,
-  resolvePath,
-  addTemplate,
-  addImports,
-} from "@nuxt/kit";
+import { defineNuxtModule, addPlugin, createResolver, resolvePath, addTemplate, addImports } from "@nuxt/kit";
 import { name, version } from "../package.json";
 
 // Module options TypeScript inteface definition
@@ -39,19 +32,11 @@ export default defineNuxtModule<ModuleOptions>({
     // send module config to plugin
     addTemplate({
       filename: "urql-module.d.ts",
-      getContents: () =>
-        ["declare const ssrKey: string", "export default { ssrKey }"].join(
-          "\n"
-        ),
+      getContents: () => ["declare const ssrKey: string", "export default { ssrKey }"].join("\n"),
     });
     nuxt.options.alias["#urql-module"] = addTemplate({
       filename: "urql-module.mjs",
-      getContents: () =>
-        [
-          "export default {",
-          ` ssrKey: ${JSON.stringify(options.ssrKey)}`,
-          "}",
-        ].join("\n"),
+      getContents: () => ["export default {", ` ssrKey: ${JSON.stringify(options.ssrKey)}`, "}"].join("\n"),
     }).dst;
 
     // import urql vue composables

@@ -1,4 +1,4 @@
-import { dedupExchange, fetchExchange } from "@urql/core";
+import { dedupExchange } from "@urql/core";
 import { defineUrqlClient } from "#urql";
 import { cacheExchange } from "@urql/exchange-graphcache";
 import type { GraphCacheConfig } from "./gql/types";
