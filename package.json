@@ -1,8 +1,12 @@
 {
-  "name": "nuxt-urql",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
+  "name": "@gbicou/nuxt-urql",
+  "version": "0.0.3",
+  "description": "Nuxt URQL module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbicou/nuxt-urql.git"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -21,7 +25,6 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
     "dev:start": "nuxi start playground",
-    "release": "npm run lint && npm run unit && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",

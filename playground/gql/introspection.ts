@@ -1,82 +1,82 @@
-import type { IntrospectionQuery } from 'graphql';
+import type { IntrospectionQuery } from "graphql";
 export default {
-  "__schema": {
-    "queryType": {
-      "name": "Query"
+  __schema: {
+    queryType: {
+      name: "Query",
     },
-    "mutationType": null,
-    "subscriptionType": null,
-    "types": [
+    mutationType: null,
+    subscriptionType: null,
+    types: [
       {
-        "kind": "OBJECT",
-        "name": "Country",
-        "fields": [
+        kind: "OBJECT",
+        name: "Country",
+        fields: [
           {
-            "name": "code",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
+            name: "code",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "SCALAR",
+                name: "Any",
+              },
             },
-            "args": []
+            args: [],
           },
           {
-            "name": "name",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
+            name: "name",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "SCALAR",
+                name: "Any",
+              },
             },
-            "args": []
-          }
+            args: [],
+          },
         ],
-        "interfaces": []
+        interfaces: [],
       },
       {
-        "kind": "OBJECT",
-        "name": "Query",
-        "fields": [
+        kind: "OBJECT",
+        name: "Query",
+        fields: [
           {
-            "name": "countries",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "LIST",
-                "ofType": {
-                  "kind": "NON_NULL",
-                  "ofType": {
-                    "kind": "OBJECT",
-                    "name": "Country",
-                    "ofType": null
-                  }
-                }
-              }
+            name: "countries",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "LIST",
+                ofType: {
+                  kind: "NON_NULL",
+                  ofType: {
+                    kind: "OBJECT",
+                    name: "Country",
+                    ofType: null,
+                  },
+                },
+              },
             },
-            "args": []
+            args: [],
           },
           {
-            "name": "version",
-            "type": {
-              "kind": "NON_NULL",
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "Any"
-              }
+            name: "version",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "SCALAR",
+                name: "Any",
+              },
             },
-            "args": []
-          }
+            args: [],
+          },
         ],
-        "interfaces": []
+        interfaces: [],
       },
       {
-        "kind": "SCALAR",
-        "name": "Any"
-      }
+        kind: "SCALAR",
+        name: "Any",
+      },
     ],
-    "directives": []
-  }
+    directives: [],
+  },
 } as unknown as IntrospectionQuery;
