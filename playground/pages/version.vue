@@ -6,13 +6,12 @@
 </template>
 
 <script setup lang="ts">
-import {computed, useQuery} from "#imports";
-import {VersionDocument} from "~/gql/queries/version";
+import { computed, useQuery } from "#imports";
+import { VersionDocument } from "~/gql/queries/version";
 
 const { data, fetching } = useQuery({
-  query: VersionDocument
-})
+  query: VersionDocument,
+});
 
-const version = computed(() => data.value?.version ?? '')
-
+const version = computed(() => data.value?.version ?? "");
 </script>

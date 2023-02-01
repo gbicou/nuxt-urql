@@ -20,6 +20,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "dev:start": "nuxi start playground",
     "release": "npm run lint && npm run unit && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
@@ -38,8 +39,11 @@
     "@nuxt/test-utils": "^3.1.1",
     "changelogen": "^0.4.1",
     "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "graphql": "^16.6.0",
     "nuxt": "^3.1.1",
+    "prettier": "^2.8.3",
     "vitest": "^0.28.3"
   },
   "peerDependencies": {
