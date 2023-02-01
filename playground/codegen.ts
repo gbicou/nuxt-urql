@@ -28,6 +28,7 @@ const config: CodegenConfig = {
       plugins: ["urql-introspection"],
     },
   },
+  hooks: { afterOneFileWrite: ["eslint --fix", "prettier -w"] },
 };
 
 export default config;
