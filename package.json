@@ -1,6 +1,6 @@
 {
   "name": "@gbicou/nuxt-urql",
-  "version": "0.0.3",
+  "version": "0.0.0-development",
   "description": "Nuxt URQL module",
   "license": "MIT",
   "repository": {
@@ -28,7 +28,8 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "clean": "rimraf dist/ playground/.nuxt/ playground/.output/ playground/node_modules/.vite/"
+    "clean": "rimraf dist/ playground/.nuxt/ playground/.output/ playground/node_modules/.vite/",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@nuxt/kit": "^3.1.1",
@@ -47,13 +48,10 @@
     "graphql": "^16.6.0",
     "nuxt": "^3.1.1",
     "prettier": "^2.8.3",
-    "release-it": "^15.6.0",
+    "semantic-release": "^20.1.0",
     "vitest": "^0.28.3"
   },
   "peerDependencies": {
     "graphql": "^16.6.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
