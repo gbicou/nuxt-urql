@@ -1,5 +1,5 @@
 {
-  "name": "Countries by Trevor Blades",
+  "name": "Local countries list",
   "schemaPath": "gql/schema.graphql",
   "extensions": {
     "endpoints": {

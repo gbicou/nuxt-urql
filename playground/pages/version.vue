@@ -6,8 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import {useQuery} from "@urql/vue";
-import {computed} from "#imports";
+import {computed, useQuery} from "#imports";
 import {VersionDocument} from "~/gql/queries/version";
 
 const { data, fetching } = useQuery({

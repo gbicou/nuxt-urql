@@ -25,9 +25,9 @@ export type Country = {
 
 export type Query = {
   __typename?: 'Query';
-  /** all countries */
+  /** All countries */
   countries: Array<Country>;
-  /** package version */
+  /** Package version */
   version: Scalars['String'];
 };
 
