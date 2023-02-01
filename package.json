@@ -54,9 +54,6 @@
     "graphql": "^16.6.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "github": {
-      "release": true
-    }
+    "registry": "https://npm.pkg.github.com"
   }
 }
