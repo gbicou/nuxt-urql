@@ -1,29 +1,46 @@
-import {dedupExchange, fetchExchange} from "@urql/core";
-import {defineUrqlConfig} from "#urql";
-import {cacheExchange} from "@urql/exchange-graphcache";
-import type {GraphCacheConfig} from "./gql/types";
-import schema from "./gql/introspection"
+import { dedupExchange, fetchExchange } from "@urql/core";
+import { defineUrqlClient } from "#urql";
+import { cacheExchange } from "@urql/exchange-graphcache";
+import type { GraphCacheConfig } from "./gql/types";
+import schema from "./gql/introspection";
+import { useRuntimeConfig } from "#app";
+import { yogaExchange } from "@graphql-yoga/urql-exchange";
+
+function getToken(): string {
+  return Math.random().toString(16);
+}
 
 // use urql graphcache
 const cacheConfig: GraphCacheConfig = {
   schema,
   keys: {
-    Country: (data) => data.code || null
+    Country: (data) => data.code || null,
   },
   resolvers: {
     Query: {
-    //  country: (_, args) => ({__typename: "Country", code: args.code})
-    }
-  }
+      //  country: (_, args) => ({__typename: "Country", code: args.code})
+    },
+  },
   // storage: process.client ? makeDefaultStorage() : undefined
-}
+};
 
-export default defineUrqlConfig(ssr => ({
-  url: 'http://localhost:3000/api/graphql',
-  exchanges: [
-    dedupExchange,
-    cacheExchange(cacheConfig),
-    ssr,
-    fetchExchange,
-  ]
-}))
+export default defineUrqlClient((ssr) => {
+  const runtimeConfig = useRuntimeConfig();
+
+  return {
+    url: runtimeConfig.public.graphqlApiUrl,
+    fetchOptions: () => {
+      const token = getToken();
+      return {
+        headers: { authorization: token ? `Bearer ${token}` : "" },
+      };
+    },
+    exchanges: [
+      dedupExchange,
+      cacheExchange(cacheConfig),
+      ssr,
+      // fetchExchange,
+      yogaExchange(),
+    ],
+  };
+});

@@ -10,12 +10,11 @@
   </div>
 </template>
 
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 nav a {
   display: inline-block;
-  margin: .2em;
+  margin: 0.2em;
 }
 </style>

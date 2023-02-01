@@ -1,16 +1,18 @@
 {
   "private": true,
-  "name": "my-module-playground",
+  "name": "nuxt-urql-module-playground",
   "scripts": {
     "codegen": "graphql-codegen"
   },
   "dependencies": {
+    "@graphql-yoga/urql-exchange": "^1.4.1",
     "@pothos/core": "^3.24.0",
     "@urql/exchange-graphcache": "^5.0.8",
     "@urql/vue": "^1.0.4",
     "graphql": "^16.6.0",
     "graphql-yoga": "^3.4.1",
-    "iso-3166-1-ts": "^0.2.2"
+    "iso-3166-1-ts": "^0.2.2",
+    "nuxt-urql": "workspace:*"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.16.4",
