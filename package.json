@@ -53,6 +53,7 @@
   "peerDependencies": {
     "graphql": "^16.6.0"
   },
+  "packageManager": "pnpm@7.26.3",
   "publishConfig": {
     "access": "public"
   }
