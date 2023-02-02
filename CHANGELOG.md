@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/gbicou/nuxt-urql/compare/v1.1.0...v1.1.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* **build:** inlined implicit external causing error ([d1f47a2](https://github.com/gbicou/nuxt-urql/commit/d1f47a25eac6c611a048dc41fb78e00167f4f637))
+* **build:** module needs playground preparation ([6e96a66](https://github.com/gbicou/nuxt-urql/commit/6e96a66579a2d9d601efd98b971d8947133a52e0))
+
 # [1.1.0](https://github.com/gbicou/nuxt-urql/compare/v1.0.0...v1.1.0) (2023-02-02)
 
 
