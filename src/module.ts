@@ -1,9 +1,11 @@
-import { defineNuxtModule, addPlugin, createResolver, resolvePath, addTemplate, addImports } from "@nuxt/kit";
+import { defineNuxtModule, addPlugin, createResolver, addTemplate, addImports, resolvePath } from "@nuxt/kit";
 import { name, version } from "../package.json";
+import { ModuleClientOptions } from "#urql";
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
   ssrKey: string;
+  client: ModuleClientOptions | string;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -18,6 +20,7 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults: {
     ssrKey: "__URQL_DATA__",
+    client: "urql.config",
   },
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
@@ -26,17 +29,44 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.alias["#urql"] = resolve("./runtime");
 
     // load client config
-    const configPath = await resolvePath("urql.config");
+    let configPath: string | null;
+    if (typeof options.client === "string") {
+      configPath = await resolvePath(options.client);
+    } else {
+      configPath = addTemplate({
+        filename: "urql-config.mjs",
+        getContents: () =>
+          [
+            'import { dedupExchange, cacheExchange, fetchExchange } from "@urql/core";',
+            'import NuxtUrql from "#urql-module";',
+            "export default (ssr) => ({ ...NuxtUrql.client,",
+            "  exchanges: [dedupExchange, cacheExchange, ssr, fetchExchange]",
+            "});",
+          ].join("\n"),
+      }).dst;
+    }
     nuxt.options.alias["#urql-config"] = configPath;
 
     // send module config to plugin
     addTemplate({
       filename: "urql-module.d.ts",
-      getContents: () => ["declare const ssrKey: string", "export default { ssrKey }"].join("\n"),
+      getContents: () =>
+        [
+          'import { ModuleClientOptions } from "#urql";',
+          "declare const ssrKey: string;",
+          "declare const client: ModuleClientOptions | null;",
+          "export default { ssrKey, client }",
+        ].join("\n"),
     });
     nuxt.options.alias["#urql-module"] = addTemplate({
       filename: "urql-module.mjs",
-      getContents: () => ["export default {", ` ssrKey: ${JSON.stringify(options.ssrKey)}`, "}"].join("\n"),
+      getContents: () =>
+        [
+          "export default {",
+          ` ssrKey: ${JSON.stringify(options.ssrKey)},`,
+          ` client: ${JSON.stringify(typeof options.client === "object" ? options.client : null)},`,
+          "}",
+        ].join("\n"),
     }).dst;
 
     // import urql vue composables
