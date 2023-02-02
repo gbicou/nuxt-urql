@@ -47,6 +47,7 @@
     "graphql": "^16.6.0",
     "nuxt": "^3.1.1",
     "prettier": "^2.8.3",
+    "semantic-release": "^20.1.0",
     "vitest": "^0.28.3"
   },
   "peerDependencies": {
