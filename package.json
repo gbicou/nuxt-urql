@@ -20,17 +20,18 @@
     "dist"
   ],
   "scripts": {
+    "prepare": "nuxi prepare playground",
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "dev:build": "nuxi build playground",
     "dev:start": "nuxi start playground",
+    "build": "nuxt-module-build",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "ci": "nuxt-module-build --stub && nuxi prepare playground && nuxt-module-build && vitest run",
     "clean": "rimraf dist/ playground/.nuxt/ playground/.output/ playground/node_modules/.vite/",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "dependencies": {
     "@nuxt/kit": "^3.1.1",
