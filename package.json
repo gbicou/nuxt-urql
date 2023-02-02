@@ -1,5 +1,5 @@
 {
-  "name": "@gbicou/nuxt-urql",
+  "name": "@bicou/nuxt-urql",
   "version": "0.0.3",
   "description": "Nuxt URQL module",
   "license": "MIT",
@@ -51,5 +51,8 @@
   },
   "peerDependencies": {
     "graphql": "^16.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
