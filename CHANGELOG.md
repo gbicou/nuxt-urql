@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/gbicou/nuxt-urql/compare/v1.0.0...v1.1.0) (2023-02-02)
+
+
+### Features
+
+* allow simple configuration in module config ([c454df5](https://github.com/gbicou/nuxt-urql/commit/c454df5ec88b0eea8810fe85e4cbca71875cee15))
+
 # 1.0.0 (2023-02-02)
 
 
