@@ -20,7 +20,7 @@
 
 ## Quick Setup
 
-1. Add `@bicou/nuxt-urql` dependency to your project
+Add `@bicou/nuxt-urql` dependency to your project
 
 ```bash
 # Using pnpm
@@ -33,13 +33,20 @@ yarn add --dev @bicou/nuxt-urql
 npm install --save-dev @bicou/nuxt-urql
 ```
 
-2. Add `@bicou/nuxt-urql` to the `modules` section of `nuxt.config.ts`
+Add `@bicou/nuxt-urql` to the `modules` section of `nuxt.config.ts` and
+configure the urql client with the endpoint url
+
 
 ```js
 export default defineNuxtConfig({
   modules: [
     '@bicou/nuxt-urql'
-  ]
+  ],
+  urql: {
+    client: {
+      url: "http://myapi/graphql"
+    }
+  }
 })
 ```
 
