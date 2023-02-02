@@ -1,6 +1,6 @@
 import { defineNuxtModule, addPlugin, createResolver, addTemplate, addImports, resolvePath } from "@nuxt/kit";
 import { name, version } from "../package.json";
-import { ModuleClientOptions } from "#urql";
+import type { ModuleClientOptions } from "./runtime";
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {

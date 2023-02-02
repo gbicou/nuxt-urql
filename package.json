@@ -28,7 +28,7 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "ci": "nuxt-module-build --stub && nuxi prepare playground && vitest run",
+    "ci": "nuxt-module-build && nuxi prepare playground && vitest run",
     "clean": "rimraf dist/ playground/.nuxt/ playground/.output/ playground/node_modules/.vite/",
     "semantic-release": "semantic-release"
   },
