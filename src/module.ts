@@ -4,7 +4,9 @@ import type { ModuleClientOptions } from "./runtime";
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
+  // key for SSR data transmission
   ssrKey: string;
+  // client options object or path to client setup script
   client: ModuleClientOptions | string;
 }
 
