@@ -82,7 +82,7 @@ export default defineNuxtModule<ModuleOptions>({
     // watch client config
     if (nuxt.options.dev) {
       // @ts-ignore
-      nuxt.options.watch ||= [];
+      nuxt.options.watch = nuxt.options.watch || [];
       // @ts-ignore
       nuxt.options.watch.push(configPath);
     }
