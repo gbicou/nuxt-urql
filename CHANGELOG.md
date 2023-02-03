@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/gbicou/nuxt-urql/compare/v1.1.1...v1.1.2) (2023-02-03)
+
+
+### Bug Fixes
+
+* **client:** remove dedup and cache on server ([35b7df5](https://github.com/gbicou/nuxt-urql/commit/35b7df5b31d39b2f3f23432968ec9baacbea1828))
+
 ## [1.1.1](https://github.com/gbicou/nuxt-urql/compare/v1.1.0...v1.1.1) (2023-02-02)
 
 
