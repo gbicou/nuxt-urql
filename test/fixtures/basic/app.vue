@@ -13,6 +13,14 @@
 import { computed, useQuery } from "#imports";
 import { gql } from "@urql/core";
 
-const { data } = await useQuery({query: gql`query countries {countries { name }}`})
-const countries = computed(() => data.value?.countries ?? [])
+const { data } = await useQuery({
+  query: gql`
+    query countries {
+      countries {
+        name
+      }
+    }
+  `,
+});
+const countries = computed(() => data.value?.countries ?? []);
 </script>
