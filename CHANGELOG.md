@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/gbicou/nuxt-urql/compare/v1.1.2...v1.1.3) (2023-02-03)
+
+
+### Performance Improvements
+
+* **test:** use own sample schema for server ([e48d9f3](https://github.com/gbicou/nuxt-urql/commit/e48d9f3bde4d37d173e3c8888c7d0b857bb8af21))
+
 ## [1.1.2](https://github.com/gbicou/nuxt-urql/compare/v1.1.1...v1.1.2) (2023-02-03)
 
 
