@@ -1,16 +1,36 @@
-"""A country record"""
+"""
+A country record
+"""
 type Country {
-  """ISO code"""
+  """
+  Alpha‑3 code
+  """
+  alpha3: String!
+
+  """
+  ISO code
+  """
   code: String!
 
-  """Name of country"""
+  """
+  Name of country
+  """
   name: String!
+
+  """
+  Numeric
+  """
+  numeric: String!
 }
 
 type Query {
-  """All countries"""
+  """
+  All countries
+  """
   countries: [Country!]!
 
-  """Package version"""
+  """
+  Package version
+  """
   version: String!
 }

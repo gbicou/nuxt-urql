@@ -12,6 +12,8 @@ builder.objectType(Country, {
   fields: (t) => ({
     code: t.exposeString("alpha2", { description: "ISO code" }),
     name: t.exposeString("name", { description: "Name of country" }),
+    alpha3: t.exposeString("alpha3", { description: "Alpha‑3 code" }),
+    numeric: t.exposeString("numeric", { description: "Numeric" }),
   }),
 });
 

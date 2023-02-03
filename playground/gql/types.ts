@@ -22,10 +22,14 @@ export type Scalars = {
 /** A country record */
 export type Country = {
   __typename?: "Country";
+  /** Alpha‑3 code */
+  alpha3: Scalars["String"];
   /** ISO code */
   code: Scalars["String"];
   /** Name of country */
   name: Scalars["String"];
+  /** Numeric */
+  numeric: Scalars["String"];
 };
 
 export type Query = {
@@ -48,8 +52,10 @@ export type GraphCacheResolvers = {
     version?: GraphCacheResolver<WithTypename<Query>, Record<string, never>, Scalars["String"] | string>;
   };
   Country?: {
+    alpha3?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
     code?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
     name?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
+    numeric?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
   };
 };
 

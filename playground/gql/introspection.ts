@@ -12,6 +12,17 @@ export default {
         name: "Country",
         fields: [
           {
+            name: "alpha3",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "SCALAR",
+                name: "Any",
+              },
+            },
+            args: [],
+          },
+          {
             name: "code",
             type: {
               kind: "NON_NULL",
@@ -24,6 +35,17 @@ export default {
           },
           {
             name: "name",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "SCALAR",
+                name: "Any",
+              },
+            },
+            args: [],
+          },
+          {
+            name: "numeric",
             type: {
               kind: "NON_NULL",
               ofType: {
