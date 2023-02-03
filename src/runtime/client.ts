@@ -1,7 +1,5 @@
-import { dedupExchange, cacheExchange, fetchExchange } from "@urql/core";
-// @ts-ignore
-import NuxtUrqlOptions from "#urql-options";
-import type { ClientOptions } from "@urql/core";
+import { dedupExchange, cacheExchange, fetchExchange, type ClientOptions } from "@urql/core";
+import NuxtUrqlOptions from "#build/urql-options";
 import type { SSRExchange } from "@urql/core/dist/types/exchanges/ssr";
 
 // client options from configured ssr
@@ -12,6 +10,6 @@ export const defineUrqlClient = (f: UrqlClientOptions) => f;
 
 // default client options with exchanges
 export default defineUrqlClient((ssr) => ({
-  ...NuxtUrqlOptions.client,
+  ...(NuxtUrqlOptions.client as ClientOptions),
   exchanges: process.server ? [ssr, fetchExchange] : [dedupExchange, cacheExchange, ssr, fetchExchange],
 }));

@@ -1,7 +1,6 @@
 import { createClient, ssrExchange } from "@urql/core";
 import { ref, defineNuxtPlugin } from "#imports";
-// @ts-ignore
-import NuxtUrqlOptions from "#urql-options";
+import NuxtUrqlOptions from "#build/urql-options";
 import NuxtUrqlClient from "#urql-client";
 
 export default defineNuxtPlugin((nuxtApp) => {

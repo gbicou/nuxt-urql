@@ -46,10 +46,19 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.alias["#urql-client"] = clientPath;
 
     // send module config to plugin
-    nuxt.options.alias["#urql-options"] = addTemplate({
+    addTemplate({
       filename: "urql-options.mjs",
       getContents: () => `export default ${JSON.stringify(options)}`,
-    }).dst;
+    });
+    addTemplate({
+      filename: "urql-options.d.ts",
+      getContents: () =>
+        [
+          "import type { ModuleOptions } from '@bicou/nuxt-urql';",
+          "const options: ModuleOptions;",
+          "export default options;",
+        ].join("\n"),
+    });
 
     // import urql vue composables
     addImports(
