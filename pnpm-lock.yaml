@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@bicou/nuxt-urql-sample-schema': workspace:*
       '@nuxt/eslint-config': ^0.1.1
       '@nuxt/kit': ^3.1.1
       '@nuxt/module-builder': ^0.2.1
@@ -28,6 +29,7 @@ importers:
       '@urql/core': 3.1.1_graphql@16.6.0
       '@urql/vue': 1.0.4_graphql@16.6.0+vue@3.2.47
     devDependencies:
+      '@bicou/nuxt-urql-sample-schema': link:sample-schema
       '@nuxt/eslint-config': 0.1.1_eslint@8.33.0
       '@nuxt/module-builder': 0.2.1
       '@nuxt/schema': 3.1.1

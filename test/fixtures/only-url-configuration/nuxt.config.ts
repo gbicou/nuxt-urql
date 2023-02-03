@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [UrqlModule],
   urql: {
     client: {
-      url: "https://countries.trevorblades.com/",
+      url: "http://localhost/graphql",
     },
   },
 });
