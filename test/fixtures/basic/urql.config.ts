@@ -1,5 +1,5 @@
 import { dedupExchange, fetchExchange, cacheExchange } from "@urql/core";
-import { defineUrqlClient } from "#urql";
+import { defineUrqlClient } from "#urql/client";
 
 export default defineUrqlClient((ssr) => ({
   url: "https://countries.trevorblades.com/",

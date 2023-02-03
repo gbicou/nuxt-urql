@@ -1,10 +1,10 @@
 import { dedupExchange } from "@urql/core";
-import { defineUrqlClient } from "#urql";
 import { cacheExchange } from "@urql/exchange-graphcache";
 import type { GraphCacheConfig } from "./gql/types";
 import schema from "./gql/introspection";
 import { useRuntimeConfig } from "#app";
 import { yogaExchange } from "@graphql-yoga/urql-exchange";
+import { defineUrqlClient } from "#urql/client";
 
 function getToken(): string {
   return Math.random().toString(16);
