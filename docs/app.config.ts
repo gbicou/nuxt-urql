@@ -1,7 +1,7 @@
 export default defineAppConfig({
   docus: {
     github: {
-      repo: "gbicou/nuxt-urql"
+      repo: "gbicou/nuxt-urql",
     },
     title: "Nuxt URQL",
     description: "The best place to start your documentation.",
