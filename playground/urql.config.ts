@@ -1,4 +1,4 @@
-import { dedupExchange } from "@urql/core";
+import { dedupExchange, fetchExchange } from "@urql/core";
 import { cacheExchange } from "@urql/exchange-graphcache";
 import type { GraphCacheConfig } from "./gql/types";
 import schema from "./gql/introspection";
@@ -28,6 +28,10 @@ const cacheConfig: GraphCacheConfig = {
 export default defineUrqlClient((ssr) => {
   const runtimeConfig = useRuntimeConfig();
 
+  const exchanges = process.server
+    ? [ssr, fetchExchange]
+    : [dedupExchange, cacheExchange(cacheConfig), ssr, yogaExchange()];
+
   return {
     url: runtimeConfig.public.graphqlApiUrl,
     fetchOptions: () => {
@@ -36,12 +40,6 @@ export default defineUrqlClient((ssr) => {
         headers: { authorization: token ? `Bearer ${token}` : "" },
       };
     },
-    exchanges: [
-      dedupExchange,
-      cacheExchange(cacheConfig),
-      ssr,
-      // fetchExchange,
-      yogaExchange(),
-    ],
+    exchanges,
   };
 });
