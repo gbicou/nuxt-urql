@@ -62,7 +62,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     // import urql vue composables
     addImports(
-      ["useQuery", "useMutation", "useSubscription"].map((name) => ({
+      ["useClientHandle", "useQuery", "useMutation", "useSubscription"].map((name) => ({
         name,
         from: "@urql/vue",
       }))
