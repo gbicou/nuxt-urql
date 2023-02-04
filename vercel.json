@@ -1,5 +1,3 @@
 {
-  "framework": "nuxtjs",
-  "buildCommand": "pnpm nuxi build docs",
-  "outputDirectory": "docs/.vercel/output"
+  "framework": "nuxtjs"
 }
