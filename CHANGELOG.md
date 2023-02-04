@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/gbicou/nuxt-urql/compare/v1.1.3...v1.1.4) (2023-02-04)
+
+
+### Bug Fixes
+
+* export useClientHandle from @urql/vue ([16312a2](https://github.com/gbicou/nuxt-urql/commit/16312a219803eab663ca8f970f52146f99dea99f))
+
 ## [1.1.3](https://github.com/gbicou/nuxt-urql/compare/v1.1.2...v1.1.3) (2023-02-03)
 
 
