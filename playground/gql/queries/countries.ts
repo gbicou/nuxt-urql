@@ -7,6 +7,14 @@ export type CountriesQuery = { __typename?: "Query" } & {
   countries: Array<{ __typename?: "Country" } & Pick<Types.Country, "code" | "name">>;
 };
 
+export type CountryByCodeQueryVariables = Types.Exact<{
+  code: Types.Scalars["String"];
+}>;
+
+export type CountryByCodeQuery = { __typename?: "Query" } & {
+  country?: Types.Maybe<{ __typename?: "Country" } & Pick<Types.Country, "code" | "name" | "alpha3" | "numeric">>;
+};
+
 export const CountriesDocument = {
   kind: "Document",
   definitions: [
@@ -33,3 +41,45 @@ export const CountriesDocument = {
     },
   ],
 } as unknown as DocumentNode<CountriesQuery, CountriesQueryVariables>;
+export const CountryByCodeDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "query",
+      name: { kind: "Name", value: "countryByCode" },
+      variableDefinitions: [
+        {
+          kind: "VariableDefinition",
+          variable: { kind: "Variable", name: { kind: "Name", value: "code" } },
+          type: { kind: "NonNullType", type: { kind: "NamedType", name: { kind: "Name", value: "String" } } },
+        },
+      ],
+      selectionSet: {
+        kind: "SelectionSet",
+        selections: [
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "country" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "code" },
+                value: { kind: "Variable", name: { kind: "Name", value: "code" } },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "code" } },
+                { kind: "Field", name: { kind: "Name", value: "name" } },
+                { kind: "Field", name: { kind: "Name", value: "alpha3" } },
+                { kind: "Field", name: { kind: "Name", value: "numeric" } },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<CountryByCodeQuery, CountryByCodeQueryVariables>;

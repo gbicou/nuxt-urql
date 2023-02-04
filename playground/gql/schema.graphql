@@ -30,6 +30,11 @@ type Query {
   countries: [Country!]!
 
   """
+  Country by code
+  """
+  country(code: String!): Country
+
+  """
   Package version
   """
   version: String!

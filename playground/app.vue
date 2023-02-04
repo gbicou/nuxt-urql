@@ -5,6 +5,7 @@
       <nuxt-link to="/">index</nuxt-link>
       <nuxt-link to="/version">version</nuxt-link>
       <nuxt-link to="/countries">countries</nuxt-link>
+      <nuxt-link to="/country">country by code</nuxt-link>
     </nav>
     <nuxt-page />
   </div>

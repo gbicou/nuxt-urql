@@ -4,3 +4,12 @@ query countries {
     name
   }
 }
+
+query countryByCode($code: String!) {
+  country(code: $code) {
+    code
+    name
+    alpha3
+    numeric
+  }
+}

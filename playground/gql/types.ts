@@ -36,8 +36,14 @@ export type Query = {
   __typename?: "Query";
   /** All countries */
   countries: Array<Country>;
+  /** Country by code */
+  country?: Maybe<Country>;
   /** Package version */
   version: Scalars["String"];
+};
+
+export type QueryCountryArgs = {
+  code: Scalars["String"];
 };
 
 export type WithTypename<T extends { __typename?: any }> = Partial<T> & { __typename: NonNullable<T["__typename"]> };
@@ -49,6 +55,7 @@ export type GraphCacheKeysConfig = {
 export type GraphCacheResolvers = {
   Query?: {
     countries?: GraphCacheResolver<WithTypename<Query>, Record<string, never>, Array<WithTypename<Country> | string>>;
+    country?: GraphCacheResolver<WithTypename<Query>, QueryCountryArgs, WithTypename<Country> | string>;
     version?: GraphCacheResolver<WithTypename<Query>, Record<string, never>, Scalars["String"] | string>;
   };
   Country?: {

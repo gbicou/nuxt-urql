@@ -5,6 +5,7 @@ import schema from "./gql/introspection";
 import { useRuntimeConfig } from "#app";
 import { yogaExchange } from "@graphql-yoga/urql-exchange";
 import { defineUrqlClient } from "#urql/client";
+import { makeDefaultStorage } from "@urql/exchange-graphcache/default-storage";
 
 function getToken(): string {
   return Math.random().toString(16);
@@ -18,10 +19,10 @@ const cacheConfig: GraphCacheConfig = {
   },
   resolvers: {
     Query: {
-      //  country: (_, args) => ({__typename: "Country", code: args.code})
+      country: (_, args) => ({ __typename: "Country", code: args.code }),
     },
   },
-  // storage: process.client ? makeDefaultStorage() : undefined
+  storage: process.client ? makeDefaultStorage() : undefined,
 };
 
 export default defineUrqlClient((ssr) => {

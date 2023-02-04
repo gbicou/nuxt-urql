@@ -1,6 +1,6 @@
 import SchemaBuilder from "@pothos/core";
 import { version } from "../package.json";
-import { records, type ISO_3166_1_Record } from "iso-3166-1-ts";
+import { records, findByAlpha2, type ISO_3166_1_Record } from "iso-3166-1-ts";
 
 // build schema with pothos
 const builder = new SchemaBuilder({});
@@ -27,6 +27,17 @@ builder.queryType({
       type: [Country],
       description: "All countries",
       resolve: () => records,
+    }),
+    country: t.field({
+      type: Country,
+      description: "Country by code",
+      nullable: true,
+      args: {
+        code: t.arg.string({
+          required: true,
+        }),
+      },
+      resolve: (_, { code }) => findByAlpha2(code),
     }),
   }),
 });

@@ -81,6 +81,26 @@ export default {
             args: [],
           },
           {
+            name: "country",
+            type: {
+              kind: "OBJECT",
+              name: "Country",
+              ofType: null,
+            },
+            args: [
+              {
+                name: "code",
+                type: {
+                  kind: "NON_NULL",
+                  ofType: {
+                    kind: "SCALAR",
+                    name: "Any",
+                  },
+                },
+              },
+            ],
+          },
+          {
             name: "version",
             type: {
               kind: "NON_NULL",
