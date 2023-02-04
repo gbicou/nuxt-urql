@@ -1,5 +1,5 @@
 {
   "framework": "nuxtjs",
-  "buildCommand": "pnpm nuxi build playground",
-  "outputDirectory": "playground/.vercel/output"
+  "buildCommand": "pnpm nuxi build docs",
+  "outputDirectory": "docs/.vercel/output"
 }
