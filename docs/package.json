@@ -1,6 +1,5 @@
 {
-  "name": "docus-starter",
-  "version": "0.1.0",
+  "name": "@bicou/nuxt-urql-docs",
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
