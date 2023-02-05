@@ -4,7 +4,7 @@ import type { TypedDocumentNode as DocumentNode } from "@graphql-typed-document-
 export type CountriesQueryVariables = Types.Exact<{ [key: string]: never }>;
 
 export type CountriesQuery = { __typename?: "Query" } & {
-  countries: Array<{ __typename?: "Country" } & Pick<Types.Country, "code" | "name">>;
+  countries: Array<{ __typename: "Country" } & Pick<Types.Country, "code" | "name">>;
 };
 
 export type CountryByCodeQueryVariables = Types.Exact<{
@@ -12,7 +12,7 @@ export type CountryByCodeQueryVariables = Types.Exact<{
 }>;
 
 export type CountryByCodeQuery = { __typename?: "Query" } & {
-  country?: Types.Maybe<{ __typename?: "Country" } & Pick<Types.Country, "code" | "name" | "alpha3" | "numeric">>;
+  country?: Types.Maybe<{ __typename: "Country" } & Pick<Types.Country, "code" | "name" | "alpha3" | "numeric">>;
 };
 
 export const CountriesDocument = {
@@ -31,6 +31,7 @@ export const CountriesDocument = {
             selectionSet: {
               kind: "SelectionSet",
               selections: [
+                { kind: "Field", name: { kind: "Name", value: "__typename" } },
                 { kind: "Field", name: { kind: "Name", value: "code" } },
                 { kind: "Field", name: { kind: "Name", value: "name" } },
               ],
@@ -71,6 +72,7 @@ export const CountryByCodeDocument = {
             selectionSet: {
               kind: "SelectionSet",
               selections: [
+                { kind: "Field", name: { kind: "Name", value: "__typename" } },
                 { kind: "Field", name: { kind: "Name", value: "code" } },
                 { kind: "Field", name: { kind: "Name", value: "name" } },
                 { kind: "Field", name: { kind: "Name", value: "alpha3" } },

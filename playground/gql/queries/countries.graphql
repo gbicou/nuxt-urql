@@ -1,5 +1,6 @@
 query countries {
   countries {
+    __typename
     code
     name
   }
@@ -7,6 +8,7 @@ query countries {
 
 query countryByCode($code: String!) {
   country(code: $code) {
+    __typename
     code
     name
     alpha3
