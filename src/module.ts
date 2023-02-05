@@ -1,6 +1,7 @@
-import { defineNuxtModule, addPlugin, createResolver, addTemplate, addImports, resolvePath } from "@nuxt/kit";
+import { defineNuxtModule, addPlugin, createResolver, addImports, resolvePath } from "@nuxt/kit";
 import { name, version } from "../package.json";
 import type { ClientOptions } from "@urql/core";
+import defu from "defu";
 
 // serializable URQL client options
 export type ModuleClientOptions = Pick<
@@ -14,6 +15,10 @@ export interface ModuleOptions {
   ssrKey: string;
   // client options object or path to client setup script
   client: ModuleClientOptions | string;
+}
+
+export interface ModulePublicRuntimeConfig {
+  urql: ModuleOptions;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -33,6 +38,12 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
 
+    // expose public options
+    nuxt.options.runtimeConfig.public.urql = defu(nuxt.options.runtimeConfig.public.urql, {
+      ssrKey: options.ssrKey,
+      client: options.client,
+    });
+
     // alias runtime
     nuxt.options.alias["#urql"] = resolve("./runtime");
 
@@ -44,21 +55,6 @@ export default defineNuxtModule<ModuleOptions>({
       clientPath = resolve("./runtime/client");
     }
     nuxt.options.alias["#urql-client"] = clientPath;
-
-    // send module config to plugin
-    addTemplate({
-      filename: "urql-options.mjs",
-      getContents: () => `export default ${JSON.stringify(options)}`,
-    });
-    addTemplate({
-      filename: "urql-options.d.ts",
-      getContents: () =>
-        [
-          "import type { ModuleOptions } from '@bicou/nuxt-urql';",
-          "const options: ModuleOptions;",
-          "export default options;",
-        ].join("\n"),
-    });
 
     // import urql vue composables
     addImports(

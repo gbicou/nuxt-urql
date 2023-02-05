@@ -1,9 +1,10 @@
 import { createClient, ssrExchange } from "@urql/core";
-import { ref, defineNuxtPlugin } from "#imports";
-import NuxtUrqlOptions from "#build/urql-options";
+import { ref, defineNuxtPlugin, useRuntimeConfig } from "#imports";
 import NuxtUrqlClient from "#urql-client";
 
 export default defineNuxtPlugin((nuxtApp) => {
+  const { ssrKey } = useRuntimeConfig().public.urql;
+
   // create ssr exchange
   const ssr = ssrExchange({
     isClient: process.client,
@@ -12,14 +13,14 @@ export default defineNuxtPlugin((nuxtApp) => {
   // when app is created in browser, restore SSR state from nuxt payload
   if (process.client) {
     nuxtApp.hook("app:created", () => {
-      ssr.restoreData(nuxtApp.payload.data[NuxtUrqlOptions.ssrKey]);
+      ssr.restoreData(nuxtApp.payload.data[ssrKey]);
     });
   }
 
   // when app has rendered in server, send SSR state to client
   if (process.server) {
     nuxtApp.hook("app:rendered", () => {
-      nuxtApp.payload.data[NuxtUrqlOptions.ssrKey] = ssr.extractData();
+      nuxtApp.payload.data[ssrKey] = ssr.extractData();
     });
   }
 

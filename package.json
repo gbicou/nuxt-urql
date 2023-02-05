@@ -48,6 +48,7 @@
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "changelogen": "^0.4.1",
+    "defu": "^6.1.2",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -59,6 +60,7 @@
     "vue": "^3.2.47"
   },
   "peerDependencies": {
+    "defu": "^6.1.2",
     "graphql": "^16.6.0",
     "vue": "^3.2.47"
   },
