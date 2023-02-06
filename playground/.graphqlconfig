@@ -4,7 +4,7 @@
   "extensions": {
     "endpoints": {
       "Default GraphQL Endpoint": {
-        "url": "http://countries.bicou.com/",
+        "url": "https://countries-server.vercel.app/",
         "headers": {
           "user-agent": "JS GraphQL"
         },

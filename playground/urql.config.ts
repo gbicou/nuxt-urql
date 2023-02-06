@@ -29,7 +29,7 @@ export default defineUrqlClient((ssr) => {
     : [dedupExchange, cacheExchange(cacheConfig), ssr, fetchExchange];
 
   return {
-    url: "http://countries.bicou.com/",
+    url: "https://countries-server.vercel.app/",
     fetchOptions: () => {
       const token = getToken();
       return {

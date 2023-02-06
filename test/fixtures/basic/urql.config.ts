@@ -2,7 +2,7 @@ import { dedupExchange, fetchExchange, cacheExchange } from "@urql/core";
 import { defineUrqlClient } from "#urql/client";
 
 export default defineUrqlClient((ssr) => ({
-  url: `http://countries.bicou.com/`,
+  url: "https://countries-server.vercel.app/",
   exchanges: [
     dedupExchange,
     cacheExchange,

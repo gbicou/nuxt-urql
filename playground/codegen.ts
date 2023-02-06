@@ -1,7 +1,7 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "http://countries.bicou.com/",
+  schema: "https://countries-server.vercel.app/",
   documents: ["gql/**/*.graphql"],
   config: {
     useTypeImports: true,

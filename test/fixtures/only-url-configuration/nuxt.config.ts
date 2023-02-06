@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [UrqlModule],
   urql: {
     client: {
-      url: "http://countries.bicou.com/",
+      url: "https://countries-server.vercel.app/",
     },
   },
 });
