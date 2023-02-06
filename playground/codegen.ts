@@ -1,9 +1,7 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
-import { printSchema } from "graphql";
-import { schema } from "@bicou/nuxt-urql-sample-schema/schema";
 
 const config: CodegenConfig = {
-  schema: printSchema(schema),
+  schema: "http://countries.bicou.com/",
   documents: ["gql/**/*.graphql"],
   config: {
     useTypeImports: true,

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [UrqlModule],
   urql: {
     client: {
-      url: "http://localhost/graphql",
+      url: "http://countries.bicou.com/",
     },
   },
 });

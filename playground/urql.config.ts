@@ -2,8 +2,6 @@ import { dedupExchange, fetchExchange } from "@urql/core";
 import { cacheExchange } from "@urql/exchange-graphcache";
 import type { GraphCacheConfig } from "./gql/types";
 import schema from "./gql/introspection";
-import { useRuntimeConfig } from "#app";
-import { yogaExchange } from "@graphql-yoga/urql-exchange";
 import { defineUrqlClient } from "#urql/client";
 import { makeDefaultStorage } from "@urql/exchange-graphcache/default-storage";
 
@@ -26,14 +24,12 @@ const cacheConfig: GraphCacheConfig = {
 };
 
 export default defineUrqlClient((ssr) => {
-  const runtimeConfig = useRuntimeConfig();
-
   const exchanges = process.server
     ? [ssr, fetchExchange]
-    : [dedupExchange, cacheExchange(cacheConfig), ssr, yogaExchange()];
+    : [dedupExchange, cacheExchange(cacheConfig), ssr, fetchExchange];
 
   return {
-    url: runtimeConfig.public.graphqlApiUrl,
+    url: "http://countries.bicou.com/",
     fetchOptions: () => {
       const token = getToken();
       return {
