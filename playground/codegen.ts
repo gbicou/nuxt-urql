@@ -1,7 +1,10 @@
 import { CodegenConfig } from "@graphql-codegen/cli";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 const config: CodegenConfig = {
-  schema: "https://countries-server.vercel.app/",
+  schema: process.env.GQL_ENDPOINT ?? "https://countries.bicou.com/",
   documents: ["gql/**/*.graphql"],
   config: {
     useTypeImports: true,
@@ -24,6 +27,9 @@ const config: CodegenConfig = {
     },
     "./gql/introspection.ts": {
       plugins: ["urql-introspection"],
+      config: {
+        includeScalars: true,
+      },
     },
   },
   hooks: { afterOneFileWrite: ["eslint --fix", "prettier -w"] },

@@ -8,6 +8,10 @@ export default {
     subscriptionType: null,
     types: [
       {
+        kind: "SCALAR",
+        name: "Boolean",
+      },
+      {
         kind: "OBJECT",
         name: "Country",
         fields: [
@@ -17,7 +21,8 @@ export default {
               kind: "NON_NULL",
               ofType: {
                 kind: "SCALAR",
-                name: "Any",
+                name: "String",
+                ofType: null,
               },
             },
             args: [],
@@ -28,7 +33,8 @@ export default {
               kind: "NON_NULL",
               ofType: {
                 kind: "SCALAR",
-                name: "Any",
+                name: "String",
+                ofType: null,
               },
             },
             args: [],
@@ -39,7 +45,8 @@ export default {
               kind: "NON_NULL",
               ofType: {
                 kind: "SCALAR",
-                name: "Any",
+                name: "String",
+                ofType: null,
               },
             },
             args: [],
@@ -50,13 +57,26 @@ export default {
               kind: "NON_NULL",
               ofType: {
                 kind: "SCALAR",
-                name: "Any",
+                name: "String",
+                ofType: null,
               },
             },
             args: [],
           },
         ],
         interfaces: [],
+      },
+      {
+        kind: "SCALAR",
+        name: "Float",
+      },
+      {
+        kind: "SCALAR",
+        name: "ID",
+      },
+      {
+        kind: "SCALAR",
+        name: "Int",
       },
       {
         kind: "OBJECT",
@@ -94,7 +114,8 @@ export default {
                   kind: "NON_NULL",
                   ofType: {
                     kind: "SCALAR",
-                    name: "Any",
+                    name: "String",
+                    ofType: null,
                   },
                 },
               },
@@ -106,13 +127,18 @@ export default {
               kind: "NON_NULL",
               ofType: {
                 kind: "SCALAR",
-                name: "Any",
+                name: "String",
+                ofType: null,
               },
             },
             args: [],
           },
         ],
         interfaces: [],
+      },
+      {
+        kind: "SCALAR",
+        name: "String",
       },
       {
         kind: "SCALAR",

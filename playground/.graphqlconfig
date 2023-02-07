@@ -3,13 +3,8 @@
   "schemaPath": "gql/schema.graphql",
   "extensions": {
     "endpoints": {
-      "Default GraphQL Endpoint": {
-        "url": "https://countries-server.vercel.app/",
-        "headers": {
-          "user-agent": "JS GraphQL"
-        },
-        "introspect": false
-      }
+      "dev": "http://localhost:4000/",
+      "live": "https://countries.bicou.com/"
     }
   }
 }

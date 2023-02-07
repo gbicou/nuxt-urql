@@ -46,6 +46,7 @@
     "@nuxt/test-utils": "^3.1.2",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
+    "@types/node": "^18.11.18",
     "changelogen": "^0.4.1",
     "defu": "^6.1.2",
     "eslint": "^8.33.0",

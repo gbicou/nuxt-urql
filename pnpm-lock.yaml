@@ -12,6 +12,7 @@ importers:
       '@nuxt/test-utils': ^3.1.2
       '@semantic-release/changelog': ^6.0.2
       '@semantic-release/git': ^10.0.1
+      '@types/node': ^18.11.18
       '@urql/core': ^3.1.1
       '@urql/vue': ^1.0.4
       changelogen: ^0.4.1
@@ -30,20 +31,21 @@ importers:
       '@urql/core': 3.1.1_graphql@16.6.0
       '@urql/vue': 1.0.4_graphql@16.6.0+vue@3.2.47
     devDependencies:
-      '@graphql-eslint/eslint-plugin': 3.15.0_graphql@16.6.0
+      '@graphql-eslint/eslint-plugin': 3.15.0_fpwzejcmfqpdneobdih363qpvq
       '@nuxt/eslint-config': 0.1.1_eslint@8.33.0
       '@nuxt/module-builder': 0.2.1
       '@nuxt/schema': 3.1.2
       '@nuxt/test-utils': 3.1.2_vue@3.2.47
       '@semantic-release/changelog': 6.0.2_semantic-release@20.1.0
       '@semantic-release/git': 10.0.1_semantic-release@20.1.0
+      '@types/node': 18.11.19
       changelogen: 0.4.1
       defu: 6.1.2
       eslint: 8.33.0
       eslint-config-prettier: 8.6.0_eslint@8.33.0
       eslint-plugin-prettier: 4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq
       graphql: 16.6.0
-      nuxt: 3.1.2_eslint@8.33.0
+      nuxt: 3.1.2_v43gqgcrnfndnqp63wn6432sxi
       prettier: 2.8.3
       semantic-release: 20.1.0
       vitest: 0.28.4
@@ -1457,7 +1459,7 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-eslint/eslint-plugin/3.15.0_graphql@16.6.0:
+  /@graphql-eslint/eslint-plugin/3.15.0_fpwzejcmfqpdneobdih363qpvq:
     resolution: {integrity: sha512-0sCHsbD07sCAHLKr/89i0ZcKasAbPps9OcWcvBtBoyuyvINWQlTrG0eqIwo4n5pOdNLw1yCfk+R7AwRYJ8m+MQ==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -1470,7 +1472,7 @@ packages:
       debug: 4.3.4
       fast-glob: 3.2.12
       graphql: 16.6.0
-      graphql-config: 4.4.1_graphql@16.6.0
+      graphql-config: 4.4.1_fpwzejcmfqpdneobdih363qpvq
       graphql-depth-limit: 1.1.0_graphql@16.6.0
       lodash.lowercase: 4.3.0
       tslib: 2.5.0
@@ -1573,24 +1575,6 @@ packages:
       extract-files: 11.0.0
       graphql: 16.6.0
       meros: 1.2.1_@types+node@18.11.19
-      tslib: 2.5.0
-      value-or-promise: 1.0.12
-    transitivePeerDependencies:
-      - '@types/node'
-    dev: true
-
-  /@graphql-tools/executor-http/0.1.5_graphql@16.6.0:
-    resolution: {integrity: sha512-oyLxtRFq4//5WhxbvwbJE69EDL3vq3gGEltcGlKfN1Jxj59Rs2KwjwRRjrq2pWxxPE4QRcb4EFfohFTHMz/Kpw==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-    dependencies:
-      '@graphql-tools/utils': 9.2.1_graphql@16.6.0
-      '@repeaterjs/repeater': 3.0.4
-      '@whatwg-node/fetch': 0.6.9
-      dset: 3.1.2
-      extract-files: 11.0.0
-      graphql: 16.6.0
-      meros: 1.2.1
       tslib: 2.5.0
       value-or-promise: 1.0.12
     transitivePeerDependencies:
@@ -1818,32 +1802,6 @@ packages:
       '@graphql-tools/wrap': 9.3.5_graphql@16.6.0
       '@types/ws': 8.5.4
       '@whatwg-node/fetch': 0.6.9_@types+node@18.11.19
-      graphql: 16.6.0
-      isomorphic-ws: 5.0.0_ws@8.12.0
-      tslib: 2.5.0
-      value-or-promise: 1.0.12
-      ws: 8.12.0
-    transitivePeerDependencies:
-      - '@types/node'
-      - bufferutil
-      - encoding
-      - utf-8-validate
-    dev: true
-
-  /@graphql-tools/url-loader/7.17.10_graphql@16.6.0:
-    resolution: {integrity: sha512-lntMUrthET8/d70xdRl95COTh28pSCd3Z1hTwQiCQ5oDS4SzAmI6zT+l6V39KQl/yi4UcRmdLZjUeJhkIkUjKw==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-    dependencies:
-      '@ardatan/sync-fetch': 0.0.1
-      '@graphql-tools/delegate': 9.0.26_graphql@16.6.0
-      '@graphql-tools/executor-graphql-ws': 0.0.10_graphql@16.6.0
-      '@graphql-tools/executor-http': 0.1.5_graphql@16.6.0
-      '@graphql-tools/executor-legacy-ws': 0.0.8_graphql@16.6.0
-      '@graphql-tools/utils': 9.2.1_graphql@16.6.0
-      '@graphql-tools/wrap': 9.3.5_graphql@16.6.0
-      '@types/ws': 8.5.4
-      '@whatwg-node/fetch': 0.6.9
       graphql: 16.6.0
       isomorphic-ws: 5.0.0_ws@8.12.0
       tslib: 2.5.0
@@ -2365,7 +2323,7 @@ packages:
     resolution: {integrity: sha512-PjVETP7+iZXAs5Q8O4ivl4t6qjWZMZqwiTVogUXHoHGZZcw7GZW3u3tzfYfE1HbzyYJfr236IXqQ02MeR8Fz2w==}
     dev: true
 
-  /@nuxt/vite-builder/3.1.2_eslint@8.33.0+vue@3.2.47:
+  /@nuxt/vite-builder/3.1.2_db7fjthjekqdk2dslcpt2uvb7y:
     resolution: {integrity: sha512-xKH71LG2xKAmCNlu1rqeL9YmGpJCr4NKg9py3yqmMN+CdivIU4kJ+O5gU0DxX9vo7ZSl7d72v+kyQa3KEM2Gyg==}
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     peerDependencies:
@@ -2400,8 +2358,8 @@ packages:
       rollup-plugin-visualizer: 5.9.0_rollup@3.14.0
       ufo: 1.0.1
       unplugin: 1.0.1
-      vite: 4.1.1
-      vite-node: 0.28.4
+      vite: 4.1.1_@types+node@18.11.19
+      vite-node: 0.28.4_@types+node@18.11.19
       vite-plugin-checker: 0.5.5_eslint@8.33.0+vite@4.1.1
       vue: 3.2.47
       vue-bundle-renderer: 1.0.0
@@ -3321,7 +3279,7 @@ packages:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.20.12
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.12
-      vite: 4.1.1
+      vite: 4.1.1_@types+node@18.11.19
       vue: 3.2.47
     transitivePeerDependencies:
       - supports-color
@@ -3334,7 +3292,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.1
+      vite: 4.1.1_@types+node@18.11.19
       vue: 3.2.47
     dev: true
 
@@ -3553,18 +3511,6 @@ packages:
     resolution: {integrity: sha512-WKj/lI4QjnLuPrim0cfO7i+HsDSXHxNv1y0CrJhdntuO3hxWZmnXCwNDnwOvry11OjRin6cgWNF+j/9Pn8TN4w==}
     dev: true
 
-  /@whatwg-node/fetch/0.6.9:
-    resolution: {integrity: sha512-JfrBCJdMu9n9OARc0e/hPHcD98/8Nz1CKSdGYDg6VbObDkV/Ys30xe5i/wPOatYbxuvatj1kfWeHf7iNX3i17w==}
-    dependencies:
-      '@peculiar/webcrypto': 1.4.1
-      '@whatwg-node/node-fetch': 0.0.5
-      busboy: 1.6.0
-      urlpattern-polyfill: 6.0.2
-      web-streams-polyfill: 3.2.1
-    transitivePeerDependencies:
-      - '@types/node'
-    dev: true
-
   /@whatwg-node/fetch/0.6.9_@types+node@18.11.19:
     resolution: {integrity: sha512-JfrBCJdMu9n9OARc0e/hPHcD98/8Nz1CKSdGYDg6VbObDkV/Ys30xe5i/wPOatYbxuvatj1kfWeHf7iNX3i17w==}
     dependencies:
@@ -3575,16 +3521,6 @@ packages:
       web-streams-polyfill: 3.2.1
     transitivePeerDependencies:
       - '@types/node'
-    dev: true
-
-  /@whatwg-node/node-fetch/0.0.5:
-    resolution: {integrity: sha512-hbccmaSZaItdsRuBKBEEhLoO+5oXJPxiyd0kG2xXd0Dh3Rt+vZn4pADHxuSiSHLd9CM+S2z4+IxlEGbWUgiz9g==}
-    peerDependencies:
-      '@types/node': ^18.0.6
-    dependencies:
-      '@whatwg-node/events': 0.0.2
-      busboy: 1.6.0
-      tslib: 2.5.0
     dev: true
 
   /@whatwg-node/node-fetch/0.0.5_@types+node@18.11.19:
@@ -5869,7 +5805,7 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
 
-  /graphql-config/4.4.1_graphql@16.6.0:
+  /graphql-config/4.4.1_fpwzejcmfqpdneobdih363qpvq:
     resolution: {integrity: sha512-B8wlvfBHZ5WnI4IiuQZRqql6s+CKz7S+xpUeTb28Z8nRBi8tH9ChEBgT5FnTyE05PUhHlrS2jK9ICJ4YBl9OtQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
@@ -5886,7 +5822,7 @@ packages:
       '@graphql-tools/json-file-loader': 7.4.17_graphql@16.6.0
       '@graphql-tools/load': 7.8.12_graphql@16.6.0
       '@graphql-tools/merge': 8.3.18_graphql@16.6.0
-      '@graphql-tools/url-loader': 7.17.10_graphql@16.6.0
+      '@graphql-tools/url-loader': 7.17.10_fpwzejcmfqpdneobdih363qpvq
       '@graphql-tools/utils': 9.2.1_graphql@16.6.0
       cosmiconfig: 8.0.0
       graphql: 16.6.0
@@ -7312,16 +7248,6 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-  /meros/1.2.1:
-    resolution: {integrity: sha512-R2f/jxYqCAGI19KhAvaxSOxALBMkaXWH2a7rOyqQw+ZmizX5bKkEYWLzdhC+U82ZVVPVp6MCXe3EkVligh+12g==}
-    engines: {node: '>=13'}
-    peerDependencies:
-      '@types/node': '>=13'
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-    dev: true
-
   /meros/1.2.1_@types+node@18.11.19:
     resolution: {integrity: sha512-R2f/jxYqCAGI19KhAvaxSOxALBMkaXWH2a7rOyqQw+ZmizX5bKkEYWLzdhC+U82ZVVPVp6MCXe3EkVligh+12g==}
     engines: {node: '>=13'}
@@ -8208,7 +8134,7 @@ packages:
       - vue-tsc
     dev: true
 
-  /nuxt/3.1.2_eslint@8.33.0:
+  /nuxt/3.1.2_v43gqgcrnfndnqp63wn6432sxi:
     resolution: {integrity: sha512-mzEYvokFZAtiZRfNNj72m94nuMWzBgOCwuxlYt9paxH4Y9qcBr+Ki4ppnqD1gK719exccGqJAODJWL05aN3HFA==}
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     hasBin: true
@@ -8218,7 +8144,7 @@ packages:
       '@nuxt/schema': 3.1.2
       '@nuxt/telemetry': 2.1.9
       '@nuxt/ui-templates': 1.1.1
-      '@nuxt/vite-builder': 3.1.2_eslint@8.33.0+vue@3.2.47
+      '@nuxt/vite-builder': 3.1.2_db7fjthjekqdk2dslcpt2uvb7y
       '@unhead/ssr': 1.0.21
       '@vue/reactivity': 3.2.47
       '@vue/shared': 3.2.47
@@ -10872,7 +10798,7 @@ packages:
       npm-run-path: 4.0.1
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
-      vite: 4.1.1
+      vite: 4.1.1_@types+node@18.11.19
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.8
