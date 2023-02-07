@@ -2,7 +2,7 @@ import { createClient, ssrExchange } from "@urql/core";
 import { ref, defineNuxtPlugin, useRuntimeConfig } from "#imports";
 import NuxtUrqlClient from "#urql-client";
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(async (nuxtApp) => {
   const { endpoint, ssrKey } = useRuntimeConfig().public.urql;
 
   // create ssr exchange
@@ -25,9 +25,12 @@ export default defineNuxtPlugin((nuxtApp) => {
   }
 
   // retrieve user client options to create client
+  const options = await NuxtUrqlClient(ssr);
+
+  // create urql client
   const client = createClient({
-    ...NuxtUrqlClient(ssr),
     url: endpoint,
+    ...options,
   });
 
   // provide client to @urql/vue

@@ -2,11 +2,14 @@ import { dedupExchange, cacheExchange, fetchExchange, type ClientOptions } from 
 import { useRuntimeConfig } from "#app";
 import type { SSRExchange } from "@urql/core/dist/types/exchanges/ssr";
 
-// client options from configured ssr
-export type UrqlClientOptions = (ssr: SSRExchange) => Omit<ClientOptions, "url">;
+// client options except endpoint
+export type UrqlClientOptions = Omit<ClientOptions, "url">;
+
+// helper to build client options from configured ssr
+export type UrqlClientBuild = (ssr: SSRExchange) => PromiseLike<UrqlClientOptions> | UrqlClientOptions;
 
 // helper to define client options
-export const defineUrqlClient = (f: UrqlClientOptions) => f;
+export const defineUrqlClient = (f: UrqlClientBuild) => f;
 
 // default client options with exchanges
 export default defineUrqlClient((ssr) => {
