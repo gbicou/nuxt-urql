@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/gbicou/nuxt-urql/compare/v1.1.4...v1.1.5) (2023-02-07)
+
+
+### Bug Fixes
+
+* allow async config ([b4a67d5](https://github.com/gbicou/nuxt-urql/commit/b4a67d50e2d0fa8eef42bc901362710aaeea051e))
+
 ## [1.1.4](https://github.com/gbicou/nuxt-urql/compare/v1.1.3...v1.1.4) (2023-02-04)
 
 
