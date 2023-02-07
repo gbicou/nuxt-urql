@@ -43,9 +43,7 @@ export default defineNuxtConfig({
     '@bicou/nuxt-urql'
   ],
   urql: {
-    client: {
-      url: "http://myapi/graphql"
-    }
+    endpoint: "http://myapi/graphql"
   }
 })
 ```
