@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <p>client handle:</p>
+  <main>
+    <h4>Client handle</h4>
     <pre>{{ ch }}</pre>
-  </div>
+  </main>
 </template>
 
 <script setup lang="ts">

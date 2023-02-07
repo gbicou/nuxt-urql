@@ -1,21 +1,14 @@
 <template>
-  <div>
-    <h1>Nuxt urql playground</h1>
-    <nav>
-      <nuxt-link to="/">index</nuxt-link>
-      <nuxt-link to="/version">version</nuxt-link>
-      <nuxt-link to="/countries">countries</nuxt-link>
-      <nuxt-link to="/country">country by code</nuxt-link>
-    </nav>
-    <nuxt-page />
-  </div>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Nuxt urql playground</strong></li>
+    </ul>
+    <ul>
+      <li><nuxt-link to="/">index</nuxt-link></li>
+      <li><nuxt-link to="/version">version</nuxt-link></li>
+      <li><nuxt-link to="/countries">countries</nuxt-link></li>
+      <li><nuxt-link to="/country">country</nuxt-link></li>
+    </ul>
+  </nav>
+  <nuxt-page />
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped>
-nav a {
-  display: inline-block;
-  margin: 0.2em;
-}
-</style>

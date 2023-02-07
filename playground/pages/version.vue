@@ -1,8 +1,14 @@
 <template>
-  <div>
-    <h3>Version (fetching = {{ fetching }})</h3>
-    <p>{{ version }}</p>
-  </div>
+  <main>
+    <hgroup>
+      <h4>Version</h4>
+      <h5>Simple query non awaited</h5>
+    </hgroup>
+    <p>fetching = {{ fetching }}</p>
+    <p>
+      version = <code>{{ version }}</code>
+    </p>
+  </main>
 </template>
 
 <script setup lang="ts">

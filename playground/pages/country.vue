@@ -1,10 +1,21 @@
 <template>
-  <div>
-    <h3>Find a country (fetching = {{ fetching }})</h3>
-    <p><input v-model="code" placeholder="2 letter code" /></p>
-    <p>Result:</p>
-    <pre>{{ country }}</pre>
-  </div>
+  <main>
+    <hgroup>
+      <h4>Find a country</h4>
+      <h5>Query with variable from input</h5>
+    </hgroup>
+    <article>
+      <label>
+        ISO code
+        <input v-model="code" placeholder="FR, be, ..." />
+      </label>
+      <footer>
+        <p>fetching = {{ fetching }}</p>
+        <p>Result:</p>
+        <pre>{{ country }}</pre>
+      </footer>
+    </article>
+  </main>
 </template>
 
 <script setup lang="ts">

@@ -6,4 +6,5 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
   },
+  css: ["~/assets/css/app.scss"],
 });
