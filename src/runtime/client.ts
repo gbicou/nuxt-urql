@@ -3,7 +3,7 @@ import { useRuntimeConfig } from "#app";
 import type { SSRExchange } from "@urql/core/dist/types/exchanges/ssr";
 
 // client options from configured ssr
-export type UrqlClientOptions = (ssr: SSRExchange) => ClientOptions;
+export type UrqlClientOptions = (ssr: SSRExchange) => Omit<ClientOptions, "url">;
 
 // helper to define client options
 export const defineUrqlClient = (f: UrqlClientOptions) => f;

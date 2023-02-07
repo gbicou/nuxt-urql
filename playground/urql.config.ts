@@ -29,7 +29,7 @@ export default defineUrqlClient((ssr) => {
     : [dedupExchange, cacheExchange(cacheConfig), ssr, fetchExchange];
 
   return {
-    url: process.env.GQL_ENDPOINT ?? "https://countries.bicou.com/",
+    // url: process.env.GQL_ENDPOINT ?? "https://countries.bicou.com/",
     fetchOptions: () => {
       const token = getToken();
       return {

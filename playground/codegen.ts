@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const config: CodegenConfig = {
-  schema: process.env.GQL_ENDPOINT ?? "https://countries.bicou.com/",
+  schema: process.env.NUXT_PUBLIC_URQL_ENDPOINT ?? "https://countries.bicou.com/",
   documents: ["gql/**/*.graphql"],
   config: {
     useTypeImports: true,

@@ -6,13 +6,14 @@ import defu from "defu";
 // serializable URQL client options
 export type ModuleClientOptions = Pick<
   ClientOptions,
-  "url" | "preferGetMethod" | "requestPolicy" | "maskTypename" | "suspense"
+  "preferGetMethod" | "requestPolicy" | "maskTypename" | "suspense"
 >;
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
   // key for SSR data transmission
   ssrKey: string;
+  endpoint: string;
   // client options object or path to client setup script
   client: ModuleClientOptions | string;
 }
@@ -33,6 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults: {
     ssrKey: "__URQL_DATA__",
+    endpoint: "http://host/graphql",
     client: "urql.config",
   },
   async setup(options, nuxt) {
@@ -41,6 +43,7 @@ export default defineNuxtModule<ModuleOptions>({
     // expose public options
     nuxt.options.runtimeConfig.public.urql = defu(nuxt.options.runtimeConfig.public.urql, {
       ssrKey: options.ssrKey,
+      endpoint: options.endpoint,
       client: options.client,
     });
 
