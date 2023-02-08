@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, addImports, resolvePath } from "@nuxt/kit";
+import { defineNuxtModule, addPlugin, createResolver, addImports, findPath } from "@nuxt/kit";
 import { name, version } from "../package.json";
 import type { ClientOptions } from "@urql/core";
 import defu from "defu";
@@ -51,12 +51,9 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.alias["#urql"] = resolve("./runtime");
 
     // load client config
-    let clientPath: string | null;
-    if (typeof options.client === "string") {
-      clientPath = await resolvePath(options.client);
-    } else {
-      clientPath = resolve("./runtime/client");
-    }
+    const clientPathDefault = resolve("./runtime/client");
+    const clientPath =
+      typeof options.client === "string" ? (await findPath(options.client)) ?? clientPathDefault : clientPathDefault;
     nuxt.options.alias["#urql-client"] = clientPath;
 
     // import urql vue composables

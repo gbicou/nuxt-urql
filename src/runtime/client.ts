@@ -14,11 +14,9 @@ export const defineUrqlClient = (f: UrqlClientBuild) => f;
 // default client options with exchanges
 export default defineUrqlClient((ssr) => {
   const { client } = useRuntimeConfig().public.urql;
-  if (typeof client === "string") {
-    throw new Error("default URQL client config should be an object");
-  }
+  const options = typeof client === "string" ? {} : client;
   return {
-    ...client,
+    ...options,
     exchanges: process.server ? [ssr, fetchExchange] : [dedupExchange, cacheExchange, ssr, fetchExchange],
   };
 });
