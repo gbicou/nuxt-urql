@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/gbicou/nuxt-urql/compare/v1.1.5...v1.1.6) (2023-02-08)
+
+
+### Bug Fixes
+
+* allow non existant urql.config file ([1ba1498](https://github.com/gbicou/nuxt-urql/commit/1ba14989715a103af45f7d3265b46e6249049877))
+
 ## [1.1.5](https://github.com/gbicou/nuxt-urql/compare/v1.1.4...v1.1.5) (2023-02-07)
 
 
