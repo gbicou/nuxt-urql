@@ -3,6 +3,7 @@
   "version": "1.1.5",
   "description": "Nuxt URQL module",
   "license": "MIT",
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/gbicou/nuxt-urql.git"
@@ -39,6 +40,7 @@
     "@urql/vue": "^1.0.4"
   },
   "devDependencies": {
+    "@bicou/countries-server": "^1.0.0",
     "@graphql-eslint/eslint-plugin": "^3.15.0",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.2.1",
@@ -47,6 +49,7 @@
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.11.18",
+    "@urql/exchange-execute": "^2.1.1",
     "changelogen": "^0.4.1",
     "defu": "^6.1.2",
     "eslint": "^8.33.0",
