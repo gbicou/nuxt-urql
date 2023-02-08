@@ -40,7 +40,7 @@
     "@urql/vue": "^1.0.4"
   },
   "devDependencies": {
-    "@bicou/countries-server": "^1.0.0",
+    "@bicou/countries-server": "^1.0.1",
     "@graphql-eslint/eslint-plugin": "^3.15.0",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.2.1",
@@ -48,7 +48,7 @@
     "@nuxt/test-utils": "^3.1.2",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^18.11.18",
+    "@types/node": "^18.13.0",
     "@urql/exchange-execute": "^2.1.1",
     "changelogen": "^0.4.1",
     "defu": "^6.1.2",
@@ -57,7 +57,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "graphql": "^16.6.0",
     "nuxt": "^3.1.2",
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.4",
     "semantic-release": "^20.1.0",
     "vitest": "^0.28.4",
     "vue": "^3.2.47"
