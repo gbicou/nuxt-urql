@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@bicou/countries-server': ^1.0.1
+      '@bicou/countries-server': ^1.2.0
       '@graphql-eslint/eslint-plugin': ^3.15.0
       '@nuxt/eslint-config': ^0.1.1
       '@nuxt/kit': ^3.1.2
@@ -33,7 +33,7 @@ importers:
       '@urql/core': 3.1.1_graphql@16.6.0
       '@urql/vue': 1.0.4_graphql@16.6.0+vue@3.2.47
     devDependencies:
-      '@bicou/countries-server': 1.0.1_d3dx4krdt4fsynqrp5lqxelwe4
+      '@bicou/countries-server': 1.2.0_d3dx4krdt4fsynqrp5lqxelwe4
       '@graphql-eslint/eslint-plugin': 3.15.0_d3dx4krdt4fsynqrp5lqxelwe4
       '@nuxt/eslint-config': 0.1.1_eslint@8.33.0
       '@nuxt/module-builder': 0.2.1
@@ -725,16 +725,14 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  /@bicou/countries-server/1.0.1_d3dx4krdt4fsynqrp5lqxelwe4:
-    resolution: {integrity: sha512-gpALZq9q+aBGR/zzjdQF8Q4e/SHm0R3anB9wXuJ9MzQgngCSV+32cPpJCbdeFqMXRIAJhTOii3zraxpVOPmmsg==}
-    requiresBuild: true
+  /@bicou/countries-server/1.2.0_d3dx4krdt4fsynqrp5lqxelwe4:
+    resolution: {integrity: sha512-dD2/Bm5UflCCwPsYgracUjX3YywU+OzitSY860A5tyUEGToeBhKCsJ1BWA28u+xQ5y/CTNVGkhRbPlAE7X+nPA==}
     peerDependencies:
       graphql: ^16.6.0
     dependencies:
       '@pothos/core': 3.25.0_graphql@16.6.0
       graphql: 16.6.0
       graphql-yoga: 3.5.1_d3dx4krdt4fsynqrp5lqxelwe4
-      iso-3166-1-ts: 0.2.2
     transitivePeerDependencies:
       - '@types/node'
     dev: true
@@ -2324,7 +2322,7 @@ packages:
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
-      jiti: 1.16.2
+      jiti: 1.17.0
       knitwork: 1.0.0
       lodash.template: 4.5.0
       mlly: 1.1.0
@@ -2350,7 +2348,7 @@ packages:
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
-      jiti: 1.16.2
+      jiti: 1.17.0
       knitwork: 1.0.0
       lodash.template: 4.5.0
       mlly: 1.1.0
@@ -2410,7 +2408,7 @@ packages:
       create-require: 1.1.1
       defu: 6.1.2
       hookable: 5.4.2
-      jiti: 1.16.2
+      jiti: 1.17.0
       pathe: 1.1.0
       pkg-types: 1.0.1
       postcss-import-resolver: 2.0.0
@@ -2431,7 +2429,7 @@ packages:
       create-require: 1.1.1
       defu: 6.1.2
       hookable: 5.4.2
-      jiti: 1.16.2
+      jiti: 1.17.0
       pathe: 1.1.0
       pkg-types: 1.0.1
       postcss-import-resolver: 2.0.0
@@ -2461,7 +2459,7 @@ packages:
       git-url-parse: 13.1.0
       inquirer: 9.1.4
       is-docker: 3.0.0
-      jiti: 1.16.2
+      jiti: 1.17.0
       mri: 1.2.0
       nanoid: 4.0.1
       node-fetch: 3.3.0
@@ -2486,7 +2484,7 @@ packages:
       defu: 6.1.2
       execa: 6.1.0
       get-port-please: 3.0.1
-      jiti: 1.16.2
+      jiti: 1.17.0
       ofetch: 1.0.0
       pathe: 1.1.0
       vue: 3.2.47
@@ -2519,7 +2517,7 @@ packages:
       externality: 1.0.0
       fs-extra: 11.1.0
       get-port-please: 3.0.1
-      h3: 1.3.0
+      h3: 1.4.0
       knitwork: 1.0.0
       magic-string: 0.27.0
       mlly: 1.1.0
@@ -2538,7 +2536,7 @@ packages:
       vite-node: 0.28.4_@types+node@18.13.0
       vite-plugin-checker: 0.5.5_eslint@8.33.0+vite@4.1.1
       vue: 3.2.47
-      vue-bundle-renderer: 1.0.0
+      vue-bundle-renderer: 1.0.1
     transitivePeerDependencies:
       - '@types/node'
       - eslint
@@ -4205,7 +4203,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001451
-      electron-to-chromium: 1.4.289
+      electron-to-chromium: 1.4.292
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
 
@@ -4259,7 +4257,7 @@ packages:
       defu: 6.1.2
       dotenv: 16.0.3
       giget: 1.0.0
-      jiti: 1.16.2
+      jiti: 1.17.0
       mlly: 1.1.0
       pathe: 1.1.0
       pkg-types: 1.0.1
@@ -5233,8 +5231,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium/1.4.289:
-    resolution: {integrity: sha512-relLdMfPBxqGCxy7Gyfm1HcbRPcFUJdlgnCPVgQ23sr1TvUrRJz0/QPoGP0+x41wOVSTN/Wi3w6YDgHiHJGOzg==}
+  /electron-to-chromium/1.4.292:
+    resolution: {integrity: sha512-ESWOSyJy5odDlE8wvh5NNAMORv4r6assPwIPGHEMWrWD0SONXcG/xT+9aD9CQyeRwyYDPo6dJT4Bbeg5uevVQQ==}
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -5783,7 +5781,7 @@ packages:
     resolution: {integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      locate-path: 7.1.1
+      locate-path: 7.2.0
       path-exists: 5.0.0
     dev: true
 
@@ -6221,8 +6219,8 @@ packages:
       ufo: 1.0.1
     dev: true
 
-  /h3/1.3.0:
-    resolution: {integrity: sha512-nuEQOgMmdVl5wJYGoGnMwd048j004IcPcNdPmSrIjjPSbgusM4+ObSQ2b5SWqXAV7rspxjdG5+Er1ORmJOVbaQ==}
+  /h3/1.4.0:
+    resolution: {integrity: sha512-FWG+FUdW6XQnf/54L4AXzZs1KUYwSJk5cbdFvTM4EG96bEQiWDJ5003xW4S3UGgXI0VJJgyY6KCaDmAL75kjbA==}
     dependencies:
       cookie-es: 0.5.0
       destr: 1.2.2
@@ -6893,11 +6891,6 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
-  /iso-3166-1-ts/0.2.2:
-    resolution: {integrity: sha512-5KJp6m2Y2tW8bekRpy0Vckob8VqsQTTy2BQQ1o2opXsr30t1MD8M/OvOZzIRBR3DcELCnkpnIXoQbM+Hp5U26A==}
-    engines: {node: '>=10'}
-    dev: true
-
   /isomorphic-fetch/3.0.0:
     resolution: {integrity: sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==}
     dependencies:
@@ -6933,6 +6926,11 @@ packages:
 
   /jiti/1.16.2:
     resolution: {integrity: sha512-OKBOVWmU3FxDt/UH4zSwiKPuc1nihFZiOD722FuJlngvLz2glX1v2/TJIgoA4+mrpnXxHV6dSAoCvPcYQtoG5A==}
+    hasBin: true
+    dev: true
+
+  /jiti/1.17.0:
+    resolution: {integrity: sha512-CByzPgFqYoB9odEeef7GNmQ3S5THIBOtzRYoSCya2Sv27AuQxy2jgoFjQ6VTF53xsq1MXRm+YWNvOoDHUAteOw==}
     hasBin: true
 
   /js-sdsl/4.3.0:
@@ -7152,8 +7150,8 @@ packages:
       p-locate: 5.0.0
     dev: true
 
-  /locate-path/7.1.1:
-    resolution: {integrity: sha512-vJXaRMJgRVD3+cUZs3Mncj2mxpt5mP0EmNOsxRSZRMlbqjvxzDEOIUWXGmavo0ZC9+tNZCBLQ66reA11nbpHZg==}
+  /locate-path/7.2.0:
+    resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       p-locate: 6.0.0
@@ -7973,7 +7971,7 @@ packages:
       esbuild: 0.17.6
       fs-extra: 11.1.0
       globby: 13.1.3
-      jiti: 1.16.2
+      jiti: 1.17.0
       mri: 1.2.0
       pathe: 1.1.0
       typescript: 4.9.5
@@ -8113,8 +8111,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /nitropack/2.1.2:
-    resolution: {integrity: sha512-Z6hRUsvDI+tLFGmZugWukdatBc9eRyRTP1l5CqZg3CQWrDkr6fQb8nh2x8Zdp9UNqhoessrHiO/62pWsau3AUg==}
+  /nitropack/2.2.1:
+    resolution: {integrity: sha512-V7sYOqyNZFQ+Yp3S2Ks9VUiLDp7Fz3vdc4ULTAK+E0R5nMSq5MuoQZqH4BT0x8UHC30lo+fd3gXk2fCYzUft1g==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     hasBin: true
     dependencies:
@@ -8145,11 +8143,11 @@ packages:
       fs-extra: 11.1.0
       globby: 13.1.3
       gzip-size: 7.0.0
-      h3: 1.3.0
+      h3: 1.4.0
       hookable: 5.4.2
       http-proxy: 1.18.1
       is-primitive: 3.0.1
-      jiti: 1.16.2
+      jiti: 1.17.0
       klona: 2.0.6
       knitwork: 1.0.0
       listhen: 1.0.2
@@ -8558,14 +8556,14 @@ packages:
       estree-walker: 3.0.3
       fs-extra: 11.1.0
       globby: 13.1.3
-      h3: 1.3.0
+      h3: 1.4.0
       hash-sum: 2.0.0
       hookable: 5.4.2
-      jiti: 1.16.2
+      jiti: 1.17.0
       knitwork: 1.0.0
       magic-string: 0.27.0
       mlly: 1.1.0
-      nitropack: 2.1.2
+      nitropack: 2.2.1
       nuxi: 3.1.2
       ofetch: 1.0.0
       ohash: 1.0.0
@@ -8582,7 +8580,7 @@ packages:
       unplugin: 1.0.1
       untyped: 1.2.2
       vue: 3.2.47
-      vue-bundle-renderer: 1.0.0
+      vue-bundle-renderer: 1.0.1
       vue-devtools-stub: 0.1.0
       vue-router: 4.1.6_vue@3.2.47
     transitivePeerDependencies:
@@ -10820,7 +10818,7 @@ packages:
       esbuild: 0.16.17
       globby: 13.1.3
       hookable: 5.4.2
-      jiti: 1.16.2
+      jiti: 1.17.0
       magic-string: 0.27.0
       mkdirp: 1.0.4
       mkdist: 1.1.1_typescript@4.9.5
@@ -11067,7 +11065,7 @@ packages:
       anymatch: 3.1.3
       chokidar: 3.5.3
       destr: 1.2.2
-      h3: 1.3.0
+      h3: 1.4.0
       ioredis: 5.3.0
       listhen: 1.0.2
       lru-cache: 7.14.1
@@ -11507,6 +11505,12 @@ packages:
 
   /vue-bundle-renderer/1.0.0:
     resolution: {integrity: sha512-43vCqTgaMXfHhtR8/VcxxWD1DgtzyvNc4wNyG5NKCIH19O1z5G9ZCRXTGEA2wifVec5PU82CkRLD2sTK9NkTdA==}
+    dependencies:
+      ufo: 1.0.1
+    dev: true
+
+  /vue-bundle-renderer/1.0.1:
+    resolution: {integrity: sha512-w1zRgff5lVJ5YAIkVSKuFjDyCgKdg/sPbcgZbosnMCoHblg0uThCKA2n/XWUGnw0Rh2+03UY/VtkwaYwMUSRyQ==}
     dependencies:
       ufo: 1.0.1
     dev: true
