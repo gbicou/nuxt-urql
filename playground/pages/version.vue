@@ -5,6 +5,7 @@
       <h5>Simple query non awaited</h5>
     </hgroup>
     <p>fetching = {{ fetching }}</p>
+    <p>error = {{ error }}</p>
     <p>
       version = <code>{{ version }}</code>
     </p>
@@ -15,7 +16,7 @@
 import { computed, useQuery } from "#imports";
 import { VersionDocument } from "~/gql/queries/version";
 
-const { data, fetching } = useQuery({
+const { data, fetching, error } = useQuery({
   query: VersionDocument,
 });
 

@@ -5,6 +5,7 @@
       <h5>Simple query awaited (SSR)</h5>
     </hgroup>
     <p>fetching = {{ fetching }}</p>
+    <p>error = {{ error }}</p>
     <table>
       <thead>
         <tr>
@@ -28,7 +29,7 @@
 import { computed, useQuery } from "#imports";
 import { CountriesDocument } from "~/gql/queries/countries";
 
-const { data, fetching } = await useQuery({
+const { data, fetching, error } = await useQuery({
   query: CountriesDocument,
 });
 

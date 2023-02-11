@@ -10,7 +10,9 @@
         <input v-model="code" placeholder="FR, be, ..." />
       </label>
       <footer>
+        <p>is paused = {{ isPaused }}</p>
         <p>fetching = {{ fetching }}</p>
+        <p>error = {{ error }}</p>
         <p>Result:</p>
         <pre>{{ country }}</pre>
       </footer>
@@ -28,9 +30,12 @@ const variables = computed(() => ({
   code: code.value.trim().toUpperCase(),
 }));
 
-const { data, fetching } = await useQuery({
+const pause = computed(() => code.value.length == 0);
+
+const { data, fetching, error, isPaused } = await useQuery({
   query: CountryByCodeDocument,
   variables,
+  pause,
 });
 
 const country = computed(() => data.value?.country ?? null);
