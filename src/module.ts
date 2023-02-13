@@ -4,10 +4,7 @@ import type { ClientOptions } from "@urql/core";
 import defu from "defu";
 
 // serializable URQL client options
-export type ModuleClientOptions = Pick<
-  ClientOptions,
-  "preferGetMethod" | "requestPolicy" | "maskTypename" | "suspense"
->;
+export type ModuleClientOptions = Pick<ClientOptions, "preferGetMethod" | "requestPolicy" | "maskTypename">;
 
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
@@ -34,7 +31,7 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults: {
     ssrKey: "__URQL_DATA__",
-    endpoint: "http://host/graphql",
+    endpoint: "",
     client: "urql.config",
   },
   async setup(options, nuxt) {
