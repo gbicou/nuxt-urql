@@ -5,6 +5,9 @@ import schema from "./gql/introspection";
 import { defineUrqlClient } from "#urql/client";
 import { makeDefaultStorage } from "@urql/exchange-graphcache/default-storage";
 
+/**
+ * @returns random token
+ */
 function getToken(): string {
   return Math.random().toString(16);
 }

@@ -4,21 +4,44 @@ import type { ClientOptions } from "@urql/core";
 import defu from "defu";
 import type { SSRExchangeParams } from "@urql/core/dist/types/exchanges/ssr";
 
-// serializable URQL client options
+/**
+ * serializable URQL client options
+ *
+ * @see {@link ClientOptions}
+ */
 export type ModuleClientOptions = Pick<ClientOptions, "preferGetMethod" | "requestPolicy" | "maskTypename">;
 
-// SSR exchange params
+/**
+ * SSR exchange params
+ *
+ * @see {@link SSRExchangeParams}
+ */
 export type ModuleSSRParams = Pick<SSRExchangeParams, "staleWhileRevalidate" | "includeExtensions"> & {
-  // key for SSR data transmission
+  /**
+   * payload key for SSR data transmission
+   */
   key: string;
 };
 
-// Module options TypeScript inteface definition
+/**
+ * Module options TypeScript inteface definition
+ */
 export interface ModuleOptions {
+  /**
+   * graphql endpoint URL
+   *
+   * @see {@link ClientOptions.url}
+   */
   endpoint: string;
-  // client options object or path to client setup script
+
+  /**
+   * client options object or path to client setup script
+   */
   client: ModuleClientOptions | string;
-  // SSR exchange options
+
+  /**
+   * SSR exchange options
+   */
   ssr: ModuleSSRParams;
 }
 

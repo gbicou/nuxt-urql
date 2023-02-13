@@ -5,7 +5,7 @@ import type { SSRExchange } from "@urql/core/dist/types/exchanges/ssr";
 /**
  * client options except endpoint
  *
- * @see {@link ClientOptions} for the returned data structure
+ * @see {@link ClientOptions}
  */
 export type UrqlClientOptions = Omit<ClientOptions, "url">;
 
@@ -16,10 +16,14 @@ export type UrqlClientOptions = Omit<ClientOptions, "url">;
  */
 export type UrqlClientBuild = (ssr: SSRExchange) => PromiseLike<UrqlClientOptions> | UrqlClientOptions;
 
-// helper to define client options
+/**
+ * helper to define client options
+ */
 export const defineUrqlClient = (f: UrqlClientBuild) => f;
 
-// default client options with exchanges
+/**
+ * default client options and exchanges
+ */
 export default defineUrqlClient((ssr) => {
   const { client } = useRuntimeConfig().public.urql;
   const options = typeof client === "string" ? {} : client;
