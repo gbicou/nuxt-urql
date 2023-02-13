@@ -24,13 +24,13 @@ Add `@bicou/nuxt-urql` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add -D @bicou/nuxt-urql
+pnpm add -D @bicou/nuxt-urql graphql
 
 # Using yarn
-yarn add --dev @bicou/nuxt-urql
+yarn add --dev @bicou/nuxt-urql graphql
 
 # Using npm
-npm install --save-dev @bicou/nuxt-urql
+npm install --save-dev @bicou/nuxt-urql graphql
 ```
 
 Add `@bicou/nuxt-urql` to the `modules` section of `nuxt.config.ts` and
