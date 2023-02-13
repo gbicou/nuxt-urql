@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/gbicou/nuxt-urql/compare/v1.1.7...v1.1.8) (2023-02-13)
+
+
+### Bug Fixes
+
+* import gql from @urql/core ([95cb0af](https://github.com/gbicou/nuxt-urql/commit/95cb0af95b8ab3de8c71b34b11928b54d7d75b54))
+
 ## [1.1.7](https://github.com/gbicou/nuxt-urql/compare/v1.1.6...v1.1.7) (2023-02-13)
 
 
