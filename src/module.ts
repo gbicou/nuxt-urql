@@ -60,9 +60,9 @@ export default defineNuxtModule<ModuleOptions>({
       typeof options.client === "string" ? (await findPath(options.client)) ?? clientPathDefault : clientPathDefault;
     nuxt.options.alias["#urql-client"] = clientPath;
 
-    // import urql vue composables
+    // import urql vue composables and utils
     addImports(
-      ["useClientHandle", "useQuery", "useMutation", "useSubscription"].map((name) => ({
+      ["useClientHandle", "useQuery", "useMutation", "useSubscription", "gql"].map((name) => ({
         name,
         from: "@urql/vue",
       }))
