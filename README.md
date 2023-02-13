@@ -50,6 +50,24 @@ export default defineNuxtConfig({
 
 That's it! You can now use Nuxt URQL module in your Nuxt app ✨
 
+```vue
+<template>
+  <div>{{ data }}</div>
+</template>
+
+<script setup lang="ts">
+import { useQuery, gql } from "#imports";
+
+const { data } = await useQuery({
+  query: gql`
+    query name {
+      # ...
+    }
+  `,
+});
+</script>
+```
+
 ## Development
 
 ```bash
