@@ -9,14 +9,13 @@
 > URQL client for Nuxt v3
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+- [📖 &nbsp;Documentation](https://nuxt-urql-docs.vercel.app/)
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- @urql/vue integration
+- SSR exchange
+- client customization
 
 ## Quick Setup
 
