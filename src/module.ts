@@ -2,17 +2,24 @@ import { defineNuxtModule, addPlugin, createResolver, addImports, findPath } fro
 import { name, version } from "../package.json";
 import type { ClientOptions } from "@urql/core";
 import defu from "defu";
+import type { SSRExchangeParams } from "@urql/core/dist/types/exchanges/ssr";
 
 // serializable URQL client options
 export type ModuleClientOptions = Pick<ClientOptions, "preferGetMethod" | "requestPolicy" | "maskTypename">;
 
+// SSR exchange params
+export type ModuleSSRParams = Pick<SSRExchangeParams, "staleWhileRevalidate" | "includeExtensions"> & {
+  // key for SSR data transmission
+  key: string;
+};
+
 // Module options TypeScript inteface definition
 export interface ModuleOptions {
-  // key for SSR data transmission
-  ssrKey: string;
   endpoint: string;
   // client options object or path to client setup script
   client: ModuleClientOptions | string;
+  // SSR exchange options
+  ssr: ModuleSSRParams;
 }
 
 export interface ModulePublicRuntimeConfig {
@@ -30,18 +37,18 @@ export default defineNuxtModule<ModuleOptions>({
   },
   // Default configuration options of the Nuxt module
   defaults: {
-    ssrKey: "__URQL_DATA__",
     endpoint: "",
     client: "urql.config",
+    ssr: { key: "__URQL_DATA__" },
   },
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
 
     // expose public options
     nuxt.options.runtimeConfig.public.urql = defu(nuxt.options.runtimeConfig.public.urql, {
-      ssrKey: options.ssrKey,
       endpoint: options.endpoint,
       client: options.client,
+      ssr: options.ssr,
     });
 
     // alias runtime
