@@ -1,3 +1,11 @@
+## [1.1.7](https://github.com/gbicou/nuxt-urql/compare/v1.1.6...v1.1.7) (2023-02-13)
+
+
+### Bug Fixes
+
+* add staleWhileRevalidate and includeExtensions options to SSR ([01619ad](https://github.com/gbicou/nuxt-urql/commit/01619ad2447d06b67c295f02bbc2991bbb982c3d))
+* **options:** remove suspense option (urql react only) ([6bbf99e](https://github.com/gbicou/nuxt-urql/commit/6bbf99ef16dee5bd1d8059d5d09acb9ed8b6b0d1))
+
 ## [1.1.6](https://github.com/gbicou/nuxt-urql/compare/v1.1.5...v1.1.6) (2023-02-08)
 
 
