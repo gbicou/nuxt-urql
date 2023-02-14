@@ -4,13 +4,7 @@ import type { GraphCacheConfig } from "./gql/types";
 import schema from "./gql/introspection";
 import { defineUrqlClient } from "#urql/client";
 import { makeDefaultStorage } from "@urql/exchange-graphcache/default-storage";
-
-/**
- * @returns random token
- */
-function getToken(): string {
-  return Math.random().toString(16);
-}
+import { useRequestHeaders } from "#app";
 
 // use urql graphcache
 const cacheConfig: GraphCacheConfig = {
@@ -31,13 +25,10 @@ export default defineUrqlClient((ssr) => {
     ? [ssr, fetchExchange]
     : [dedupExchange, cacheExchange(cacheConfig), ssr, fetchExchange];
 
+  const headers = useRequestHeaders(["cookie", "authorization"]) as HeadersInit;
+
   return {
-    fetchOptions: () => {
-      const token = getToken();
-      return {
-        headers: { authorization: token ? `Bearer ${token}` : "" },
-      };
-    },
     exchanges,
+    fetchOptions: () => ({ headers }),
   };
 });
