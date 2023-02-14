@@ -16,8 +16,8 @@
 import { computed, useQuery, gql } from "#imports";
 
 const { data, fetching, error } = useQuery({
-  query: gql`
-    query version {
+  query: gql<{ version: string }>`
+    query {
       version
     }
   `,
