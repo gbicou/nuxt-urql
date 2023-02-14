@@ -1,12 +1,18 @@
 name: CI
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore:
+      - "docs/**"
+  pull_request:
+    paths-ignore:
+      - "docs/**"
 jobs:
   test:
     name: Test node/${{ matrix.node }} ${{ matrix.os }}
     strategy:
       matrix:
-        node: [ 14, 16, 18 ]
-        os: [ ubuntu-latest, windows-latest, macos-latest ]
+        node: [14, 16, 18]
+        os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
