@@ -10,6 +10,7 @@ describe("basic", async () => {
   it("renders the index page", async () => {
     const html = await $fetch("/");
     expect(html).toContain("<div>basic</div>");
+    expect(html).toContain("<no>basic</no>");
   });
 
   it("execute a graphql query", async () => {
