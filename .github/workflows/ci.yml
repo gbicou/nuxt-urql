@@ -2,11 +2,12 @@ name: CI
 on: [push, pull_request]
 jobs:
   test:
-    name: Test node/${{ matrix.node }}
-    runs-on: ubuntu-latest
+    name: Test node/${{ matrix.node }} ${{ matrix.os }}
     strategy:
       matrix:
         node: [ 14, 16, 18 ]
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
