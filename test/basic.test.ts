@@ -8,14 +8,24 @@ describe("basic", async () => {
   });
 
   it("renders the index page", async () => {
-    // Get response to a server-rendered page with `$fetch`.
     const html = await $fetch("/");
     expect(html).toContain("<div>basic</div>");
   });
 
   it("execute a graphql query", async () => {
-    // Get response to a server-rendered page with `$fetch`.
     const html = await $fetch("/fr");
     expect(html).toContain("<div>France</div>");
+  });
+
+  it("execute a query on server", async () => {
+    // SSR supposed to be active
+    const html = await $fetch("/ssr-on");
+    expect(html).toContain("<div>France</div>");
+  });
+
+  it("execute a query on client", async () => {
+    // should not render without await
+    const html = await $fetch("/ssr-off");
+    expect(html).not.toContain("<div>France</div>");
   });
 });
