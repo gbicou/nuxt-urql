@@ -1,12 +1,7 @@
 {
   "root": true,
-  "extends": [
-    "@nuxt/eslint-config",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": [
-    "eslint-plugin-tsdoc"
-  ],
+  "extends": ["@nuxt/eslint-config", "plugin:prettier/recommended"],
+  "plugins": ["eslint-plugin-tsdoc"],
   "rules": {
     "tsdoc/syntax": "warn"
   },
