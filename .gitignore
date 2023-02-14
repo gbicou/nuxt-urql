@@ -56,3 +56,4 @@ coverage
 Network Trash Folder
 Temporary Items
 .apdisk
+/.vitest-result.json

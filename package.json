@@ -31,6 +31,7 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
+    "webstorm-integration": "vitest --watch --reporter=dot --reporter=json --outputFile=.vitest-result.json",
     "clean": "rimraf dist/ playground/.nuxt/ playground/.output/ playground/node_modules/.vite/",
     "release": "semantic-release"
   },
