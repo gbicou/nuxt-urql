@@ -102,10 +102,7 @@ export default defineNuxtModule<ModuleOptions>({
     // add plugin
     addPlugin(resolve("./runtime/plugin"));
 
-    nuxt.options.build.transpile
-      .push
-      //   '@urql/vue'
-      ();
+    // nuxt.options.build.transpile.push("@urql/vue");
   },
 });
 
