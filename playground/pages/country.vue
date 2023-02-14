@@ -30,7 +30,7 @@ const variables = computed(() => ({
   code: code.value.trim().toUpperCase(),
 }));
 
-const pause = computed(() => code.value.length == 0);
+const pause = computed(() => code.value.length === 0);
 
 const { data, fetching, error, isPaused } = useQuery({
   query: CountryByCodeDocument,

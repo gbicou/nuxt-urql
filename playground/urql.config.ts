@@ -10,7 +10,7 @@ import { useRequestHeaders } from "#app";
 const cacheConfig: GraphCacheConfig = {
   schema,
   keys: {
-    Country: (data) => data.code || null,
+    Country: (data) => data.code ?? null,
   },
   resolvers: {
     Query: {
