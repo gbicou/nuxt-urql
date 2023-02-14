@@ -32,7 +32,7 @@ const variables = computed(() => ({
 
 const pause = computed(() => code.value.length == 0);
 
-const { data, fetching, error, isPaused } = await useQuery({
+const { data, fetching, error, isPaused } = useQuery({
   query: CountryByCodeDocument,
   variables,
   pause,
