@@ -9,7 +9,7 @@ import { name, version } from "../package.json";
  *
  * @see {@link ClientOptions}
  */
-export type ModuleClientOptions = Pick<ClientOptions, "preferGetMethod" | "requestPolicy" | "maskTypename">;
+export type ModuleClientOptions = Omit<ClientOptions, "url">;
 
 /**
  * SSR exchange params
