@@ -14,7 +14,7 @@ importers:
       '@semantic-release/changelog': ^6.0.2
       '@semantic-release/git': ^10.0.1
       '@types/node': ^18.13.0
-      '@urql/core': ^3.1.1
+      '@urql/core': ^4.0.0
       '@urql/exchange-execute': ^2.1.1
       '@urql/vue': ^1.0.4
       changelogen: ^0.4.1
@@ -31,7 +31,7 @@ importers:
       vue: ^3.2.47
     dependencies:
       '@nuxt/kit': 3.2.0
-      '@urql/core': 3.1.1_graphql@16.6.0
+      '@urql/core': 4.0.0_graphql@16.6.0
       '@urql/vue': 1.0.4_graphql@16.6.0+vue@3.2.47
     devDependencies:
       '@bicou/countries-server': 1.2.0_d3dx4krdt4fsynqrp5lqxelwe4
@@ -107,6 +107,16 @@ importers:
       typescript: 4.9.5
 
 packages:
+
+  /@0no-co/graphql.web/1.0.0_graphql@16.6.0:
+    resolution: {integrity: sha512-JBq2pWyDchE1vVjj/+c4dzZ8stbpew4RrzpZ3vYdn1WJFGHfYg6YIX1fDdMKtSXJJM9FUlsoDOxemr9WMM2p+A==}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+    peerDependenciesMeta:
+      graphql:
+        optional: true
+    dependencies:
+      graphql: 16.6.0
 
   /@ampproject/remapping/2.2.0:
     resolution: {integrity: sha512-qRmjj8nj9qmLTQXXmaR1cck3UXSRMPrbsLJAasZpF+t3riI71BXed5ebIOYwQntykeZuhjsdweEc9BxH5Jc26w==}
@@ -3486,14 +3496,22 @@ packages:
       graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       graphql: 16.6.0
-      wonka: 6.2.3
+      wonka: 6.3.1
+
+  /@urql/core/4.0.0_graphql@16.6.0:
+    resolution: {integrity: sha512-ZQEtL8tXSdZXvaTsF8GY5wYklqXYKfivQ72p98MfkVSWAjgNgwfHZ32wjUBxge99jGxNjD1vUmYYEINqQhEqtw==}
+    dependencies:
+      '@0no-co/graphql.web': 1.0.0_graphql@16.6.0
+      wonka: 6.3.1
+    transitivePeerDependencies:
+      - graphql
 
   /@urql/exchange-execute/2.1.1_graphql@16.6.0:
     resolution: {integrity: sha512-vxwROzKPl3D2/IYmyrIR6H9yp92CTEVk3RdvrEluD/L3uDPaFHuyUJIAs8lcO/yuUQCaK3cLt+SSr19N9F08bA==}
     peerDependencies:
       graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@urql/core': 3.1.1_graphql@16.6.0
+      '@urql/core': 4.0.0_graphql@16.6.0
       graphql: 16.6.0
       wonka: 6.2.3
     dev: true
@@ -11858,6 +11876,9 @@ packages:
 
   /wonka/6.2.3:
     resolution: {integrity: sha512-EFOYiqDeYLXSzGYt2X3aVe9Hq1XJG+Hz/HjTRRT4dZE9q95khHl5+7pzUSXI19dbMO1/2UMrTf7JT7/7JrSQSQ==}
+
+  /wonka/6.3.1:
+    resolution: {integrity: sha512-nJyGPcjuBiaLFn8QAlrHd+QjV9AlPO7snOWAhgx6aX0nQLMV6Wi0nqfrkmsXIH0efngbDOroOz2QyLnZMF16Hw==}
 
   /word-wrap/1.2.3:
     resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}

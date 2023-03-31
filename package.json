@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.2.0",
-    "@urql/core": "^3.1.1",
+    "@urql/core": "^4.0.0",
     "@urql/vue": "^1.0.4"
   },
   "devDependencies": {
