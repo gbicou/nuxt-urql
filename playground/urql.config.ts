@@ -21,9 +21,7 @@ const cacheConfig: GraphCacheConfig = {
 };
 
 export default defineUrqlClient((ssr) => {
-  const exchanges = process.server
-    ? [ssr, fetchExchange]
-    : [cacheExchange(cacheConfig), ssr, fetchExchange];
+  const exchanges = process.server ? [ssr, fetchExchange] : [cacheExchange(cacheConfig), ssr, fetchExchange];
 
   const headers = useRequestHeaders(["cookie", "authorization"]) as HeadersInit;
 
