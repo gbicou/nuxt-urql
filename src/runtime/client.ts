@@ -1,6 +1,5 @@
-import { dedupExchange, cacheExchange, fetchExchange, type ClientOptions } from "@urql/core";
+import { cacheExchange, fetchExchange, type ClientOptions, type SSRExchange } from "@urql/core";
 import { useRuntimeConfig } from "#app";
-import type { SSRExchange } from "@urql/core/dist/types/exchanges/ssr";
 
 /**
  * client options except endpoint
@@ -29,6 +28,6 @@ export default defineUrqlClient((ssr) => {
   const options = typeof client === "string" ? {} : client;
   return {
     ...options,
-    exchanges: process.server ? [ssr, fetchExchange] : [dedupExchange, cacheExchange, ssr, fetchExchange],
+    exchanges: process.server ? [ssr, fetchExchange] : [cacheExchange, ssr, fetchExchange],
   };
 });

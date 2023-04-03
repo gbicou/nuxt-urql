@@ -1,4 +1,4 @@
-import { dedupExchange, fetchExchange } from "@urql/core";
+import { fetchExchange } from "@urql/core";
 import { cacheExchange } from "@urql/exchange-graphcache";
 import type { GraphCacheConfig } from "./gql/types";
 import schema from "./gql/introspection";
@@ -23,7 +23,7 @@ const cacheConfig: GraphCacheConfig = {
 export default defineUrqlClient((ssr) => {
   const exchanges = process.server
     ? [ssr, fetchExchange]
-    : [dedupExchange, cacheExchange(cacheConfig), ssr, fetchExchange];
+    : [cacheExchange(cacheConfig), ssr, fetchExchange];
 
   const headers = useRequestHeaders(["cookie", "authorization"]) as HeadersInit;
 

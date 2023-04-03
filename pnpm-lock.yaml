@@ -15,8 +15,8 @@ importers:
       '@semantic-release/git': ^10.0.1
       '@types/node': ^18.13.0
       '@urql/core': ^4.0.0
-      '@urql/exchange-execute': ^2.1.1
-      '@urql/vue': ^1.0.4
+      '@urql/exchange-execute': ^2.2.0
+      '@urql/vue': ^1.1.0
       changelogen: ^0.4.1
       defu: ^6.1.2
       eslint: ^8.34.0
@@ -32,7 +32,7 @@ importers:
     dependencies:
       '@nuxt/kit': 3.2.0
       '@urql/core': 4.0.0_graphql@16.6.0
-      '@urql/vue': 1.0.4_graphql@16.6.0+vue@3.2.47
+      '@urql/vue': 1.1.0_graphql@16.6.0+vue@3.2.47
     devDependencies:
       '@bicou/countries-server': 1.2.0_d3dx4krdt4fsynqrp5lqxelwe4
       '@graphql-eslint/eslint-plugin': 3.16.0_d3dx4krdt4fsynqrp5lqxelwe4
@@ -43,7 +43,7 @@ importers:
       '@semantic-release/changelog': 6.0.2_semantic-release@20.1.0
       '@semantic-release/git': 10.0.1_semantic-release@20.1.0
       '@types/node': 18.13.0
-      '@urql/exchange-execute': 2.1.1_graphql@16.6.0
+      '@urql/exchange-execute': 2.2.0_graphql@16.6.0
       changelogen: 0.4.1
       defu: 6.1.2
       eslint: 8.34.0
@@ -3506,14 +3506,14 @@ packages:
     transitivePeerDependencies:
       - graphql
 
-  /@urql/exchange-execute/2.1.1_graphql@16.6.0:
-    resolution: {integrity: sha512-vxwROzKPl3D2/IYmyrIR6H9yp92CTEVk3RdvrEluD/L3uDPaFHuyUJIAs8lcO/yuUQCaK3cLt+SSr19N9F08bA==}
+  /@urql/exchange-execute/2.2.0_graphql@16.6.0:
+    resolution: {integrity: sha512-CjmszdfiO5EuKHGSSDyV8s0Ys0gH8rK/1a8/YmzgWont83KLlUqF6BiUnk4Z7ZHisT91NIOxMLE1T9cNW+Lswg==}
     peerDependencies:
       graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@urql/core': 4.0.0_graphql@16.6.0
       graphql: 16.6.0
-      wonka: 6.2.3
+      wonka: 6.3.1
     dev: true
 
   /@urql/exchange-graphcache/5.0.8_graphql@16.6.0:
@@ -3533,16 +3533,16 @@ packages:
       graphql: 16.6.0
     dev: true
 
-  /@urql/vue/1.0.4_graphql@16.6.0+vue@3.2.47:
-    resolution: {integrity: sha512-soycMzRekSUCa+QQYSc9gF9qMOeIkfKnirFySVlW8mVhCRBwyjKvb37Z9eksRCqzGerKsn54zmdsgR66LKrGng==}
+  /@urql/vue/1.1.0_graphql@16.6.0+vue@3.2.47:
+    resolution: {integrity: sha512-fqkhCdv1RLNma2BcfLFOogKt416TNZejW+wl8uz5nU5KRTf82PS/5m5UaWumjtqF6k7BfxR8vecLdQj9HokYVQ==}
     peerDependencies:
-      graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       vue: ^2.7.0 || ^3.0.0
     dependencies:
-      '@urql/core': 3.1.1_graphql@16.6.0
-      graphql: 16.6.0
+      '@urql/core': 4.0.0_graphql@16.6.0
       vue: 3.2.47
-      wonka: 6.2.3
+      wonka: 6.3.1
+    transitivePeerDependencies:
+      - graphql
     dev: false
 
   /@vercel/nft/0.22.6:
@@ -11873,9 +11873,6 @@ packages:
 
   /wonka/6.1.2:
     resolution: {integrity: sha512-zNrXPMccg/7OEp9tSfFkMgTvhhowqasiSHdJ3eCZolXxVTV/aT6HUTofoZk9gwRbGoFey/Nss3JaZKUMKMbofg==}
-
-  /wonka/6.2.3:
-    resolution: {integrity: sha512-EFOYiqDeYLXSzGYt2X3aVe9Hq1XJG+Hz/HjTRRT4dZE9q95khHl5+7pzUSXI19dbMO1/2UMrTf7JT7/7JrSQSQ==}
 
   /wonka/6.3.1:
     resolution: {integrity: sha512-nJyGPcjuBiaLFn8QAlrHd+QjV9AlPO7snOWAhgx6aX0nQLMV6Wi0nqfrkmsXIH0efngbDOroOz2QyLnZMF16Hw==}

@@ -1,7 +1,6 @@
 import { defineNuxtModule, addPlugin, createResolver, addImports, findPath } from "@nuxt/kit";
-import type { ClientOptions } from "@urql/core";
+import type { ClientOptions, SSRExchangeParams } from "@urql/core";
 import defu from "defu";
-import type { SSRExchangeParams } from "@urql/core/dist/types/exchanges/ssr";
 import { name, version } from "../package.json";
 
 /**
