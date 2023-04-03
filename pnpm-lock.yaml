@@ -45,8 +45,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(graphql@16.6.0)
       changelogen:
-        specifier: ^0.4.1
-        version: 0.4.1
+        specifier: ^0.5.0
+        version: 0.5.0
       defu:
         specifier: ^6.1.2
         version: 6.1.2
@@ -2282,18 +2282,18 @@ packages:
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
       '@nuxt/schema': 3.1.1(rollup@3.15.0)
-      c12: 1.1.0
+      c12: 1.2.0
       consola: 2.15.3
       defu: 6.1.2
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
-      jiti: 1.16.2
+      jiti: 1.18.2
       knitwork: 1.0.0
       lodash.template: 4.5.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       scule: 1.0.0
       semver: 7.3.8
       unctx: 2.1.1
@@ -2309,18 +2309,18 @@ packages:
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
       '@nuxt/schema': 3.1.2(rollup@3.15.0)
-      c12: 1.1.0
+      c12: 1.2.0
       consola: 2.15.3
       defu: 6.1.2
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
-      jiti: 1.17.0
+      jiti: 1.18.2
       knitwork: 1.0.0
       lodash.template: 4.5.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       scule: 1.0.0
       semver: 7.3.8
       unctx: 2.1.1
@@ -2336,18 +2336,18 @@ packages:
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
       '@nuxt/schema': 3.2.0(rollup@3.15.0)
-      c12: 1.1.0
+      c12: 1.2.0
       consola: 2.15.3
       defu: 6.1.2
       globby: 13.1.3
       hash-sum: 2.0.0
       ignore: 5.2.4
-      jiti: 1.17.0
+      jiti: 1.18.2
       knitwork: 1.0.0
       lodash.template: 4.5.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       scule: 1.0.0
       semver: 7.3.8
       unctx: 2.1.2
@@ -2375,17 +2375,17 @@ packages:
     resolution: {integrity: sha512-/KuoCDVGrLD9W7vwuYhu4HbdT/BpbrhA4Pm9dGn7Jah40kHDGqUnJxugvMjt+4suq53rLQyTA0LRDWfFxfxAOQ==}
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
-      c12: 1.1.0
+      c12: 1.2.0
       create-require: 1.1.1
       defu: 6.1.2
       hookable: 5.4.2
-      jiti: 1.16.2
+      jiti: 1.18.2
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       postcss-import-resolver: 2.0.0
       scule: 1.0.0
       std-env: 3.3.2
-      ufo: 1.0.1
+      ufo: 1.1.1
       unimport: 2.1.0(rollup@3.15.0)
       untyped: 1.2.2
     transitivePeerDependencies:
@@ -2397,17 +2397,17 @@ packages:
     resolution: {integrity: sha512-wru9LhRXTa6WQlx7c0oYrtvJY7TiVlkBKXY5Rsmfo0StJuWohgZiReu9fu6z6GU4MzZlX25TVjwvq9Q7bNVbSQ==}
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
-      c12: 1.1.0
+      c12: 1.2.0
       create-require: 1.1.1
       defu: 6.1.2
       hookable: 5.4.2
-      jiti: 1.17.0
+      jiti: 1.18.2
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       postcss-import-resolver: 2.0.0
       scule: 1.0.0
       std-env: 3.3.2
-      ufo: 1.0.1
+      ufo: 1.1.1
       unimport: 2.2.4(rollup@3.15.0)
       untyped: 1.2.2
     transitivePeerDependencies:
@@ -2452,11 +2452,11 @@ packages:
       git-url-parse: 13.1.0
       inquirer: 9.1.4
       is-docker: 3.0.0
-      jiti: 1.17.0
+      jiti: 1.18.2
       mri: 1.2.0
       nanoid: 4.0.1
       node-fetch: 3.3.0
-      ofetch: 1.0.0
+      ofetch: 1.0.1
       parse-git-config: 3.0.0
       rc9: 2.0.1
       std-env: 3.3.2
@@ -2513,17 +2513,17 @@ packages:
       h3: 1.1.0
       knitwork: 1.0.0
       magic-string: 0.27.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       ohash: 1.0.0
       pathe: 1.1.0
       perfect-debounce: 0.1.3
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       postcss: 8.4.21
       postcss-import: 15.1.0(postcss@8.4.21)
       postcss-url: 10.1.3(postcss@8.4.21)
       rollup: 3.15.0
       rollup-plugin-visualizer: 5.9.0(rollup@3.15.0)
-      ufo: 1.0.1
+      ufo: 1.1.1
       unplugin: 1.0.1
       vite: 4.1.1(@types/node@18.13.0)
       vite-node: 0.28.5(@types/node@18.13.0)
@@ -2571,17 +2571,17 @@ packages:
       h3: 1.4.0
       knitwork: 1.0.0
       magic-string: 0.27.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       ohash: 1.0.0
       pathe: 1.1.0
       perfect-debounce: 0.1.3
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       postcss: 8.4.21
       postcss-import: 15.1.0(postcss@8.4.21)
       postcss-url: 10.1.3(postcss@8.4.21)
       rollup: 3.15.0
       rollup-plugin-visualizer: 5.9.0(rollup@3.15.0)
-      ufo: 1.0.1
+      ufo: 1.1.1
       unplugin: 1.0.1
       vite: 4.1.1(@types/node@18.13.0)
       vite-node: 0.28.5(@types/node@18.13.0)
@@ -4214,11 +4214,25 @@ packages:
     dependencies:
       defu: 6.1.2
       dotenv: 16.0.3
-      giget: 1.0.0
-      jiti: 1.17.0
-      mlly: 1.1.0
+      giget: 1.1.2
+      jiti: 1.18.2
+      mlly: 1.2.0
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
+      rc9: 2.0.1
+    transitivePeerDependencies:
+      - supports-color
+
+  /c12@1.2.0:
+    resolution: {integrity: sha512-CMznkE0LpNEuD8ILp5QvsQVP+YvcpJnrI/zFeFnosU2PyDtx1wT7tXfZ8S3Tl3l9MTTXbKeuhDYKwgvnAPOx3w==}
+    dependencies:
+      defu: 6.1.2
+      dotenv: 16.0.3
+      giget: 1.1.2
+      jiti: 1.18.2
+      mlly: 1.2.0
+      pathe: 1.1.0
+      pkg-types: 1.0.2
       rc9: 2.0.1
     transitivePeerDependencies:
       - supports-color
@@ -4383,15 +4397,37 @@ packages:
     resolution: {integrity: sha512-p1dJO1Z995odIxdypzAykHIaUu+XnEvwYPSTyKJsbpL82o99sxN1G24tbecoMxTsV4PI+ZId82GJXRL2hhOeJA==}
     hasBin: true
     dependencies:
-      c12: 1.1.0
+      c12: 1.2.0
       consola: 2.15.3
       convert-gitmoji: 0.1.3
       execa: 6.1.0
       mri: 1.2.0
-      node-fetch-native: 1.0.1
-      pkg-types: 1.0.1
+      node-fetch-native: 1.0.2
+      pkg-types: 1.0.2
       scule: 1.0.0
       semver: 7.3.8
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /changelogen@0.5.0:
+    resolution: {integrity: sha512-fmP5Xpi7KvGCM86dgXYChBQSQAkwoUEEy/2mXCTtEqSo8FgVOo0/mUfNZ2UD1NquHP2XEl7yiZ4R8jlPWiY8Zg==}
+    hasBin: true
+    dependencies:
+      c12: 1.2.0
+      colorette: 2.0.19
+      consola: 2.15.3
+      convert-gitmoji: 0.1.3
+      execa: 7.1.1
+      mri: 1.2.0
+      node-fetch-native: 1.0.2
+      ofetch: 1.0.1
+      open: 8.4.2
+      pathe: 1.1.0
+      pkg-types: 1.0.2
+      scule: 1.0.0
+      semver: 7.3.8
+      yaml: 2.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5605,9 +5641,9 @@ packages:
     resolution: {integrity: sha512-MAU9ci3XdpqOX1aoIoyL2DMzW97P8LYeJxIUkfXhOfsrkH4KLHFaYDwKN0B2l6tqedVJWiTIJtWmxmZfa05vOQ==}
     dependencies:
       enhanced-resolve: 5.12.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
-      ufo: 1.0.1
+      ufo: 1.1.1
     dev: true
 
   /extract-files@11.0.0:
@@ -5928,15 +5964,15 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /giget@1.0.0:
-    resolution: {integrity: sha512-KWELZn3Nxq5+0So485poHrFriK9Bn3V/x9y+wgqrHkbmnGbjfLmZ685/SVA/ovW+ewoqW0gVI47pI4yW/VNobQ==}
+  /giget@1.1.2:
+    resolution: {integrity: sha512-HsLoS07HiQ5oqvObOI+Qb2tyZH4Gj5nYGfF9qQcZNrPw+uEFhdXtgJr01aO2pWadGHucajYDLxxbtQkm97ON2A==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
       defu: 6.1.2
       https-proxy-agent: 5.0.1
       mri: 1.2.0
-      node-fetch-native: 1.0.1
+      node-fetch-native: 1.0.2
       pathe: 1.1.0
       tar: 6.1.13
     transitivePeerDependencies:
@@ -6169,7 +6205,7 @@ packages:
       cookie-es: 0.5.0
       destr: 1.2.2
       radix3: 1.0.0
-      ufo: 1.0.1
+      ufo: 1.1.1
     dev: true
 
   /h3@1.4.0:
@@ -6179,7 +6215,7 @@ packages:
       destr: 1.2.2
       iron-webcrypto: 0.4.0
       radix3: 1.0.0
-      ufo: 1.0.1
+      ufo: 1.1.1
       uncrypto: 0.1.2
     dev: true
 
@@ -6903,6 +6939,10 @@ packages:
     resolution: {integrity: sha512-CByzPgFqYoB9odEeef7GNmQ3S5THIBOtzRYoSCya2Sv27AuQxy2jgoFjQ6VTF53xsq1MXRm+YWNvOoDHUAteOw==}
     hasBin: true
 
+  /jiti@1.18.2:
+    resolution: {integrity: sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==}
+    hasBin: true
+
   /jju@1.4.0:
     resolution: {integrity: sha512-8wb9Yw966OSxApiCt0K3yNJL8pnNeIv+OEq2YMidz4FKP6nonSRoOXc80iXY4JaN2FC11B9qsNmDsm+ZOfMROA==}
     dev: true
@@ -7066,7 +7106,7 @@ packages:
       http-shutdown: 1.2.2
       ip-regex: 5.0.0
       node-forge: 1.3.1
-      ufo: 1.0.1
+      ufo: 1.1.1
     dev: true
 
   /listr2@4.0.5:
@@ -7941,7 +7981,7 @@ packages:
       esbuild: 0.17.8
       fs-extra: 11.1.0
       globby: 13.1.3
-      jiti: 1.17.0
+      jiti: 1.18.2
       mri: 1.2.0
       pathe: 1.1.0
       typescript: 4.9.5
@@ -7952,8 +7992,17 @@ packages:
     dependencies:
       acorn: 8.8.2
       pathe: 1.1.0
-      pkg-types: 1.0.1
-      ufo: 1.0.1
+      pkg-types: 1.0.2
+      ufo: 1.1.1
+    dev: true
+
+  /mlly@1.2.0:
+    resolution: {integrity: sha512-+c7A3CV0KGdKcylsI6khWyts/CYrGTrRVo4R/I7u/cUsy0Conxa6LUhiEzVKIw14lc2L5aiO4+SeVe4TeGRKww==}
+    dependencies:
+      acorn: 8.8.2
+      pathe: 1.1.0
+      pkg-types: 1.0.2
+      ufo: 1.1.1
 
   /modify-values@1.0.1:
     resolution: {integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==}
@@ -8028,7 +8077,7 @@ packages:
       '@rollup/pluginutils': 5.0.2(rollup@3.15.0)
       '@vercel/nft': 0.22.6
       archiver: 5.3.1
-      c12: 1.1.0
+      c12: 1.2.0
       chalk: 5.2.0
       chokidar: 3.5.3
       consola: 2.15.3
@@ -8046,19 +8095,19 @@ packages:
       hookable: 5.4.2
       http-proxy: 1.18.1
       is-primitive: 3.0.1
-      jiti: 1.16.2
+      jiti: 1.18.2
       klona: 2.0.6
       knitwork: 1.0.0
       listhen: 1.0.2
       mime: 3.0.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       mri: 1.2.0
-      node-fetch-native: 1.0.1
-      ofetch: 1.0.0
+      node-fetch-native: 1.0.2
+      ofetch: 1.0.1
       ohash: 1.0.0
       pathe: 1.1.0
       perfect-debounce: 0.1.3
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       pretty-bytes: 6.1.0
       radix3: 1.0.0
       rollup: 3.15.0
@@ -8069,7 +8118,7 @@ packages:
       serve-static: 1.15.0
       source-map-support: 0.5.21
       std-env: 3.3.2
-      ufo: 1.0.1
+      ufo: 1.1.1
       unenv: 1.0.3
       unimport: 2.1.0(rollup@3.15.0)
       unstorage: 1.1.3
@@ -8099,7 +8148,7 @@ packages:
       '@rollup/pluginutils': 5.0.2(rollup@3.15.0)
       '@vercel/nft': 0.22.6
       archiver: 5.3.1
-      c12: 1.1.0
+      c12: 1.2.0
       chalk: 5.2.0
       chokidar: 3.5.3
       consola: 2.15.3
@@ -8117,19 +8166,19 @@ packages:
       hookable: 5.4.2
       http-proxy: 1.18.1
       is-primitive: 3.0.1
-      jiti: 1.17.0
+      jiti: 1.18.2
       klona: 2.0.6
       knitwork: 1.0.0
       listhen: 1.0.2
       mime: 3.0.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       mri: 1.2.0
-      node-fetch-native: 1.0.1
-      ofetch: 1.0.0
+      node-fetch-native: 1.0.2
+      ofetch: 1.0.1
       ohash: 1.0.0
       pathe: 1.1.0
       perfect-debounce: 0.1.3
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       pretty-bytes: 6.1.0
       radix3: 1.0.0
       rollup: 3.15.0
@@ -8140,7 +8189,7 @@ packages:
       serve-static: 1.15.0
       source-map-support: 0.5.21
       std-env: 3.3.2
-      ufo: 1.0.1
+      ufo: 1.1.1
       unenv: 1.1.1
       unimport: 2.2.4(rollup@3.15.0)
       unstorage: 1.1.4
@@ -8170,8 +8219,8 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /node-fetch-native@1.0.1:
-    resolution: {integrity: sha512-VzW+TAk2wE4X9maiKMlT+GsPU4OMmR1U9CrHSmd3DFLn2IcZ9VJ6M6BBugGfYUnPCLSYxXdZy17M0BEJyhUTwg==}
+  /node-fetch-native@1.0.2:
+    resolution: {integrity: sha512-KIkvH1jl6b3O7es/0ShyCgWLcfXxlBrLBbP3rOr23WArC66IMcU4DeZEeYEOwnopYhawLTn7/y+YtmASe8DFVQ==}
 
   /node-fetch@2.6.7:
     resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
@@ -8416,7 +8465,7 @@ packages:
       '@nuxt/kit': 3.1.2(rollup@3.15.0)
       changelogen: 0.4.1
       defu: 6.1.2
-      jiti: 1.16.2
+      jiti: 1.18.2
       pathe: 1.1.0
       untyped: 1.2.2
     transitivePeerDependencies:
@@ -8603,8 +8652,16 @@ packages:
     resolution: {integrity: sha512-d40aof8czZFSQKJa4+F7Ch3UC5D631cK1TTUoK+iNEut9NoiCL+u0vykl/puYVUS2df4tIQl5upQcolIcEzQjQ==}
     dependencies:
       destr: 1.2.2
-      node-fetch-native: 1.0.1
-      ufo: 1.0.1
+      node-fetch-native: 1.0.2
+      ufo: 1.1.1
+    dev: true
+
+  /ofetch@1.0.1:
+    resolution: {integrity: sha512-icBz2JYfEpt+wZz1FRoGcrMigjNKjzvufE26m9+yUiacRQRHwnNlGRPiDnW4op7WX/MR6aniwS8xw8jyVelF2g==}
+    dependencies:
+      destr: 1.2.2
+      node-fetch-native: 1.0.2
+      ufo: 1.1.1
     dev: true
 
   /ohash@1.0.0:
@@ -8638,8 +8695,8 @@ packages:
       mimic-fn: 4.0.0
     dev: true
 
-  /open@8.4.1:
-    resolution: {integrity: sha512-/4b7qZNhv6Uhd7jjnREh1NjnPxlTq+XNWPG88Ydkj5AILcA5m3ajvcg57pB24EQjKv0dK62XnDqk9c/hkIG5Kg==}
+  /open@8.4.2:
+    resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
     dependencies:
       define-lazy-prop: 2.0.0
@@ -9028,7 +9085,14 @@ packages:
     resolution: {integrity: sha512-jHv9HB+Ho7dj6ItwppRDDl0iZRYBD0jsakHXtFgoLr+cHSF6xC+QL54sJmWxyGxOLYSHm0afhXhXcQDQqH9z8g==}
     dependencies:
       jsonc-parser: 3.2.0
-      mlly: 1.1.0
+      mlly: 1.2.0
+      pathe: 1.1.0
+
+  /pkg-types@1.0.2:
+    resolution: {integrity: sha512-hM58GKXOcj8WTqUXnsQyJYXdeAPbythQgEF3nTcEo+nkD49chjQ9IKm/QJy9xf6JakXptz86h7ecP2024rrLaQ==}
+    dependencies:
+      jsonc-parser: 3.2.0
+      mlly: 1.2.0
       pathe: 1.1.0
 
   /postcss-calc@8.2.4(postcss@8.4.21):
@@ -9896,7 +9960,7 @@ packages:
       rollup:
         optional: true
     dependencies:
-      open: 8.4.1
+      open: 8.4.2
       picomatch: 2.3.1
       rollup: 3.15.0
       source-map: 0.7.4
@@ -10421,7 +10485,7 @@ packages:
       consola: 2.15.3
       fs-extra: 11.1.0
       glob: 8.1.0
-      jiti: 1.16.2
+      jiti: 1.18.2
       json5: 2.2.3
       jsonc-parser: 3.2.0
       lodash.template: 4.5.0
@@ -10773,6 +10837,9 @@ packages:
   /ufo@1.0.1:
     resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
 
+  /ufo@1.1.1:
+    resolution: {integrity: sha512-MvlCc4GHrmZdAllBc0iUDowff36Q9Ndw/UzqmEKyrfSzokTd9ZCy1i+IIk5hrYKkjoYVQyNbrw7/F8XJ2rEwTg==}
+
   /uglify-js@3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
     engines: {node: '>=0.8.0'}
@@ -10808,7 +10875,7 @@ packages:
       mlly: 1.1.0
       mri: 1.2.0
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       pretty-bytes: 6.1.0
       rollup: 3.15.0
       rollup-plugin-dts: 5.2.0(rollup@3.15.0)(typescript@4.9.5)
@@ -10851,7 +10918,7 @@ packages:
     dependencies:
       defu: 6.1.2
       mime: 3.0.0
-      node-fetch-native: 1.0.1
+      node-fetch-native: 1.0.2
       pathe: 1.1.0
     dev: true
 
@@ -10860,7 +10927,7 @@ packages:
     dependencies:
       defu: 6.1.2
       mime: 3.0.0
-      node-fetch-native: 1.0.1
+      node-fetch-native: 1.0.2
       pathe: 1.1.0
     dev: true
 
@@ -10892,9 +10959,9 @@ packages:
       fast-glob: 3.2.12
       local-pkg: 0.4.3
       magic-string: 0.27.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       scule: 1.0.0
       strip-literal: 1.0.1
       unplugin: 1.0.1
@@ -10910,9 +10977,9 @@ packages:
       fast-glob: 3.2.12
       local-pkg: 0.4.3
       magic-string: 0.27.0
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
-      pkg-types: 1.0.1
+      pkg-types: 1.0.2
       scule: 1.0.0
       strip-literal: 1.0.1
       unplugin: 1.0.1
@@ -11003,9 +11070,9 @@ packages:
       lru-cache: 7.14.1
       mkdir: 0.0.2
       mri: 1.2.0
-      node-fetch-native: 1.0.1
-      ofetch: 1.0.0
-      ufo: 1.0.1
+      node-fetch-native: 1.0.2
+      ofetch: 1.0.1
+      ufo: 1.1.1
       ws: 8.12.0
     optionalDependencies:
       '@planetscale/database': 1.5.0
@@ -11027,9 +11094,9 @@ packages:
       lru-cache: 7.14.1
       mkdir: 0.0.2
       mri: 1.2.0
-      node-fetch-native: 1.0.1
-      ofetch: 1.0.0
-      ufo: 1.0.1
+      node-fetch-native: 1.0.2
+      ofetch: 1.0.1
+      ufo: 1.1.1
       ws: 8.12.1
     optionalDependencies:
       '@planetscale/database': 1.5.0
@@ -11157,7 +11224,7 @@ packages:
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
       picocolors: 1.0.0
       source-map: 0.6.1
@@ -11180,7 +11247,7 @@ packages:
     dependencies:
       cac: 6.7.14
       debug: 4.3.4
-      mlly: 1.1.0
+      mlly: 1.2.0
       pathe: 1.1.0
       picocolors: 1.0.0
       vite: 4.1.1(@types/node@18.13.0)
@@ -11378,13 +11445,13 @@ packages:
   /vue-bundle-renderer@1.0.0:
     resolution: {integrity: sha512-43vCqTgaMXfHhtR8/VcxxWD1DgtzyvNc4wNyG5NKCIH19O1z5G9ZCRXTGEA2wifVec5PU82CkRLD2sTK9NkTdA==}
     dependencies:
-      ufo: 1.0.1
+      ufo: 1.1.1
     dev: true
 
   /vue-bundle-renderer@1.0.1:
     resolution: {integrity: sha512-w1zRgff5lVJ5YAIkVSKuFjDyCgKdg/sPbcgZbosnMCoHblg0uThCKA2n/XWUGnw0Rh2+03UY/VtkwaYwMUSRyQ==}
     dependencies:
-      ufo: 1.0.1
+      ufo: 1.1.1
     dev: true
 
   /vue-component-meta@1.0.24(typescript@4.9.5):
@@ -11671,6 +11738,11 @@ packages:
   /yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+    dev: true
+
+  /yaml@2.2.1:
+    resolution: {integrity: sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==}
+    engines: {node: '>= 14'}
     dev: true
 
   /yargs-parser@18.1.3:
