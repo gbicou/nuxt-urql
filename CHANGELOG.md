@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/gbicou/nuxt-urql/compare/v1.1.8...v1.2.0) (2023-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @urql/core to v4 ([0efad74](https://github.com/gbicou/nuxt-urql/commit/0efad74acc75e36a2b6e351d35a7448765e1b5fe))
+
+
+### Features
+
+* upgrade to urql v4 ([9592668](https://github.com/gbicou/nuxt-urql/commit/959266809872de8bc0ae75cc10863d7f8321622f))
+
 ## [1.1.8](https://github.com/gbicou/nuxt-urql/compare/v1.1.7...v1.1.8) (2023-02-13)
 
 
