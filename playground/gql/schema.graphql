@@ -18,9 +18,15 @@ type Country {
   name: String!
 
   """
+  Neighbours countries
+  """
+  neighbours: [Country!]!
+
+  """
   Numeric
   """
   numeric: String!
+  tld: String!
 }
 
 type Query {

@@ -3,8 +3,9 @@ import type {
   UpdateResolver as GraphCacheUpdateResolver,
   OptimisticMutationResolver as GraphCacheOptimisticMutationResolver,
   StorageAdapter as GraphCacheStorageAdapter,
+  CacheExchangeOpts,
 } from "@urql/exchange-graphcache";
-import type { IntrospectionData } from "@urql/exchange-graphcache/dist/types/ast";
+
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -28,8 +29,11 @@ export type Country = {
   code: Scalars["String"];
   /** Name of country */
   name: Scalars["String"];
+  /** Neighbours countries */
+  neighbours: Array<Country>;
   /** Numeric */
   numeric: Scalars["String"];
+  tld: Scalars["String"];
 };
 
 export type Query = {
@@ -62,7 +66,13 @@ export type GraphCacheResolvers = {
     alpha3?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
     code?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
     name?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
+    neighbours?: GraphCacheResolver<
+      WithTypename<Country>,
+      Record<string, never>,
+      Array<WithTypename<Country> | string>
+    >;
     numeric?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
+    tld?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
   };
 };
 
@@ -74,7 +84,7 @@ export type GraphCacheUpdaters = {
 };
 
 export type GraphCacheConfig = {
-  schema?: IntrospectionData;
+  schema?: CacheExchangeOpts["schema"];
   updates?: GraphCacheUpdaters;
   keys?: GraphCacheKeysConfig;
   optimistic?: GraphCacheOptimisticUpdaters;

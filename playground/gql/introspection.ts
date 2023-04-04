@@ -52,7 +52,37 @@ export default {
             args: [],
           },
           {
+            name: "neighbours",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "LIST",
+                ofType: {
+                  kind: "NON_NULL",
+                  ofType: {
+                    kind: "OBJECT",
+                    name: "Country",
+                    ofType: null,
+                  },
+                },
+              },
+            },
+            args: [],
+          },
+          {
             name: "numeric",
+            type: {
+              kind: "NON_NULL",
+              ofType: {
+                kind: "SCALAR",
+                name: "String",
+                ofType: null,
+              },
+            },
+            args: [],
+          },
+          {
+            name: "tld",
             type: {
               kind: "NON_NULL",
               ofType: {
