@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/gbicou/nuxt-urql/compare/v1.2.0...v1.3.0) (2023-04-04)
+
+
+### Features
+
+* upgrade nuxt to version 3.3 ([0eb5985](https://github.com/gbicou/nuxt-urql/commit/0eb59853794b3ebd79fcdd9f8d47e8edc7ef45d2))
+
 # [1.2.0](https://github.com/gbicou/nuxt-urql/compare/v1.1.8...v1.2.0) (2023-04-03)
 
 
