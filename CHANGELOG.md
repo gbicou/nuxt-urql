@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/gbicou/nuxt-urql/compare/v1.3.0...v1.4.0) (2023-04-12)
+
+
+### Features
+
+* upgrade nuxt to version 3.4 ([3e92b43](https://github.com/gbicou/nuxt-urql/commit/3e92b43036f34daaeef1d190390af8b07e97cd11))
+
 # [1.3.0](https://github.com/gbicou/nuxt-urql/compare/v1.2.0...v1.3.0) (2023-04-04)
 
 
