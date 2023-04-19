@@ -4,8 +4,6 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-### :warning: :warning: :warning: this is a work in progress :warning: :warning: :warning:
-
 > URQL client for Nuxt v3
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
