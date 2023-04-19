@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "@bicou/nuxt-urql-module-playground",
+  "type": "module",
   "scripts": {
     "codegen": "graphql-codegen"
   },
