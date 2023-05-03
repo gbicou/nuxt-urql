@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/gbicou/nuxt-urql/compare/v1.4.0...v1.4.1) (2023-05-03)
+
+
+### Reverts
+
+* Revert "chore: upgrade dependencies" ([f86b465](https://github.com/gbicou/nuxt-urql/commit/f86b4651a20ce93cf77dfdd573dc16ce44a8d605))
+
 # [1.4.0](https://github.com/gbicou/nuxt-urql/compare/v1.3.0...v1.4.0) (2023-04-12)
 
 
