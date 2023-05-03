@@ -33,8 +33,8 @@ importers:
         specifier: 3.4.2
         version: 3.4.2(rollup@3.21.0)
       '@nuxt/test-utils':
-        specifier: 3.4.2
-        version: 3.4.2(rollup@3.21.0)(vitest@0.30.1)(vue@3.2.47)
+        specifier: 3.4.3
+        version: 3.4.3(rollup@3.21.0)(vitest@0.30.1)(vue@3.2.47)
       '@types/node':
         specifier: ^18.16.3
         version: 18.16.3
@@ -2520,12 +2520,12 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/test-utils@3.4.2(rollup@3.21.0)(vitest@0.30.1)(vue@3.2.47):
-    resolution: {integrity: sha512-yJGvHD1m8KUMwzgcYYwDySIh4L/6oj+2819t/wHRQM1vCgL/iyynQ9B/Wq9ddb83q5LX0PK+k9eVylA277e9fQ==}
-    engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
+  /@nuxt/test-utils@3.4.3(rollup@3.21.0)(vitest@0.30.1)(vue@3.2.47):
+    resolution: {integrity: sha512-qy9nxPvcRTqgiosP4X8XBs7OU0qCxRTJ4k+I7NVQwz/761pOwVPNh2oKXroSiPQkWRt4Y/bysi3Gxx7K/+DsBA==}
+    engines: {node: ^14.18.0 || >=16.10.0}
     peerDependencies:
       '@jest/globals': ^29.5.0
-      playwright: ^1.32.3
+      playwright: ^1.33.0
       vitest: ^0.30.1
       vue: ^3.2.47
     peerDependenciesMeta:
@@ -2536,8 +2536,8 @@ packages:
       vitest:
         optional: true
     dependencies:
-      '@nuxt/kit': 3.4.2(rollup@3.21.0)
-      '@nuxt/schema': 3.4.2(rollup@3.21.0)
+      '@nuxt/kit': 3.4.3(rollup@3.21.0)
+      '@nuxt/schema': 3.4.3(rollup@3.21.0)
       consola: 3.1.0
       defu: 6.1.2
       execa: 7.1.1
