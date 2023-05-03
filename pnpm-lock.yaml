@@ -30,8 +30,8 @@ importers:
         specifier: ^0.3.1
         version: 0.3.1
       '@nuxt/schema':
-        specifier: 3.4.2
-        version: 3.4.2(rollup@3.21.0)
+        specifier: 3.4.3
+        version: 3.4.3(rollup@3.21.0)
       '@nuxt/test-utils':
         specifier: 3.4.2
         version: 3.4.2(rollup@3.21.0)(vitest@0.30.1)(vue@3.2.47)
