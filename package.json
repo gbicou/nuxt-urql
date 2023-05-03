@@ -36,7 +36,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "@nuxt/kit": "3.4.2",
+    "@nuxt/kit": "3.4.3",
     "@urql/core": "^4.0.7",
     "@urql/vue": "^1.1.1"
   },
