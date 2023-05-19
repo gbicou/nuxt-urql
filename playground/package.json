@@ -18,11 +18,11 @@
     "@graphql-codegen/typescript": "^3.0.4",
     "@graphql-codegen/typescript-operations": "^3.0.4",
     "@graphql-codegen/typescript-urql": "^3.7.3",
-    "@graphql-codegen/typescript-urql-graphcache": "^2.4.4",
+    "@graphql-codegen/typescript-urql-graphcache": "^2.4.5",
     "@graphql-codegen/urql-introspection": "^2.2.1",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@picocss/pico": "^1.5.10",
-    "@types/node": "^18.16.3",
+    "@types/node": "^18.16.13",
     "sass": "^1.62.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
