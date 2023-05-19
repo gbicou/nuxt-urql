@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/gbicou/nuxt-urql/compare/v1.4.1...v1.5.0) (2023-05-19)
+
+
+### Features
+
+* upgrade nuxt 3.5 + vue 3.3 ([917e5bf](https://github.com/gbicou/nuxt-urql/commit/917e5bf96b90bfcefd7c3c7b5d3c2ed67c1df65c))
+
 ## [1.4.1](https://github.com/gbicou/nuxt-urql/compare/v1.4.0...v1.4.1) (2023-05-03)
 
 
