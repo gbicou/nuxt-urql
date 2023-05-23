@@ -22,7 +22,7 @@
     "@graphql-codegen/urql-introspection": "^2.2.1",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@picocss/pico": "^1.5.10",
-    "@types/node": "^18.16.13",
+    "@types/node": "^18.16.14",
     "sass": "^1.62.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
