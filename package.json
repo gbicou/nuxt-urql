@@ -43,7 +43,7 @@
   "devDependencies": {
     "@bicou/countries-server": "^1.2.1",
     "@bicou/semantic-release": "^1.0.1",
-    "@graphql-eslint/eslint-plugin": "^3.19.0",
+    "@graphql-eslint/eslint-plugin": "^3.19.1",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.3.1",
     "@nuxt/schema": "^3.5.1",
