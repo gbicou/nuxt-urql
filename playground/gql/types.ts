@@ -1,9 +1,8 @@
+import { offlineExchange } from "@urql/exchange-graphcache";
 import type {
   Resolver as GraphCacheResolver,
   UpdateResolver as GraphCacheUpdateResolver,
   OptimisticMutationResolver as GraphCacheOptimisticMutationResolver,
-  StorageAdapter as GraphCacheStorageAdapter,
-  CacheExchangeOpts,
 } from "@urql/exchange-graphcache";
 
 export type Maybe<T> = T | null;
@@ -11,29 +10,31 @@ export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
 export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
+export type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = { [_ in K]?: never };
+export type Incremental<T> = T | { [P in keyof T]?: P extends " $fragmentName" | "__typename" ? T[P] : never };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
-  ID: string;
-  String: string;
-  Boolean: boolean;
-  Int: number;
-  Float: number;
+  ID: { input: string | number; output: string };
+  String: { input: string; output: string };
+  Boolean: { input: boolean; output: boolean };
+  Int: { input: number; output: number };
+  Float: { input: number; output: number };
 };
 
 /** A country record */
 export type Country = {
   __typename?: "Country";
   /** Alpha‑3 code */
-  alpha3: Scalars["String"];
+  alpha3: Scalars["String"]["output"];
   /** ISO code */
-  code: Scalars["String"];
+  code: Scalars["String"]["output"];
   /** Name of country */
-  name: Scalars["String"];
+  name: Scalars["String"]["output"];
   /** Neighbours countries */
   neighbours: Array<Country>;
   /** Numeric */
-  numeric: Scalars["String"];
-  tld: Scalars["String"];
+  numeric: Scalars["String"]["output"];
+  tld: Scalars["String"]["output"];
 };
 
 export type Query = {
@@ -43,11 +44,11 @@ export type Query = {
   /** Country by code */
   country?: Maybe<Country>;
   /** Package version */
-  version: Scalars["String"];
+  version: Scalars["String"]["output"];
 };
 
 export type QueryCountryArgs = {
-  code: Scalars["String"];
+  code: Scalars["String"]["input"];
 };
 
 export type WithTypename<T extends { __typename?: any }> = Partial<T> & { __typename: NonNullable<T["__typename"]> };
@@ -83,11 +84,9 @@ export type GraphCacheUpdaters = {
   Subscription?: {};
 };
 
-export type GraphCacheConfig = {
-  schema?: CacheExchangeOpts["schema"];
+export type GraphCacheConfig = Parameters<typeof offlineExchange>[0] & {
   updates?: GraphCacheUpdaters;
   keys?: GraphCacheKeysConfig;
   optimistic?: GraphCacheOptimisticUpdaters;
   resolvers?: GraphCacheResolvers;
-  storage?: GraphCacheStorageAdapter;
 };

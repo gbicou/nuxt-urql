@@ -8,7 +8,7 @@ export type CountriesQuery = { __typename?: "Query" } & {
 };
 
 export type CountryByCodeQueryVariables = Types.Exact<{
-  code: Types.Scalars["String"];
+  code: Types.Scalars["String"]["input"];
 }>;
 
 export type CountryByCodeQuery = { __typename?: "Query" } & {
