@@ -9,10 +9,22 @@
     {
       "files": ["*.graphql"],
       "parser": "@graphql-eslint/eslint-plugin",
+      "parserOptions": {
+        "operations": "./playground/gql/queries/*.graphql",
+        "schema": "./playground/gql/schema.graphql"
+      },
       "plugins": ["@graphql-eslint"],
       "rules": {
-        "@graphql-eslint/known-type-names": "error"
+        "@graphql-eslint/strict-id-in-types": ["error", { "acceptedIdNames": ["id", "code"] }]
       }
+    },
+    {
+      "files": ["./playground/gql/schema.graphql"],
+      "extends": "plugin:@graphql-eslint/schema-recommended"
+    },
+    {
+      "files": ["./playground/gql/queries/*.graphql"],
+      "extends": "plugin:@graphql-eslint/operations-recommended"
     }
   ]
 }

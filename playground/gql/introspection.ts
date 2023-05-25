@@ -33,7 +33,7 @@ export default {
               kind: "NON_NULL",
               ofType: {
                 kind: "SCALAR",
-                name: "String",
+                name: "ID",
                 ofType: null,
               },
             },
@@ -144,7 +144,7 @@ export default {
                   kind: "NON_NULL",
                   ofType: {
                     kind: "SCALAR",
-                    name: "String",
+                    name: "ID",
                     ofType: null,
                   },
                 },

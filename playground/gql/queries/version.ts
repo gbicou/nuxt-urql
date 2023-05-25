@@ -11,7 +11,7 @@ export const VersionDocument = {
     {
       kind: "OperationDefinition",
       operation: "query",
-      name: { kind: "Name", value: "version" },
+      name: { kind: "Name", value: "Version" },
       selectionSet: { kind: "SelectionSet", selections: [{ kind: "Field", name: { kind: "Name", value: "version" } }] },
     },
   ],

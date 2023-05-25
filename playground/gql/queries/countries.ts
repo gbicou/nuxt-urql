@@ -8,7 +8,7 @@ export type CountriesQuery = { __typename?: "Query" } & {
 };
 
 export type CountryByCodeQueryVariables = Types.Exact<{
-  code: Types.Scalars["String"]["input"];
+  code: Types.Scalars["ID"]["input"];
 }>;
 
 export type CountryByCodeQuery = { __typename?: "Query" } & {
@@ -21,7 +21,7 @@ export const CountriesDocument = {
     {
       kind: "OperationDefinition",
       operation: "query",
-      name: { kind: "Name", value: "countries" },
+      name: { kind: "Name", value: "Countries" },
       selectionSet: {
         kind: "SelectionSet",
         selections: [
@@ -48,12 +48,12 @@ export const CountryByCodeDocument = {
     {
       kind: "OperationDefinition",
       operation: "query",
-      name: { kind: "Name", value: "countryByCode" },
+      name: { kind: "Name", value: "CountryByCode" },
       variableDefinitions: [
         {
           kind: "VariableDefinition",
           variable: { kind: "Variable", name: { kind: "Name", value: "code" } },
-          type: { kind: "NonNullType", type: { kind: "NamedType", name: { kind: "Name", value: "String" } } },
+          type: { kind: "NonNullType", type: { kind: "NamedType", name: { kind: "Name", value: "ID" } } },
         },
       ],
       selectionSet: {

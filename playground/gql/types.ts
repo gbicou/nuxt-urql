@@ -27,7 +27,7 @@ export type Country = {
   /** Alpha‑3 code */
   alpha3: Scalars["String"]["output"];
   /** ISO code */
-  code: Scalars["String"]["output"];
+  code: Scalars["ID"]["output"];
   /** Name of country */
   name: Scalars["String"]["output"];
   /** Neighbours countries */
@@ -37,6 +37,7 @@ export type Country = {
   tld: Scalars["String"]["output"];
 };
 
+/** Queries */
 export type Query = {
   __typename?: "Query";
   /** All countries */
@@ -47,8 +48,9 @@ export type Query = {
   version: Scalars["String"]["output"];
 };
 
+/** Queries */
 export type QueryCountryArgs = {
-  code: Scalars["String"]["input"];
+  code: Scalars["ID"]["input"];
 };
 
 export type WithTypename<T extends { __typename?: any }> = Partial<T> & { __typename: NonNullable<T["__typename"]> };
@@ -65,7 +67,7 @@ export type GraphCacheResolvers = {
   };
   Country?: {
     alpha3?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
-    code?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
+    code?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["ID"] | string>;
     name?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars["String"] | string>;
     neighbours?: GraphCacheResolver<
       WithTypename<Country>,

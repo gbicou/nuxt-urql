@@ -41,7 +41,7 @@
     "@urql/vue": "^1.1.1"
   },
   "devDependencies": {
-    "@bicou/countries-server": "^1.2.1",
+    "@bicou/countries-server": "^1.2.2",
     "@bicou/semantic-release": "^1.0.1",
     "@graphql-eslint/eslint-plugin": "^3.19.1",
     "@nuxt/eslint-config": "^0.1.1",

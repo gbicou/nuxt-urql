@@ -18,7 +18,7 @@ export default defineUrqlClient((ssr) => {
       },
       resolvers: {
         Query: {
-          country: (_, args) => ({ __typename: "Country", code: args.code }),
+          country: (_, args) => ({ __typename: "Country", code: args.code.toString() }),
         },
       },
       storage: makeDefaultStorage(),

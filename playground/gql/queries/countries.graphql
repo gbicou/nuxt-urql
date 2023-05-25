@@ -1,4 +1,4 @@
-query countries {
+query Countries {
   countries {
     __typename
     code
@@ -6,7 +6,7 @@ query countries {
   }
 }
 
-query countryByCode($code: String!) {
+query CountryByCode($code: ID!) {
   country(code: $code) {
     __typename
     code

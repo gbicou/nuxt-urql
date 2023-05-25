@@ -10,7 +10,7 @@ type Country {
   """
   ISO code
   """
-  code: String!
+  code: ID!
 
   """
   Name of country
@@ -29,6 +29,9 @@ type Country {
   tld: String!
 }
 
+"""
+Queries
+"""
 type Query {
   """
   All countries
@@ -38,7 +41,7 @@ type Query {
   """
   Country by code
   """
-  country(code: String!): Country
+  country(code: ID!): Country
 
   """
   Package version
