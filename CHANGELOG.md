@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/gbicou/nuxt-urql/compare/v1.5.0...v1.5.1) (2023-06-23)
+
+
+### Bug Fixes
+
+* package.json and pnpm lock ([611bca4](https://github.com/gbicou/nuxt-urql/commit/611bca4eccc510564edef0ad4d9c8176b668a8ab))
+* upgrade to nuxt 3.6 ([fc94861](https://github.com/gbicou/nuxt-urql/commit/fc94861866b731c0147b1198f5280d647c727040))
+
 # [1.5.0](https://github.com/gbicou/nuxt-urql/compare/v1.4.1...v1.5.0) (2023-05-19)
 
 
