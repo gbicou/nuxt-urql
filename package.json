@@ -68,7 +68,7 @@
     "graphql": "^16.6.0",
     "vue": "^3.2.47"
   },
-  "packageManager": "pnpm@8.6.3",
+  "packageManager": "pnpm@8.6.4",
   "publishConfig": {
     "access": "public"
   }
