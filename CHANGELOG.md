@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/gbicou/nuxt-urql/compare/v1.5.1...v1.6.0) (2023-06-29)
+
+
+### Features
+
+* custom endpoint in server side mode ([4e03835](https://github.com/gbicou/nuxt-urql/commit/4e038353b7443a97518fa8c68f7c0cd0cd9f91a8))
+
 ## [1.5.1](https://github.com/gbicou/nuxt-urql/compare/v1.5.0...v1.5.1) (2023-06-23)
 
 
