@@ -20,6 +20,11 @@ export type ModuleSSRParams = Pick<SSRExchangeParams, "staleWhileRevalidate" | "
    * payload key for SSR data transmission
    */
   key: string;
+
+  /**
+   * server side graphql endpoint URL, defaults to module endpoint
+   */
+  endpoint?: string;
 };
 
 /**

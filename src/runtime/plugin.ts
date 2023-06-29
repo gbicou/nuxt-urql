@@ -30,7 +30,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
   // create urql client
   const client = createClient({
-    url: endpoint,
+    url: (process.server && ssrParams.endpoint) || endpoint,
     ...options,
   });
 
