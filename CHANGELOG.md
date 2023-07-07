@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/gbicou/nuxt-urql/compare/v1.6.0...v1.6.1) (2023-07-07)
+
+
+### Bug Fixes
+
+* log error when no endpoint is provided ([925cced](https://github.com/gbicou/nuxt-urql/commit/925cced0b7d4487eb0b0e265569f8e9bbe8861eb))
+
 # [1.6.0](https://github.com/gbicou/nuxt-urql/compare/v1.5.1...v1.6.0) (2023-06-29)
 
 
