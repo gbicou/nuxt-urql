@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, addImports, findPath } from "@nuxt/kit";
+import { defineNuxtModule, addPlugin, createResolver, addImports, findPath, logger } from "@nuxt/kit";
 import type { ClientOptions, SSRExchangeParams } from "@urql/core";
 import defu from "defu";
 import { name, version } from "../package.json";
@@ -70,6 +70,10 @@ export default defineNuxtModule<ModuleOptions>({
   },
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
+
+    if (!options.endpoint) {
+      logger.error("Missing endpoint for URQL");
+    }
 
     // expose public options
     nuxt.options.runtimeConfig.public.urql = defu(nuxt.options.runtimeConfig.public.urql, {
