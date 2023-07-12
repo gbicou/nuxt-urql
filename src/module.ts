@@ -96,7 +96,7 @@ export default defineNuxtModule<ModuleOptions>({
       ["useClientHandle", "useQuery", "useMutation", "useSubscription", "gql"].map((name) => ({
         name,
         from: "@urql/vue",
-      }))
+      })),
     );
 
     // watch client config
