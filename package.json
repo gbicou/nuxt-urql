@@ -59,7 +59,7 @@
     "graphql": "^16.8.0",
     "nuxt": "^3.7.3",
     "prettier": "^3.0.3",
-    "semantic-release": "^21.1.2",
+    "semantic-release": "^22.0.0",
     "vitest": "^0.34.4",
     "vue": "^3.3.4"
   },
