@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/gbicou/nuxt-urql/compare/v1.6.1...v1.6.2) (2023-11-07)
+
+
+### Bug Fixes
+
+* upgrade dependencies ([b61e7a9](https://github.com/gbicou/nuxt-urql/commit/b61e7a99d7abfd2dbc5a7f8a9e6014779e6a407f))
+
 ## [1.6.1](https://github.com/gbicou/nuxt-urql/compare/v1.6.0...v1.6.1) (2023-07-07)
 
 
