@@ -82,8 +82,21 @@ export type GraphCacheResolvers = {
 export type GraphCacheOptimisticUpdaters = {};
 
 export type GraphCacheUpdaters = {
+  Query?: {
+    countries?: GraphCacheUpdateResolver<{ countries: Array<WithTypename<Country>> }, Record<string, never>>;
+    country?: GraphCacheUpdateResolver<{ country: Maybe<WithTypename<Country>> }, QueryCountryArgs>;
+    version?: GraphCacheUpdateResolver<{ version: Scalars["String"] }, Record<string, never>>;
+  };
   Mutation?: {};
   Subscription?: {};
+  Country?: {
+    alpha3?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>;
+    code?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>;
+    name?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>;
+    neighbours?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>;
+    numeric?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>;
+    tld?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>;
+  };
 };
 
 export type GraphCacheConfig = Parameters<typeof offlineExchange>[0] & {
