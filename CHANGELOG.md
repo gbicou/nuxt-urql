@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
+
+
+### Features
+
+* adds useUrqlClient composable to access the client instance ([03b102d](https://github.com/gbicou/nuxt-urql/commit/03b102dfd1eb66f0180344d908a12f11f3f6f91b))
+
 ## [1.6.2](https://github.com/gbicou/nuxt-urql/compare/v1.6.1...v1.6.2) (2023-11-07)
 
 
