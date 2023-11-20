@@ -3,20 +3,20 @@ import { useRuntimeConfig } from "#app";
 
 /**
  * client options except endpoint
- *
  * @see {@link ClientOptions}
  */
 export type UrqlClientOptions = Omit<ClientOptions, "url">;
 
 /**
  * helper to build client options from configured ssr
- *
  * @param ssr - exchange configured to work with nuxt payload
  */
 export type UrqlClientBuild = (ssr: SSRExchange) => PromiseLike<UrqlClientOptions> | UrqlClientOptions;
 
 /**
  * helper to define client options
+ * @param f - client build options
+ * @returns client options
  */
 export const defineUrqlClient = (f: UrqlClientBuild) => f;
 
