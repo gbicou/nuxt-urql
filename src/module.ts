@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, addImports, findPath, logger } from "@nuxt/kit";
+import { defineNuxtModule, addPlugin, createResolver, addImports, findPath, logger, addImportsDir } from "@nuxt/kit";
 import type { ClientOptions, SSRExchangeParams } from "@urql/core";
 import defu from "defu";
 import { name, version } from "../package.json";
@@ -98,6 +98,8 @@ export default defineNuxtModule<ModuleOptions>({
         from: "@urql/vue",
       })),
     );
+    // add composables
+    addImportsDir(resolve("./runtime/composables"));
 
     // watch client config
     if (nuxt.options.dev) {
