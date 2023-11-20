@@ -13,8 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, useQuery, gql } from "#imports";
-
 const { data, fetching, error } = useQuery({
   query: gql<{ version: string }>`
     query {

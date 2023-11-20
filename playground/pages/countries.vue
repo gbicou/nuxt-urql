@@ -26,7 +26,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, useQuery } from "#imports";
 import { CountriesDocument } from "~/gql/queries/countries";
 
 const { data, fetching, error } = await useQuery({

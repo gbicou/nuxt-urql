@@ -6,7 +6,5 @@
 </template>
 
 <script setup lang="ts">
-import { useClientHandle } from "#imports";
-
 const ch = useClientHandle();
 </script>

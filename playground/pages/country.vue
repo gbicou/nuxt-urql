@@ -21,7 +21,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, useQuery, ref } from "#imports";
 import { CountryByCodeDocument } from "~/gql/queries/countries";
 
 const code = ref("");

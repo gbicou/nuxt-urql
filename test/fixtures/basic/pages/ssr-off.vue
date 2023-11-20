@@ -3,7 +3,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, useQuery } from "#imports";
 import { gql } from "@urql/core";
 
 const { data } = useQuery({
