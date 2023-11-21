@@ -1,10 +1,8 @@
 {
   "root": true,
-  "extends": ["@nuxt/eslint-config", "plugin:prettier/recommended"],
-  "plugins": ["eslint-plugin-tsdoc"],
-  "rules": {
-    "tsdoc/syntax": "warn"
-  },
+  "extends": ["@nuxt/eslint-config", "plugin:prettier/recommended", "plugin:jsdoc/recommended-typescript"],
+  "plugins": [],
+  "rules": {},
   "overrides": [
     {
       "files": ["*.graphql"],

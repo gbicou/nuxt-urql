@@ -5,14 +5,12 @@ import { name, version } from "../package.json";
 
 /**
  * serializable URQL client options
- *
  * @see {@link ClientOptions}
  */
 export type ModuleClientOptions = Pick<ClientOptions, "preferGetMethod" | "requestPolicy" | "maskTypename">;
 
 /**
  * SSR exchange params
- *
  * @see {@link SSRExchangeParams}
  */
 export type ModuleSSRParams = Pick<SSRExchangeParams, "staleWhileRevalidate" | "includeExtensions"> & {
@@ -33,7 +31,6 @@ export type ModuleSSRParams = Pick<SSRExchangeParams, "staleWhileRevalidate" | "
 export interface ModuleOptions {
   /**
    * graphql endpoint URL
-   *
    * @see {@link ClientOptions.url}
    */
   endpoint: string;
