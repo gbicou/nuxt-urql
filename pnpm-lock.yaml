@@ -21,9 +21,9 @@ importers:
         specifier: ^3.2.47
         version: 3.3.8(typescript@5.3.2)
     devDependencies:
-      '@bicou/countries-server':
-        specifier: ^1.3.3
-        version: 1.3.3(graphql@16.8.1)
+      '@bicou/countries-server-schema':
+        specifier: ^1.4.0
+        version: 1.4.0(graphql@16.8.1)
       '@bicou/semantic-release':
         specifier: ^1.0.1
         version: 1.0.1(typescript@5.3.2)
@@ -832,14 +832,18 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@bicou/countries-server@1.3.3(graphql@16.8.1):
-    resolution: {integrity: sha512-kQewbRjCuvhiILkW78tjkSAHfIgWkjoyK7nL3IXtilq4giFAdaNYxHoHc4Vo2f0kTDym93f10TkpTMjCVJOhVg==}
+  /@bicou/countries-server-data@1.4.0:
+    resolution: {integrity: sha512-fsg46qFSGVhkBAJrop56PBROLHS2UtSw2n+VwD7D6gFSc3luJnph4fnhtx3fpPjeNTiir577zKVoG2MeFSf6Tw==}
+    dev: true
+
+  /@bicou/countries-server-schema@1.4.0(graphql@16.8.1):
+    resolution: {integrity: sha512-vP3nUo+wnVbFrLPC42V4pKK1otIxyzzpJ4Co0yNb9WWAAiqft/jAA4zJSJWNkTZwd8H+ifVOwPEF8+qXo+BOvQ==}
     peerDependencies:
-      graphql: ^16.6.0
+      graphql: ^16.8.1
     dependencies:
+      '@bicou/countries-server-data': 1.4.0
       '@pothos/core': 3.38.0(graphql@16.8.1)
       graphql: 16.8.1
-      graphql-yoga: 4.0.5(graphql@16.8.1)
     dev: true
 
   /@bicou/semantic-release@1.0.1(typescript@5.3.2):
@@ -896,21 +900,6 @@ packages:
   /@csstools/css-tokenizer@2.2.1:
     resolution: {integrity: sha512-Zmsf2f/CaEPWEVgw29odOj+WEVoiJy9s9NOv5GgNY9mZ1CZ7394By6wONrONrTsnNDv6F9hR02nvFihrGVGHBg==}
     engines: {node: ^14 || ^16 || >=18}
-    dev: true
-
-  /@envelop/core@4.0.3:
-    resolution: {integrity: sha512-O0Vz8E0TObT6ijAob8jYFVJavcGywKThM3UAsxUIBBVPYZTMiqI9lo2gmAnbMUnrDcAYkUTZEW9FDYPRdF5l6g==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@envelop/types': 4.0.1
-      tslib: 2.6.2
-    dev: true
-
-  /@envelop/types@4.0.1:
-    resolution: {integrity: sha512-ULo27/doEsP7uUhm2iTnElx13qTO6I5FKvmLoX41cpfuw8x6e0NUFknoqhEsLzAbgz8xVS5mjwcxGCXh4lDYzg==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      tslib: 2.6.2
     dev: true
 
   /@es-joy/jsdoccomment@0.41.0:
@@ -2527,31 +2516,6 @@ packages:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       graphql: 16.8.1
-    dev: true
-
-  /@graphql-yoga/logger@1.0.0:
-    resolution: {integrity: sha512-JYoxwnPggH2BfO+dWlWZkDeFhyFZqaTRGLvFhy+Pjp2UxitEW6nDrw+pEDw/K9tJwMjIFMmTT9VfTqrnESmBHg==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      tslib: 2.6.2
-    dev: true
-
-  /@graphql-yoga/subscription@4.0.0:
-    resolution: {integrity: sha512-0qsN/BPPZNMoC2CZ8i+P6PgiJyHh1H35aKDt37qARBDaIOKDQuvEOq7+4txUKElcmXi7DYFo109FkhSQoEajrg==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@graphql-yoga/typed-event-target': 2.0.0
-      '@repeaterjs/repeater': 3.0.5
-      '@whatwg-node/events': 0.1.1
-      tslib: 2.6.2
-    dev: true
-
-  /@graphql-yoga/typed-event-target@2.0.0:
-    resolution: {integrity: sha512-oA/VGxGmaSDym1glOHrltw43qZsFwLLjBwvh57B79UKX/vo3+UQcRgOyE44c5RP7DCYjkrC2tuArZmb6jCzysw==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@repeaterjs/repeater': 3.0.5
-      tslib: 2.6.2
     dev: true
 
   /@humanwhocodes/config-array@0.11.13:
@@ -5067,14 +5031,6 @@ packages:
       busboy: 1.6.0
       fast-querystring: 1.1.2
       fast-url-parser: 1.1.3
-      tslib: 2.6.2
-    dev: true
-
-  /@whatwg-node/server@0.9.16:
-    resolution: {integrity: sha512-gktQkRyONEw2EGpx7UZaC6zNlUm21CGlqAHQXU3QC6W0zlLM5ZQNDCeD66q/nsPHDV08X2NTHlABsuAEk5rh/w==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@whatwg-node/fetch': 0.9.14
       tslib: 2.6.2
     dev: true
 
@@ -7663,26 +7619,6 @@ packages:
       graphql: '>=0.11 <=16'
     dependencies:
       graphql: 16.8.1
-    dev: true
-
-  /graphql-yoga@4.0.5(graphql@16.8.1):
-    resolution: {integrity: sha512-vIbJU9QX5RP4PoxbMCHcfOlt/3EsC/0uLdAOlKaiUvlwJDTFCaIHo2X10vL4i/27Gw8g90ECIwm2YbmeLDwcqg==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      graphql: ^15.2.0 || ^16.0.0
-    dependencies:
-      '@envelop/core': 4.0.3
-      '@graphql-tools/executor': 1.2.0(graphql@16.8.1)
-      '@graphql-tools/schema': 10.0.0(graphql@16.8.1)
-      '@graphql-tools/utils': 10.0.8(graphql@16.8.1)
-      '@graphql-yoga/logger': 1.0.0
-      '@graphql-yoga/subscription': 4.0.0
-      '@whatwg-node/fetch': 0.9.14
-      '@whatwg-node/server': 0.9.16
-      dset: 3.1.3
-      graphql: 16.8.1
-      lru-cache: 10.0.3
-      tslib: 2.6.2
     dev: true
 
   /graphql@16.8.1:
