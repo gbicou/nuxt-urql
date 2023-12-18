@@ -22,9 +22,9 @@
   ],
   "scripts": {
     "prepare": "nuxi prepare playground",
-    "prepack": "nuxt-module-build",
+    "prepack": "nuxt-module-build build",
     "dev": "nuxi dev playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxi prepare playground",
     "dev:build": "nuxi build playground",
     "dev:start": "nuxi start playground",
     "build": "nuxt-module-build build",
