@@ -21,10 +21,10 @@
     "@graphql-codegen/typescript-urql-graphcache": "^3.0.0",
     "@graphql-codegen/urql-introspection": "^3.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@picocss/pico": "^1.5.10",
-    "@types/node": "^20.10.5",
+    "@picocss/pico": "^1.5.11",
+    "@types/node": "^20.10.6",
     "nuxt": "^3.9.0",
-    "sass": "^1.69.5",
+    "sass": "^1.69.6",
     "typescript": "^5.3.3",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"
