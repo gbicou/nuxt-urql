@@ -23,7 +23,7 @@ importers:
     devDependencies:
       '@bicou/countries-server-schema':
         specifier: ^1.4.0
-        version: 1.4.0(graphql@16.8.1)
+        version: 1.4.1(graphql@16.8.1)
       '@changesets/changelog-github':
         specifier: ^0.5.0
         version: 0.5.0
@@ -834,16 +834,16 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@bicou/countries-server-data@1.4.0:
-    resolution: {integrity: sha512-fsg46qFSGVhkBAJrop56PBROLHS2UtSw2n+VwD7D6gFSc3luJnph4fnhtx3fpPjeNTiir577zKVoG2MeFSf6Tw==}
+  /@bicou/countries-server-data@1.4.1:
+    resolution: {integrity: sha512-ricVhUKKQ8DL7AFWrtx+Hwh59iIte6TyLvGyiN0aFcn+J8krFwLnECUTx0uOXW93KMqxIHL0dB+iKd0rs0iZxA==}
     dev: true
 
-  /@bicou/countries-server-schema@1.4.0(graphql@16.8.1):
-    resolution: {integrity: sha512-vP3nUo+wnVbFrLPC42V4pKK1otIxyzzpJ4Co0yNb9WWAAiqft/jAA4zJSJWNkTZwd8H+ifVOwPEF8+qXo+BOvQ==}
+  /@bicou/countries-server-schema@1.4.1(graphql@16.8.1):
+    resolution: {integrity: sha512-mb85YOEyPOHQM5od8YoIN/AKCyZGZfIcJ56NNzdAPPuiQYdee9/VhOkVHCJanCyqnFIBlg38cYH0Bv/oDy5vuQ==}
     peerDependencies:
       graphql: ^16.8.1
     dependencies:
-      '@bicou/countries-server-data': 1.4.0
+      '@bicou/countries-server-data': 1.4.1
       '@pothos/core': 3.41.0(graphql@16.8.1)
       graphql: 16.8.1
     dev: true
