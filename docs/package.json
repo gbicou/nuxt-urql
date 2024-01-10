@@ -1,7 +1,9 @@
 {
   "name": "@bicou/nuxt-urql-docs",
   "private": true,
+  "type": "module",
   "scripts": {
+    "prepare": "nuxi prepare",
     "dev": "nuxi dev",
     "build": "nuxi build",
     "generate": "nuxi generate",
@@ -9,8 +11,8 @@
   },
   "devDependencies": {
     "@nuxt-themes/docus": "^1.15.0",
-    "nuxt": "^3.9.0",
-    "vue": "^3.4.3",
+    "nuxt": "^3.9.1",
+    "vue": "^3.4.7",
     "vue-router": "^4.2.5"
   }
 }
