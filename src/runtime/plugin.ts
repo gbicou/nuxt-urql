@@ -1,4 +1,4 @@
-import { createClient, type SSRData, ssrExchange } from "@urql/core";
+import { type Client, createClient, type SSRData, ssrExchange } from "@urql/core";
 import { ref, defineNuxtPlugin, useRuntimeConfig, useState } from "#imports";
 import NuxtUrqlClient from "#urql-client";
 
@@ -32,7 +32,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
   const options = await NuxtUrqlClient(ssr);
 
   // create urql client
-  const client = createClient({
+  const client: Client = createClient({
     url: (process.server && ssrParams.endpoint) || endpoint,
     ...options,
   });
