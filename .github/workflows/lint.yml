@@ -14,7 +14,7 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
@@ -23,7 +23,7 @@ jobs:
       - run: pnpm -w add @microsoft/eslint-formatter-sarif
       - run: pnpm eslint . --format @microsoft/eslint-formatter-sarif --output-file eslint-results.sarif
         continue-on-error: true
-      - uses: github/codeql-action/upload-sarif@v2
+      - uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: eslint-results.sarif
           wait-for-processing: true
