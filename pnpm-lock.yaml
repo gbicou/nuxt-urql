@@ -137,8 +137,8 @@ importers:
         specifier: ^3.2.0
         version: 3.2.0(graphql@16.8.1)
       '@picocss/pico':
-        specifier: ^1.5.11
-        version: 1.5.11
+        specifier: ^2.0.3
+        version: 2.0.3
       '@types/node':
         specifier: ^20.11.16
         version: 20.11.16
@@ -3749,8 +3749,9 @@ packages:
       webcrypto-core: 1.7.8
     dev: true
 
-  /@picocss/pico@1.5.11:
-    resolution: {integrity: sha512-cDaFiSyNPtuSTwSQt/05xsw8+g2ek4/S58tgh9Nc7miJCCdUrY9PAyl4OPWRJtYgJDdEvkUA9GuGj0J4nDP4Cw==}
+  /@picocss/pico@2.0.3:
+    resolution: {integrity: sha512-uIWvDcZnbA+oo4mpz8LeA05huCWbDnUz8Ad2NZXTFn6SrEXBtIdKDu+/bOD4oI8hJHp6dUEEvDLim2+qqSgruQ==}
+    engines: {node: '>=18.19.0'}
     dev: true
 
   /@pkgjs/parseargs@0.11.0:
