@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@nuxt-themes/docus": "^1.15.0",
-    "nuxt": "^3.10.1",
-    "vue": "^3.4.16",
-    "vue-router": "^4.2.5"
+    "nuxt": "^3.11.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   }
 }
