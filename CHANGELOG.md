@@ -1,5 +1,15 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## 1.7.2
+
+### Patch Changes
+
+- [`c6bc745`](https://github.com/gbicou/nuxt-urql/commit/c6bc745e1d05ee9bce40fae8213ccceccde9891b) Thanks [@gbicou](https://github.com/gbicou)! - upgrade dependencies
+
+- [`cd055e1`](https://github.com/gbicou/nuxt-urql/commit/cd055e19fd68065cc02cc51e7a1cf3c3010aae8c) Thanks [@gbicou](https://github.com/gbicou)! - add type annotation to runtime plugin
+
+- [`9dbcd90`](https://github.com/gbicou/nuxt-urql/commit/9dbcd9030f28fa10f25f74e46acc0310922cd08a) Thanks [@gbicou](https://github.com/gbicou)! - upgrade dependencies
+
 ## 1.7.1
 
 ### Patch Changes
