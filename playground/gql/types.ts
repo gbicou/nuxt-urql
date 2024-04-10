@@ -1,4 +1,4 @@
-import { offlineExchange } from "@urql/exchange-graphcache";
+import { cacheExchange } from "@urql/exchange-graphcache";
 import type {
   Resolver as GraphCacheResolver,
   UpdateResolver as GraphCacheUpdateResolver,
@@ -99,7 +99,7 @@ export type GraphCacheUpdaters = {
   };
 };
 
-export type GraphCacheConfig = Parameters<typeof offlineExchange>[0] & {
+export type GraphCacheConfig = Parameters<typeof cacheExchange>[0] & {
   updates?: GraphCacheUpdaters;
   keys?: GraphCacheKeysConfig;
   optimistic?: GraphCacheOptimisticUpdaters;

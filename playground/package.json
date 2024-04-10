@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@bicou/nuxt-urql": "workspace:*",
-    "@urql/exchange-graphcache": "^6.5.0",
+    "@urql/exchange-graphcache": "^7.0.1",
     "graphql": "^16.8.1"
   },
   "devDependencies": {
@@ -22,12 +22,12 @@
     "@graphql-codegen/urql-introspection": "^3.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@picocss/pico": "^2.0.6",
-    "@types/node": "^20.11.28",
+    "@types/node": "^20.12.7",
     "dotenv": "^16.4.5",
     "graphql-config": "^5.0.3",
-    "nuxt": "^3.11.0",
-    "sass": "^1.72.0",
-    "typescript": "^5.4.2",
+    "nuxt": "^3.11.2",
+    "sass": "^1.74.1",
+    "typescript": "^5.4.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
