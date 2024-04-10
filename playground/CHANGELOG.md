@@ -4,6 +4,13 @@
 
 ### Patch Changes
 
+- Updated dependencies [[`a0909a1`](https://github.com/gbicou/nuxt-urql/commit/a0909a149e72c372c349322b87eedbac3be208ee)]:
+  - @bicou/nuxt-urql@1.8.0
+
+## null
+
+### Patch Changes
+
 - Updated dependencies [[`c6bc745`](https://github.com/gbicou/nuxt-urql/commit/c6bc745e1d05ee9bce40fae8213ccceccde9891b), [`cd055e1`](https://github.com/gbicou/nuxt-urql/commit/cd055e19fd68065cc02cc51e7a1cf3c3010aae8c), [`9dbcd90`](https://github.com/gbicou/nuxt-urql/commit/9dbcd9030f28fa10f25f74e46acc0310922cd08a)]:
   - @bicou/nuxt-urql@1.7.2
 
