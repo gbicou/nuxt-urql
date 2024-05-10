@@ -7,7 +7,9 @@ import { name, version } from "../package.json";
  * serializable URQL client options
  * @see {@link ClientOptions}
  */
-export type ModuleClientOptions = Pick<ClientOptions, "preferGetMethod" | "requestPolicy">;
+export type ModuleClientOptions = Pick<ClientOptions, "preferGetMethod" | "requestPolicy"> & {
+  fetchOptions?: RequestInit;
+};
 
 /**
  * SSR exchange params
