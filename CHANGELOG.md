@@ -1,5 +1,11 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## 1.8.1
+
+### Patch Changes
+
+- [`1f4755c`](https://github.com/gbicou/nuxt-urql/commit/1f4755c7878b8c4f6f36ce86c345265f68e23293) Thanks [@gbicou](https://github.com/gbicou)! - dependencies upgrade
+
 ## 1.8.0
 
 ### Minor Changes
