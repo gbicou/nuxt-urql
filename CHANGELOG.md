@@ -1,5 +1,11 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## 1.8.2
+
+### Patch Changes
+
+- [#152](https://github.com/gbicou/nuxt-urql/pull/152) [`eaa9d9e`](https://github.com/gbicou/nuxt-urql/commit/eaa9d9ede4445d5b6c8aed0b5895d1c45a448a1d) Thanks [@gbicou](https://github.com/gbicou)! - add missing imports from nuxt app to plugin
+
 ## 1.8.1
 
 ### Patch Changes
