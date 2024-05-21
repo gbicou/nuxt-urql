@@ -1,5 +1,6 @@
 import { type Client, createClient, type SSRData, ssrExchange } from "@urql/core";
 import { ref } from "vue";
+import { defineNuxtPlugin, useRuntimeConfig, useState } from "#app";
 import NuxtUrqlClient from "#urql-client";
 
 export default defineNuxtPlugin(async (nuxtApp) => {
