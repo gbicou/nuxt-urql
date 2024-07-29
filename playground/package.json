@@ -22,7 +22,7 @@
     "@graphql-codegen/urql-introspection": "^3.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@picocss/pico": "^2.0.6",
-    "@types/node": "^20.12.11",
+    "@types/node": "^22.0.0",
     "dotenv": "^16.4.5",
     "graphql-config": "^5.0.3",
     "nuxt": "^3.11.2",
