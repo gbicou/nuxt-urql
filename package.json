@@ -48,7 +48,7 @@
     "@nuxt/module-builder": "^0.6.0",
     "@nuxt/schema": "^3.11.2",
     "@nuxt/test-utils": "^3.12.1",
-    "@types/node": "^20.12.11",
+    "@types/node": "^22.1.0",
     "@urql/exchange-execute": "^2.3.0",
     "defu": "^6.1.4",
     "eslint": "^8.57.0",
