@@ -87,7 +87,7 @@ export default defineNuxtModule<ModuleOptions>({
     // load client config
     const clientPathDefault = resolve("./runtime/client");
     const clientPath =
-      typeof options.client === "string" ? (await findPath(options.client)) ?? clientPathDefault : clientPathDefault;
+      typeof options.client === "string" ? ((await findPath(options.client)) ?? clientPathDefault) : clientPathDefault;
     nuxt.options.alias["#urql-client"] = clientPath;
 
     // import urql vue composables and utils
