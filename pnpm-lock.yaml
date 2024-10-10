@@ -1118,6 +1118,11 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
+  '@graphql-codegen/plugin-helpers@5.0.4':
+    resolution: {integrity: sha512-MOIuHFNWUnFnqVmiXtrI+4UziMTYrcquljaI5f/T/Bc7oO7sXcfkAvgkNWEEi9xWreYwvuer3VHCuPI/lAFWbw==}
+    peerDependencies:
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+
   '@graphql-codegen/schema-ast@4.0.2':
     resolution: {integrity: sha512-5mVAOQQK3Oz7EtMl/l3vOQdc2aYClUzVDHHkMvZlunc+KlGgl81j8TLa+X7ANIllqU4fUEsQU3lJmk4hXP6K7Q==}
     peerDependencies:
@@ -3685,6 +3690,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@10.0.1:
@@ -8415,9 +8421,19 @@ snapshots:
       lodash: 4.17.21
       tslib: 2.6.2
 
+  '@graphql-codegen/plugin-helpers@5.0.4(graphql@16.8.1)':
+    dependencies:
+      '@graphql-tools/utils': 10.2.0(graphql@16.8.1)
+      change-case-all: 1.0.15
+      common-tags: 1.8.2
+      graphql: 16.8.1
+      import-from: 4.0.0
+      lodash: 4.17.21
+      tslib: 2.6.2
+
   '@graphql-codegen/schema-ast@4.0.2(graphql@16.8.1)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.3(graphql@16.8.1)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.1)
       '@graphql-tools/utils': 10.2.0(graphql@16.8.1)
       graphql: 16.8.1
       tslib: 2.6.2
