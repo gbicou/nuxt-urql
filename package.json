@@ -44,7 +44,7 @@
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.9",
     "@graphql-eslint/eslint-plugin": "^3.20.1",
-    "@nuxt/eslint-config": "^0.3.13",
+    "@nuxt/eslint-config": "^0.6.0",
     "@nuxt/module-builder": "^0.8.4",
     "@nuxt/schema": "^3.13.2",
     "@nuxt/test-utils": "^3.14.3",
