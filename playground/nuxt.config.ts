@@ -1,10 +1,16 @@
 export default defineNuxtConfig({
-  modules: ["../src/module"],
-  urql: {
-    endpoint: "https://countries.bicou.com/",
-  },
+  modules: ['../src/module', '@nuxt/eslint'],
+  css: ['~/assets/css/app.scss'],
   experimental: {
     payloadExtraction: false,
   },
-  css: ["~/assets/css/app.scss"],
-});
+  eslint: {
+    config: {
+      stylistic: true,
+      tooling: true,
+    },
+  },
+  urql: {
+    endpoint: 'https://countries.bicou.com/',
+  },
+})

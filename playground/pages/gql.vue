@@ -19,7 +19,7 @@ const { data, fetching, error } = useQuery({
       version
     }
   `,
-});
+})
 
-const version = computed(() => data.value?.version ?? "");
+const version = computed(() => data.value?.version ?? '')
 </script>

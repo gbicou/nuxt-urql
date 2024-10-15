@@ -1,11 +1,11 @@
-import { cacheExchange } from "@urql/core";
-import { executeExchange } from "@urql/exchange-execute";
-import { defineUrqlClient } from "#urql/client";
-import { buildSchema } from "@bicou/countries-server-schema";
+import { cacheExchange } from '@urql/core'
+import { executeExchange } from '@urql/exchange-execute'
+import { buildSchema } from '@bicou/countries-server-schema'
+import { defineUrqlClient } from '#urql/client'
 
-const schema = buildSchema("test");
+const schema = buildSchema('test')
 
-export default defineUrqlClient((ssr) => ({
+export default defineUrqlClient(ssr => ({
   exchanges: [
     cacheExchange,
     ssr,
@@ -14,4 +14,4 @@ export default defineUrqlClient((ssr) => ({
       schema,
     }),
   ],
-}));
+}))

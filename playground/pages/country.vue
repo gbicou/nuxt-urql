@@ -7,7 +7,10 @@
     <article>
       <label>
         ISO code
-        <input v-model="code" placeholder="FR, be, ..." />
+        <input
+          v-model="code"
+          placeholder="FR, be, ..."
+        >
       </label>
       <footer>
         <p>is paused = {{ isPaused }}</p>
@@ -21,21 +24,21 @@
 </template>
 
 <script setup lang="ts">
-import { CountryByCodeDocument } from "~/gql/queries/countries";
+import { CountryByCodeDocument } from '~/gql/queries/countries'
 
-const code = ref("");
+const code = ref('')
 
 const variables = computed(() => ({
   code: code.value.trim().toUpperCase(),
-}));
+}))
 
-const pause = computed(() => code.value.length === 0);
+const pause = computed(() => code.value.length === 0)
 
 const { data, fetching, error, isPaused } = useQuery({
   query: CountryByCodeDocument,
   variables,
   pause,
-});
+})
 
-const country = computed(() => data.value?.country ?? null);
+const country = computed(() => data.value?.country ?? null)
 </script>

@@ -6,9 +6,9 @@
 </template>
 
 <script setup lang="ts">
-import { VersionDocument } from "~/gql/queries/version";
+import { VersionDocument } from '~/gql/queries/version'
 
-const client = useUrqlClient();
+const client = useUrqlClient()
 
-const { data } = await client.query(VersionDocument, {}).toPromise();
+const { data } = await client.query(VersionDocument, {}).toPromise()
 </script>

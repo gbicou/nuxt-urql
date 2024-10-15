@@ -1,50 +1,30 @@
-"""
-A country record
-"""
+"""A country record"""
 type Country {
-  """
-  Alpha‑3 code
-  """
-  alpha3: String!
+  """Alpha‑3 code"""
+  alpha3: String
 
-  """
-  ISO code
-  """
-  code: ID!
+  """ISO code"""
+  code: ID
 
-  """
-  Name of country
-  """
-  name: String!
+  """Name of country"""
+  name: String
 
-  """
-  Neighbours countries
-  """
-  neighbours: [Country!]!
+  """Neighbours countries"""
+  neighbours: [Country!]
 
-  """
-  Numeric
-  """
-  numeric: String!
-  tld: String!
+  """Numeric"""
+  numeric: String
+  tld: String
 }
 
-"""
-Queries
-"""
+"""Queries"""
 type Query {
-  """
-  All countries
-  """
-  countries: [Country!]!
+  """All countries"""
+  countries: [Country!]
 
-  """
-  Country by code
-  """
+  """Country by code"""
   country(code: ID!): Country
 
-  """
-  Package version
-  """
-  version: String!
+  """Package version"""
+  version: String
 }

@@ -1,95 +1,78 @@
-import type { IntrospectionQuery } from "graphql";
+import type { IntrospectionQuery } from 'graphql'
+
 export default {
   __schema: {
     queryType: {
-      name: "Query",
+      name: 'Query',
     },
     mutationType: null,
     subscriptionType: null,
     types: [
       {
-        kind: "SCALAR",
-        name: "Boolean",
+        kind: 'SCALAR',
+        name: 'Boolean',
       },
       {
-        kind: "OBJECT",
-        name: "Country",
+        kind: 'OBJECT',
+        name: 'Country',
         fields: [
           {
-            name: "alpha3",
+            name: 'alpha3',
             type: {
-              kind: "NON_NULL",
-              ofType: {
-                kind: "SCALAR",
-                name: "String",
-                ofType: null,
-              },
+              kind: 'SCALAR',
+              name: 'String',
+              ofType: null,
             },
             args: [],
           },
           {
-            name: "code",
+            name: 'code',
             type: {
-              kind: "NON_NULL",
-              ofType: {
-                kind: "SCALAR",
-                name: "ID",
-                ofType: null,
-              },
+              kind: 'SCALAR',
+              name: 'ID',
+              ofType: null,
             },
             args: [],
           },
           {
-            name: "name",
+            name: 'name',
             type: {
-              kind: "NON_NULL",
-              ofType: {
-                kind: "SCALAR",
-                name: "String",
-                ofType: null,
-              },
+              kind: 'SCALAR',
+              name: 'String',
+              ofType: null,
             },
             args: [],
           },
           {
-            name: "neighbours",
+            name: 'neighbours',
             type: {
-              kind: "NON_NULL",
+              kind: 'LIST',
               ofType: {
-                kind: "LIST",
+                kind: 'NON_NULL',
                 ofType: {
-                  kind: "NON_NULL",
-                  ofType: {
-                    kind: "OBJECT",
-                    name: "Country",
-                    ofType: null,
-                  },
+                  kind: 'OBJECT',
+                  name: 'Country',
+                  ofType: null,
                 },
               },
             },
             args: [],
           },
           {
-            name: "numeric",
+            name: 'numeric',
             type: {
-              kind: "NON_NULL",
-              ofType: {
-                kind: "SCALAR",
-                name: "String",
-                ofType: null,
-              },
+              kind: 'SCALAR',
+              name: 'String',
+              ofType: null,
             },
             args: [],
           },
           {
-            name: "tld",
+            name: 'tld',
             type: {
-              kind: "NON_NULL",
-              ofType: {
-                kind: "SCALAR",
-                name: "String",
-                ofType: null,
-              },
+              kind: 'SCALAR',
+              name: 'String',
+              ofType: null,
             },
             args: [],
           },
@@ -97,54 +80,51 @@ export default {
         interfaces: [],
       },
       {
-        kind: "SCALAR",
-        name: "Float",
+        kind: 'SCALAR',
+        name: 'Float',
       },
       {
-        kind: "SCALAR",
-        name: "ID",
+        kind: 'SCALAR',
+        name: 'ID',
       },
       {
-        kind: "SCALAR",
-        name: "Int",
+        kind: 'SCALAR',
+        name: 'Int',
       },
       {
-        kind: "OBJECT",
-        name: "Query",
+        kind: 'OBJECT',
+        name: 'Query',
         fields: [
           {
-            name: "countries",
+            name: 'countries',
             type: {
-              kind: "NON_NULL",
+              kind: 'LIST',
               ofType: {
-                kind: "LIST",
+                kind: 'NON_NULL',
                 ofType: {
-                  kind: "NON_NULL",
-                  ofType: {
-                    kind: "OBJECT",
-                    name: "Country",
-                    ofType: null,
-                  },
+                  kind: 'OBJECT',
+                  name: 'Country',
+                  ofType: null,
                 },
               },
             },
             args: [],
           },
           {
-            name: "country",
+            name: 'country',
             type: {
-              kind: "OBJECT",
-              name: "Country",
+              kind: 'OBJECT',
+              name: 'Country',
               ofType: null,
             },
             args: [
               {
-                name: "code",
+                name: 'code',
                 type: {
-                  kind: "NON_NULL",
+                  kind: 'NON_NULL',
                   ofType: {
-                    kind: "SCALAR",
-                    name: "ID",
+                    kind: 'SCALAR',
+                    name: 'ID',
                     ofType: null,
                   },
                 },
@@ -152,14 +132,11 @@ export default {
             ],
           },
           {
-            name: "version",
+            name: 'version',
             type: {
-              kind: "NON_NULL",
-              ofType: {
-                kind: "SCALAR",
-                name: "String",
-                ofType: null,
-              },
+              kind: 'SCALAR',
+              name: 'String',
+              ofType: null,
             },
             args: [],
           },
@@ -167,14 +144,14 @@ export default {
         interfaces: [],
       },
       {
-        kind: "SCALAR",
-        name: "String",
+        kind: 'SCALAR',
+        name: 'String',
       },
       {
-        kind: "SCALAR",
-        name: "Any",
+        kind: 'SCALAR',
+        name: 'Any',
       },
     ],
     directives: [],
   },
-} as unknown as IntrospectionQuery;
+} as unknown as IntrospectionQuery

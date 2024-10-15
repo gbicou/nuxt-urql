@@ -14,7 +14,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="c of countries" :key="c.code">
+        <tr
+          v-for="c of countries"
+          :key="c.code"
+        >
           <td>
             <kbd>{{ c.code }}</kbd>
           </td>
@@ -26,11 +29,12 @@
 </template>
 
 <script setup lang="ts">
-import { CountriesDocument } from "~/gql/queries/countries";
+import { CountriesDocument } from '~/gql/queries/countries'
 
 const { data, fetching, error } = await useQuery({
   query: CountriesDocument,
-});
+  variables: {},
+})
 
-const countries = computed(() => data.value?.countries ?? []);
+const countries = computed(() => data.value?.countries ?? [])
 </script>
