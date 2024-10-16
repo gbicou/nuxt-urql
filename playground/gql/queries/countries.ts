@@ -5,10 +5,10 @@ export type CountriesQueryVariables = Types.Exact<{ [key: string]: never }>
 
 export type CountriesQuery = (
   { __typename?: 'Query' }
-  & { countries?: Types.Maybe<Array<(
+  & { countries: Array<(
     { __typename: 'Country' }
     & Pick<Types.Country, 'code' | 'name'>
-  )>> }
+  )> }
 )
 
 export type CountryByCodeQueryVariables = Types.Exact<{

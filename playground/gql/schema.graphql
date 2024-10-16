@@ -1,26 +1,28 @@
 """A country record"""
 type Country {
   """Alpha‑3 code"""
-  alpha3: String
+  alpha3: String!
 
   """ISO code"""
-  code: ID
+  code: ID!
 
   """Name of country"""
-  name: String
+  name: String!
 
   """Neighbours countries"""
-  neighbours: [Country!]
+  neighbours: [Country!]!
 
   """Numeric"""
-  numeric: String
-  tld: String
+  numeric: String!
+
+  """Top level domain"""
+  tld: String!
 }
 
 """Queries"""
 type Query {
   """All countries"""
-  countries: [Country!]
+  countries: [Country!]!
 
   """Country by code"""
   country(code: ID!): Country

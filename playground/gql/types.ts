@@ -20,27 +20,28 @@ export type Scalars = {
 export type Country = {
   __typename?: 'Country'
   /** Alpha‑3 code */
-  alpha3?: Maybe<Scalars['String']['output']>
+  alpha3: Scalars['String']['output']
   /** ISO code */
-  code?: Maybe<Scalars['ID']['output']>
+  code: Scalars['ID']['output']
   /** Name of country */
-  name?: Maybe<Scalars['String']['output']>
+  name: Scalars['String']['output']
   /** Neighbours countries */
-  neighbours?: Maybe<Array<Country>>
+  neighbours: Array<Country>
   /** Numeric */
-  numeric?: Maybe<Scalars['String']['output']>
-  tld?: Maybe<Scalars['String']['output']>
+  numeric: Scalars['String']['output']
+  /** Top level domain */
+  tld: Scalars['String']['output']
 }
 
 /** Queries */
 export type Query = {
   __typename?: 'Query'
   /** All countries */
-  countries?: Maybe<Array<Country>>
+  countries: Array<Country>
   /** Country by code */
   country?: Maybe<Country>
   /** Package version */
-  version?: Maybe<Scalars['String']['output']>
+  version: Scalars['String']['output']
 }
 
 /** Queries */
@@ -74,9 +75,9 @@ export type GraphCacheOptimisticUpdaters = {}
 
 export type GraphCacheUpdaters = {
   Query?: {
-    countries?: GraphCacheUpdateResolver<{ countries: Maybe<Array<WithTypename<Country>>> }, Record<string, never>>
+    countries?: GraphCacheUpdateResolver<{ countries: Array<WithTypename<Country>> }, Record<string, never>>
     country?: GraphCacheUpdateResolver<{ country: Maybe<WithTypename<Country>> }, QueryCountryArgs>
-    version?: GraphCacheUpdateResolver<{ version: Maybe<Scalars['String']> }, Record<string, never>>
+    version?: GraphCacheUpdateResolver<{ version: Scalars['String'] }, Record<string, never>>
   }
   Mutation?: {}
   Subscription?: {}

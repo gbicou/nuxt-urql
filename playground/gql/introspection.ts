@@ -19,40 +19,52 @@ export default {
           {
             name: 'alpha3',
             type: {
-              kind: 'SCALAR',
-              name: 'String',
-              ofType: null,
+              kind: 'NON_NULL',
+              ofType: {
+                kind: 'SCALAR',
+                name: 'String',
+                ofType: null,
+              },
             },
             args: [],
           },
           {
             name: 'code',
             type: {
-              kind: 'SCALAR',
-              name: 'ID',
-              ofType: null,
+              kind: 'NON_NULL',
+              ofType: {
+                kind: 'SCALAR',
+                name: 'ID',
+                ofType: null,
+              },
             },
             args: [],
           },
           {
             name: 'name',
             type: {
-              kind: 'SCALAR',
-              name: 'String',
-              ofType: null,
+              kind: 'NON_NULL',
+              ofType: {
+                kind: 'SCALAR',
+                name: 'String',
+                ofType: null,
+              },
             },
             args: [],
           },
           {
             name: 'neighbours',
             type: {
-              kind: 'LIST',
+              kind: 'NON_NULL',
               ofType: {
-                kind: 'NON_NULL',
+                kind: 'LIST',
                 ofType: {
-                  kind: 'OBJECT',
-                  name: 'Country',
-                  ofType: null,
+                  kind: 'NON_NULL',
+                  ofType: {
+                    kind: 'OBJECT',
+                    name: 'Country',
+                    ofType: null,
+                  },
                 },
               },
             },
@@ -61,18 +73,24 @@ export default {
           {
             name: 'numeric',
             type: {
-              kind: 'SCALAR',
-              name: 'String',
-              ofType: null,
+              kind: 'NON_NULL',
+              ofType: {
+                kind: 'SCALAR',
+                name: 'String',
+                ofType: null,
+              },
             },
             args: [],
           },
           {
             name: 'tld',
             type: {
-              kind: 'SCALAR',
-              name: 'String',
-              ofType: null,
+              kind: 'NON_NULL',
+              ofType: {
+                kind: 'SCALAR',
+                name: 'String',
+                ofType: null,
+              },
             },
             args: [],
           },
@@ -98,13 +116,16 @@ export default {
           {
             name: 'countries',
             type: {
-              kind: 'LIST',
+              kind: 'NON_NULL',
               ofType: {
-                kind: 'NON_NULL',
+                kind: 'LIST',
                 ofType: {
-                  kind: 'OBJECT',
-                  name: 'Country',
-                  ofType: null,
+                  kind: 'NON_NULL',
+                  ofType: {
+                    kind: 'OBJECT',
+                    name: 'Country',
+                    ofType: null,
+                  },
                 },
               },
             },
@@ -134,9 +155,12 @@ export default {
           {
             name: 'version',
             type: {
-              kind: 'SCALAR',
-              name: 'String',
-              ofType: null,
+              kind: 'NON_NULL',
+              ofType: {
+                kind: 'SCALAR',
+                name: 'String',
+                ofType: null,
+              },
             },
             args: [],
           },
