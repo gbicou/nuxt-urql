@@ -22,8 +22,8 @@ importers:
         version: 3.5.12(typescript@5.6.3)
     devDependencies:
       '@bicou/countries-server-schema':
-        specifier: 1.5.0
-        version: 1.5.0(graphql@16.9.0)
+        specifier: 1.6.0
+        version: 1.6.0(graphql@16.9.0)
       '@changesets/changelog-github':
         specifier: 0.5.0
         version: 0.5.0(encoding@0.1.13)
@@ -497,8 +497,8 @@ packages:
   '@bicou/countries-server-data@1.5.0':
     resolution: {integrity: sha512-0R87mID58vVLz0KVYxdkhl7PBA0f37gpf+OeWHPCaKpKCHzp8mzitVaU0S6hVQEUnGdAdjdC8moYn61GK2envQ==}
 
-  '@bicou/countries-server-schema@1.5.0':
-    resolution: {integrity: sha512-G2G5eTRERqvS7kEDCke9Fm7twx/wDkUWGLlAGz3MvN3ibVZPm+y3Nsvn+E/0SrJCAVSetBGQHB0a6ma7xygc/w==}
+  '@bicou/countries-server-schema@1.6.0':
+    resolution: {integrity: sha512-G896uU3so4kNQqvWtuo5QQJ1dvoHGG/TFPyals9C2cKbiAfFRbA5aOWaUGrOZJc8/lNOBPGVmk94QdWuGIzjhg==}
     peerDependencies:
       graphql: 16.9.0
 
@@ -7306,7 +7306,7 @@ snapshots:
 
   '@bicou/countries-server-data@1.5.0': {}
 
-  '@bicou/countries-server-schema@1.5.0(graphql@16.9.0)':
+  '@bicou/countries-server-schema@1.6.0(graphql@16.9.0)':
     dependencies:
       '@bicou/countries-server-data': 1.5.0
       '@pothos/core': 4.3.0(graphql@16.9.0)
