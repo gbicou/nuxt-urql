@@ -20,7 +20,7 @@
     "@graphql-codegen/typescript-urql": "4.0.0",
     "@graphql-codegen/typescript-urql-graphcache": "3.1.0",
     "@graphql-codegen/urql-introspection": "3.0.0",
-    "@graphql-eslint/eslint-plugin": "4.0.0-alpha.5",
+    "@graphql-eslint/eslint-plugin": "4.0.0-alpha.15",
     "@graphql-typed-document-node/core": "3.2.0",
     "@nuxt/eslint": "0.7.1",
     "@picocss/pico": "2.0.6",
