@@ -15,7 +15,7 @@
     "@graphql-codegen/near-operation-file-preset": "3.0.0",
     "@graphql-codegen/schema-ast": "4.1.0",
     "@graphql-codegen/typed-document-node": "5.0.11",
-    "@graphql-codegen/typescript": "4.1.1",
+    "@graphql-codegen/typescript": "4.1.2",
     "@graphql-codegen/typescript-operations": "4.3.1",
     "@graphql-codegen/typescript-urql": "4.0.0",
     "@graphql-codegen/typescript-urql-graphcache": "3.1.0",
