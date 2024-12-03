@@ -28,5 +28,5 @@ type Query {
   country(code: ID!): Country
 
   """Package version"""
-  version: String
+  version: String!
 }
