@@ -4,6 +4,7 @@ export default {
   __schema: {
     queryType: {
       name: 'Query',
+      kind: 'OBJECT',
     },
     mutationType: null,
     subscriptionType: null,
