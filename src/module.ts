@@ -19,7 +19,7 @@ export type ModuleSSRParams = Pick<SSRExchangeParams, 'staleWhileRevalidate' | '
   /**
    * payload key for SSR data transmission
    */
-  key: string
+  key?: string
 
   /**
    * server side graphql endpoint URL, defaults to module endpoint
@@ -65,7 +65,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     endpoint: '',
     client: 'urql.config',
-    ssr: { key: '__URQL_DATA__' },
+    ssr: {},
   },
   async setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)

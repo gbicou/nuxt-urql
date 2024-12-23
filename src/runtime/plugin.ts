@@ -13,7 +13,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
   })
 
   // ssr data in nuxt state
-  const ssrData = useState<SSRData>(ssrParams.key)
+  const ssrData = useState<SSRData>(ssrParams.key ?? '__URQL_DATA__')
 
   // when app is created in browser, restore SSR state from nuxt payload
   if (import.meta.client) {
