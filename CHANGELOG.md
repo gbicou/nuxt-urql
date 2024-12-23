@@ -1,5 +1,11 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## 1.9.1
+
+### Patch Changes
+
+- [`458cd72`](https://github.com/gbicou/nuxt-urql/commit/458cd728adde7dbaed93459a78a427f39be58b86) Thanks [@gbicou](https://github.com/gbicou)! - make ssr key optional
+
 ## 1.9.0
 
 ### Minor Changes
