@@ -35,11 +35,11 @@
     "release": "changeset publish"
   },
   "dependencies": {
-    "@nuxt/kit": "3.14.1592",
-    "@urql/core": "5.1.0",
-    "@urql/vue": "1.4.2"
+    "@urql/core": "^5.1.0",
+    "@urql/vue": "^1.4.2"
   },
   "devDependencies": {
+    "@nuxt/kit": "3.14.1592",
     "@bicou/countries-server-schema": "1.6.0",
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.10",
@@ -56,9 +56,9 @@
     "vitest": "2.1.8"
   },
   "peerDependencies": {
-    "defu": "6.1.4",
-    "graphql": "16.10.0",
-    "vue": "3.5.13"
+    "defu": "^6.1.4",
+    "graphql": "^16.10.0",
+    "vue": "^3.5.13"
   },
   "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf",
   "publishConfig": {
