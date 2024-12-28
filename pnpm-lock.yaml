@@ -19,8 +19,8 @@ importers:
         version: 3.5.13(typescript@5.6.3)
     devDependencies:
       '@bicou/countries-server-schema':
-        specifier: 1.6.0
-        version: 1.6.0(graphql@16.10.0)
+        specifier: 1.7.0
+        version: 1.7.0(graphql@16.10.0)
       '@changesets/changelog-github':
         specifier: 0.5.0
         version: 0.5.0(encoding@0.1.13)
@@ -492,13 +492,13 @@ packages:
     resolution: {integrity: sha512-vN5p+1kl59GVKMvTHt55NzzmYVxprfJD+ql7U9NFIfKCBkYE55LYtS+WtPlaYOyzydrKI8Nezd+aZextrd+FMA==}
     engines: {node: '>=6.9.0'}
 
-  '@bicou/countries-server-data@1.5.0':
-    resolution: {integrity: sha512-0R87mID58vVLz0KVYxdkhl7PBA0f37gpf+OeWHPCaKpKCHzp8mzitVaU0S6hVQEUnGdAdjdC8moYn61GK2envQ==}
+  '@bicou/countries-server-data@1.6.0':
+    resolution: {integrity: sha512-aAzHP9GHFjC1/MlUUx3iFx3oPRixkvcD422CJkb0FQHKwhfr77uF1Tjj2qvsoDyDpMBQY0hXLfLgZRIR3G1rmQ==}
 
-  '@bicou/countries-server-schema@1.6.0':
-    resolution: {integrity: sha512-G896uU3so4kNQqvWtuo5QQJ1dvoHGG/TFPyals9C2cKbiAfFRbA5aOWaUGrOZJc8/lNOBPGVmk94QdWuGIzjhg==}
+  '@bicou/countries-server-schema@1.7.0':
+    resolution: {integrity: sha512-fNPVf+IhTO4x0w2B2zYHsXMyvk2Ok7bF+Hadpp01J+2/0Ju3/zTtypkd0YE0i1gb7oodvu2rGVCdUg547VYpHA==}
     peerDependencies:
-      graphql: 16.9.0
+      graphql: 16.10.0
 
   '@changesets/apply-release-plan@7.0.7':
     resolution: {integrity: sha512-qnPOcmmmnD0MfMg9DjU1/onORFyRpDXkMMl2IJg9mECY6RnxL3wN0TCCc92b2sXt1jt8DgjAUUsZYGUGTdYIXA==}
@@ -7042,11 +7042,11 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@bicou/countries-server-data@1.5.0': {}
+  '@bicou/countries-server-data@1.6.0': {}
 
-  '@bicou/countries-server-schema@1.6.0(graphql@16.10.0)':
+  '@bicou/countries-server-schema@1.7.0(graphql@16.10.0)':
     dependencies:
-      '@bicou/countries-server-data': 1.5.0
+      '@bicou/countries-server-data': 1.6.0
       '@pothos/core': 4.3.0(graphql@16.10.0)
       graphql: 16.10.0
 
