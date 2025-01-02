@@ -1,0 +1,29 @@
+name: Generate changeset for Renovate
+
+on:
+  merge_group:
+  pull_request_target:
+    paths:
+      - '.github/workflows/changesets-renovate.yml'
+      - '**/pnpm-lock.yaml'
+      - '**/package.json'
+
+jobs:
+  generate-changeset:
+    runs-on: ubuntu-latest
+    if: github.actor == 'renovate[bot]' && github.repository == 'gbicou/nuxt-urql'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          ref: ${{ github.head_ref }}
+
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Run changesets-renovate
+        run: pnpm dlx @scaleway/changesets-renovate
