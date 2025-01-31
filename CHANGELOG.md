@@ -1,5 +1,23 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## 1.9.4
+
+### Patch Changes
+
+- [#272](https://github.com/gbicou/nuxt-urql/pull/272) [`bc99bd2`](https://github.com/gbicou/nuxt-urql/commit/bc99bd27a5f57d831846e70275598318bc1ed481) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitest` to `3.0.4`.
+
+- [#275](https://github.com/gbicou/nuxt-urql/pull/275) [`748597d`](https://github.com/gbicou/nuxt-urql/commit/748597dd85585bd49f132b48c1e619246bef8928) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@changesets/cli` to `2.27.12`.
+
+- [#273](https://github.com/gbicou/nuxt-urql/pull/273) [`2323ce8`](https://github.com/gbicou/nuxt-urql/commit/2323ce81b684b632f5b0cd44bdb812300bb10664) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@types/node` to `22.10.10`.
+
+- [#276](https://github.com/gbicou/nuxt-urql/pull/276) [`37e8d8f`](https://github.com/gbicou/nuxt-urql/commit/37e8d8f4a5828b3c2fd26d586bfd016a01166781) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@nuxt/kit` to `3.15.3`.
+  Updated dependency `@nuxt/schema` to `3.15.3`.
+  Updated dependency `nuxt` to `3.15.3`.
+
+- [#268](https://github.com/gbicou/nuxt-urql/pull/268) [`1ba507e`](https://github.com/gbicou/nuxt-urql/commit/1ba507efa8dff884c833440b768442054938eff2) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitest` to `3.0.3`.
+
+- [#271](https://github.com/gbicou/nuxt-urql/pull/271) [`e754117`](https://github.com/gbicou/nuxt-urql/commit/e754117fa2c67466557144b24bcedad30d3305b0) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@types/node` to `22.10.8`.
+
 ## 1.9.3
 
 ### Patch Changes
