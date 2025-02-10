@@ -1,0 +1,5 @@
+---
+'@bicou/nuxt-urql': patch
+---
+
+Updated dependency `packageManager` to `pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001`.
