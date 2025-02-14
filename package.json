@@ -39,10 +39,10 @@
     "@urql/vue": "^1.4.2"
   },
   "devDependencies": {
-    "@nuxt/kit": "3.15.4",
     "@bicou/countries-server-schema": "1.7.0",
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.12",
+    "@nuxt/kit": "3.15.4",
     "@nuxt/module-builder": "0.8.4",
     "@nuxt/schema": "3.15.4",
     "@nuxt/test-utils": "3.15.4",
@@ -63,5 +63,12 @@
   "packageManager": "pnpm@10.4.0+sha512.6b849d0787d97f8f4e1f03a9b8ff8f038e79e153d6f11ae539ae7c435ff9e796df6a862c991502695c7f9e8fac8aeafc1ac5a8dab47e36148d183832d886dd52",
   "publishConfig": {
     "access": "public"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "vue-demi"
+    ]
   }
 }
