@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@bicou/countries-server-schema": "1.7.0",
-    "@changesets/changelog-github": "0.5.0",
+    "@changesets/changelog-github": "0.5.1",
     "@changesets/cli": "2.27.12",
     "@nuxt/kit": "3.15.4",
     "@nuxt/module-builder": "0.8.4",
