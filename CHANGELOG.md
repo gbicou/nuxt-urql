@@ -1,5 +1,21 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## 1.9.5
+
+### Patch Changes
+
+- [#306](https://github.com/gbicou/nuxt-urql/pull/306) [`5409d2f`](https://github.com/gbicou/nuxt-urql/commit/5409d2fd9ad47bd4748f1a5cf4ed01597d8d5c5b) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitest` to `3.0.6`.
+
+- [#304](https://github.com/gbicou/nuxt-urql/pull/304) [`a86087a`](https://github.com/gbicou/nuxt-urql/commit/a86087acd73c3814ab11166f8d0b4b4f595e2252) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@changesets/cli` to `2.28.0`.
+
+- [#318](https://github.com/gbicou/nuxt-urql/pull/318) [`cea77ec`](https://github.com/gbicou/nuxt-urql/commit/cea77ecfbab5d5a29c8d4a5912b1af05517b1548) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.5.0+sha512.11106a5916c7406fe4b8cb8e3067974b8728f47308a4f5ac5e850304afa6f57e2847d7950dfe78877d8d36bfb401d381c4215db3a4c3547ffa63c14333a6fa51`.
+
+- [#300](https://github.com/gbicou/nuxt-urql/pull/300) [`ad6eb25`](https://github.com/gbicou/nuxt-urql/commit/ad6eb257dae2833cb2a99e22d1396bc139d54a00) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `packageManager` to `pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af`.
+
+- [#310](https://github.com/gbicou/nuxt-urql/pull/310) [`8f8908a`](https://github.com/gbicou/nuxt-urql/commit/8f8908a263f721b031b305b7a7f104f8bb891863) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@nuxt/test-utils` to `3.16.0`.
+
+- [#303](https://github.com/gbicou/nuxt-urql/pull/303) [`a850544`](https://github.com/gbicou/nuxt-urql/commit/a85054443ba2d65e39a2e9d8e40d60c172270d0d) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@changesets/changelog-github` to `0.5.1`.
+
 ## 1.9.4
 
 ### Patch Changes
