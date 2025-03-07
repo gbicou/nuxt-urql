@@ -1,0 +1,20 @@
+name: setup-node-pnpm
+
+description: Setup node and pnpm
+runs:
+  using: "composite"
+  steps:
+    - name: Install pnpm package manager
+      uses: pnpm/action-setup@v4
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: ".nvmrc"
+        cache: "pnpm"
+        scope: "@bicou"
+        registry-url: "https://registry.npmjs.org/"
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "953758cd548a5c906035ef0f45eed23bdb74151e",
+  "always-update": true,
+  "plugins": ["node-workspace"],
+  "packages": {
+    ".": {
+      "exclude-paths": [
+        "docs",
+        "playground"
+      ]
+    },
+    "docs": {
+    },
+    "playground": {
+    }
+  }
+}
