@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@urql/core':
         specifier: ^5.1.0
-        version: 5.1.0(graphql@16.10.0)
+        version: 5.1.1(graphql@16.10.0)
       '@urql/vue':
         specifier: ^1.4.2
-        version: 1.4.2(@urql/core@5.1.0(graphql@16.10.0))(vue@3.5.13(typescript@5.6.3))
+        version: 1.4.2(@urql/core@5.1.1(graphql@16.10.0))(vue@3.5.13(typescript@5.6.3))
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.6.3)
@@ -38,7 +38,7 @@ importers:
         version: 22.13.4
       '@urql/exchange-execute':
         specifier: 2.3.0
-        version: 2.3.0(@urql/core@5.1.0(graphql@16.10.0))(graphql@16.10.0)
+        version: 2.3.0(@urql/core@5.1.1(graphql@16.10.0))(graphql@16.10.0)
       defu:
         specifier: 6.1.4
         version: 6.1.4
@@ -80,7 +80,7 @@ importers:
         version: link:..
       '@urql/exchange-graphcache':
         specifier: 7.2.2
-        version: 7.2.2(@urql/core@5.1.0(graphql@16.10.0))(graphql@16.10.0)
+        version: 7.2.2(@urql/core@5.1.1(graphql@16.10.0))(graphql@16.10.0)
       graphql:
         specifier: 16.10.0
         version: 16.10.0
@@ -108,7 +108,7 @@ importers:
         version: 4.0.0(graphql-tag@2.12.6(graphql@16.10.0))(graphql@16.10.0)
       '@graphql-codegen/typescript-urql-graphcache':
         specifier: 3.1.0
-        version: 3.1.0(@urql/exchange-graphcache@7.2.2(@urql/core@5.1.0(graphql@16.10.0))(graphql@16.10.0))(graphql-tag@2.12.6(graphql@16.10.0))(graphql@16.10.0)
+        version: 3.1.0(@urql/exchange-graphcache@7.2.2(@urql/core@5.1.1(graphql@16.10.0))(graphql@16.10.0))(graphql-tag@2.12.6(graphql@16.10.0))(graphql@16.10.0)
       '@graphql-codegen/urql-introspection':
         specifier: 3.0.0
         version: 3.0.0(graphql@16.10.0)
@@ -156,6 +156,14 @@ packages:
 
   '@0no-co/graphql.web@1.1.1':
     resolution: {integrity: sha512-F2i3xdycesw78QCOBHmpTn7eaD2iNXGwB2gkfwxcOfBbeauYpr8RBSyJOkDrFtKtVRMclg8Sg3n1ip0ACyUuag==}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+    peerDependenciesMeta:
+      graphql:
+        optional: true
+
+  '@0no-co/graphql.web@1.1.2':
+    resolution: {integrity: sha512-N2NGsU5FLBhT8NZ+3l2YrzZSHITjNXNuDhC4iDiikv0IujaJ0Xc6xIxQZ/Ek3Cb+rgPjnLHYyJm11tInuJn+cw==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     peerDependenciesMeta:
@@ -2226,8 +2234,8 @@ packages:
   '@unocss/reset@0.50.8':
     resolution: {integrity: sha512-2WoM6O9VyuHDPAnvCXr7LBJQ8ZRHDnuQAFsL1dWXp561Iq2l9whdNtPuMcozLGJGUUrFfVBXIrHY4sfxxScgWg==}
 
-  '@urql/core@5.1.0':
-    resolution: {integrity: sha512-yC3sw8yqjbX45GbXxfiBY8GLYCiyW/hLBbQF9l3TJrv4ro00Y0ChkKaD9I2KntRxAVm9IYBqh0awX8fwWAe/Yw==}
+  '@urql/core@5.1.1':
+    resolution: {integrity: sha512-aGh024z5v2oINGD/In6rAtVKTm4VmQ2TxKQBAtk2ZSME5dunZFcjltw4p5ENQg+5CBhZ3FHMzl0Oa+rwqiWqlg==}
 
   '@urql/exchange-execute@2.3.0':
     resolution: {integrity: sha512-IbuRYd0wd3cKq5rLC8rUPtESaF+lgxE0hrbfjGDkH3M3hQtzhpLHg9dzzlU4bs2r0MDkZ8l5BmmA5+0ZC2H2XQ==}
@@ -6602,6 +6610,9 @@ packages:
   wonka@6.3.4:
     resolution: {integrity: sha512-CjpbqNtBGNAeyNS/9W6q3kSkKE52+FjIj7AkFlLr11s/VWGUu6a2CdYSdGxocIhIVjaW/zchesBQUKPVU69Cqg==}
 
+  wonka@6.3.5:
+    resolution: {integrity: sha512-SSil+ecw6B4/Dm7Pf2sAshKQ5hWFvfyGlfPbEd6A14dOH6VDjrmbY86u6nZvy9omGwwIPFR8V41+of1EezgoUw==}
+
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
@@ -6723,6 +6734,10 @@ packages:
 snapshots:
 
   '@0no-co/graphql.web@1.1.1(graphql@16.10.0)':
+    optionalDependencies:
+      graphql: 16.10.0
+
+  '@0no-co/graphql.web@1.1.2(graphql@16.10.0)':
     optionalDependencies:
       graphql: 16.10.0
 
@@ -7736,11 +7751,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@graphql-codegen/typescript-urql-graphcache@3.1.0(@urql/exchange-graphcache@7.2.2(@urql/core@5.1.0(graphql@16.10.0))(graphql@16.10.0))(graphql-tag@2.12.6(graphql@16.10.0))(graphql@16.10.0)':
+  '@graphql-codegen/typescript-urql-graphcache@3.1.0(@urql/exchange-graphcache@7.2.2(@urql/core@5.1.1(graphql@16.10.0))(graphql@16.10.0))(graphql-tag@2.12.6(graphql@16.10.0))(graphql@16.10.0)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 3.1.2(graphql@16.10.0)
       '@graphql-codegen/visitor-plugin-common': 2.13.1(graphql@16.10.0)
-      '@urql/exchange-graphcache': 7.2.2(@urql/core@5.1.0(graphql@16.10.0))(graphql@16.10.0)
+      '@urql/exchange-graphcache': 7.2.2(@urql/core@5.1.1(graphql@16.10.0))(graphql@16.10.0)
       auto-bind: 4.0.0
       change-case-all: 1.0.15
       graphql: 16.10.0
@@ -9444,23 +9459,23 @@ snapshots:
 
   '@unocss/reset@0.50.8': {}
 
-  '@urql/core@5.1.0(graphql@16.10.0)':
+  '@urql/core@5.1.1(graphql@16.10.0)':
     dependencies:
-      '@0no-co/graphql.web': 1.1.1(graphql@16.10.0)
-      wonka: 6.3.4
+      '@0no-co/graphql.web': 1.1.2(graphql@16.10.0)
+      wonka: 6.3.5
     transitivePeerDependencies:
       - graphql
 
-  '@urql/exchange-execute@2.3.0(@urql/core@5.1.0(graphql@16.10.0))(graphql@16.10.0)':
+  '@urql/exchange-execute@2.3.0(@urql/core@5.1.1(graphql@16.10.0))(graphql@16.10.0)':
     dependencies:
-      '@urql/core': 5.1.0(graphql@16.10.0)
+      '@urql/core': 5.1.1(graphql@16.10.0)
       graphql: 16.10.0
       wonka: 6.3.4
 
-  '@urql/exchange-graphcache@7.2.2(@urql/core@5.1.0(graphql@16.10.0))(graphql@16.10.0)':
+  '@urql/exchange-graphcache@7.2.2(@urql/core@5.1.1(graphql@16.10.0))(graphql@16.10.0)':
     dependencies:
       '@0no-co/graphql.web': 1.1.1(graphql@16.10.0)
-      '@urql/core': 5.1.0(graphql@16.10.0)
+      '@urql/core': 5.1.1(graphql@16.10.0)
       wonka: 6.3.4
     transitivePeerDependencies:
       - graphql
@@ -9469,9 +9484,9 @@ snapshots:
     dependencies:
       graphql: 16.10.0
 
-  '@urql/vue@1.4.2(@urql/core@5.1.0(graphql@16.10.0))(vue@3.5.13(typescript@5.6.3))':
+  '@urql/vue@1.4.2(@urql/core@5.1.1(graphql@16.10.0))(vue@3.5.13(typescript@5.6.3))':
     dependencies:
-      '@urql/core': 5.1.0(graphql@16.10.0)
+      '@urql/core': 5.1.1(graphql@16.10.0)
       vue: 3.5.13(typescript@5.6.3)
       wonka: 6.3.4
 
@@ -15022,6 +15037,8 @@ snapshots:
       stackback: 0.0.2
 
   wonka@6.3.4: {}
+
+  wonka@6.3.5: {}
 
   word-wrap@1.2.5: {}
 
