@@ -1,4 +1,21 @@
-# @bicou/nuxt-urql-module-playground
+# Changelog
+
+## [0.0.2](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-module-playground-v0.0.1...nuxt-urql-module-playground-v0.0.2) (2025-03-22)
+
+
+### Bug Fixes
+
+* **playground:** Use picocss use syntax ([5e411eb](https://github.com/gbicou/nuxt-urql/commit/5e411eb543c0fea722e77bcb9355a804c065ed6f))
+* publish ([e9b9db9](https://github.com/gbicou/nuxt-urql/commit/e9b9db92dc957621c04cab2b0a9437a2ef4362b0))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/nuxt-urql bumped to 1.10.0
+
+## @bicou/nuxt-urql-module-playground
 
 ## null
 
