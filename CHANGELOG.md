@@ -1,5 +1,12 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## [1.10.0](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.9.4...nuxt-urql-v1.10.0) (2025-03-22)
+
+
+### Features
+
+* Upgrade module builder and typescript ([9b93bcf](https://github.com/gbicou/nuxt-urql/commit/9b93bcf4dae6ed970e3374f1de904b7365b74e4f))
+
 ## 1.9.4
 
 ### Patch Changes
