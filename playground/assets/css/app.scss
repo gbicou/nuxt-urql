@@ -1,13 +1,13 @@
+@use "@picocss/pico/scss/pico" with (
+  // Set the root element
+  $semantic-root-element: "#__nuxt",
+
+  // Enable <header>, <main>, <footer> inside $semantic-root-element as containers
+  $enable-semantic-container: true,
+
+  $enable-responsive-spacings: false,
+);
+
 body {
   margin: 0;
 }
-
-// Set the root element
-$semantic-root-element: "#__nuxt";
-
-// Enable <header>, <main>, <footer> inside $semantic-root-element as containers
-$enable-semantic-container: true;
-
-$enable-responsive-spacings: false;
-
-@import "@picocss/pico/scss/pico";
