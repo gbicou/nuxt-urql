@@ -25,7 +25,7 @@
     "@graphql-typed-document-node/core": "3.2.0",
     "@nuxt/eslint": "1.2.0",
     "@picocss/pico": "2.1.1",
-    "@types/node": "22.13.13",
+    "@types/node": "22.13.14",
     "dotenv": "16.4.7",
     "eslint": "9.23.0",
     "graphql-config": "5.1.3",
