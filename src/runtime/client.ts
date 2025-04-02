@@ -8,10 +8,28 @@ import { useRuntimeConfig } from '#app'
 export type UrqlClientOptions = Omit<ClientOptions, 'url'>
 
 /**
+ * client options return value
+ */
+export type UrqlClientOptionsReturned = PromiseLike<UrqlClientOptions> | UrqlClientOptions
+
+/**
+ * client options for multiple clients
+ */
+export type UrqlMultipleClientOptions = {
+  default: ClientOptions
+  [key: string]: ClientOptions
+}
+
+/**
+ * client options in multiple clients scenario
+ */
+export type UrqlMultipleClientOptionsReturned = PromiseLike<UrqlMultipleClientOptions> | UrqlMultipleClientOptions
+
+/**
  * helper to build client options from configured ssr
  * @param ssr - exchange configured to work with nuxt payload
  */
-export type UrqlClientBuild = (ssr: SSRExchange) => PromiseLike<UrqlClientOptions> | UrqlClientOptions
+export type UrqlClientBuild = (ssr: SSRExchange) => UrqlClientOptionsReturned | UrqlMultipleClientOptionsReturned
 
 /**
  * helper to define client options

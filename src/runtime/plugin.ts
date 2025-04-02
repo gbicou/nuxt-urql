@@ -1,5 +1,6 @@
 import { type Client, createClient, type SSRData, ssrExchange } from '@urql/core'
 import { ref } from 'vue'
+import type { UrqlClientOptions, UrqlMultipleClientOptions } from '#urql/client'
 import { defineNuxtPlugin, useRuntimeConfig, useState } from '#app'
 import NuxtUrqlClient from '#urql-client'
 
@@ -32,18 +33,44 @@ export default defineNuxtPlugin(async (nuxtApp) => {
   // retrieve user client options to create client
   const options = await NuxtUrqlClient(ssr)
 
-  // create urql client
-  const client: Client = createClient({
-    url: (import.meta.server && ssrParams.endpoint) || endpoint,
-    ...options,
+  const defaultUrl = (import.meta.server && ssrParams.endpoint) || endpoint
+  const clientOptions = prepareOptions(defaultUrl, options)
+
+  const clients: Record<string, Client> = {}
+  Object.entries(clientOptions).forEach(([key, value]) => {
+    clients[key] = createClient(value)
   })
 
   // provide client to @urql/vue
-  nuxtApp.vueApp.provide('$urql', ref(client))
+  const defaultClient = ref(clients.default)
+  nuxtApp.vueApp.provide('$urql', defaultClient)
+  // nuxtApp.vueApp.provide('$urqlClients', { default: defaultClient })
 
   return {
     provide: {
-      urql: client,
+      urql: clients.default,
+      urqlClients: clients,
     },
   }
 })
+
+function prepareOptions(url: string, options: UrqlClientOptions | UrqlMultipleClientOptions): UrqlMultipleClientOptions {
+  if (!Object.keys(options).includes('default')) {
+    // single client
+    return {
+      default: {
+        url,
+        ...options as UrqlClientOptions,
+      },
+    }
+  }
+  // multiple clients
+  const multipleClientOptions = options as UrqlMultipleClientOptions
+  return {
+    ...multipleClientOptions,
+    default: {
+      ...multipleClientOptions.default,
+      url,
+    },
+  }
+}
