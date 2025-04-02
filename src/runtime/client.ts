@@ -1,4 +1,4 @@
-import { cacheExchange, fetchExchange, type ClientOptions, type SSRExchange } from '@urql/core'
+import { cacheExchange, type ClientOptions, fetchExchange, type SSRExchange } from '@urql/core'
 import { useRuntimeConfig } from '#app'
 
 /**
@@ -15,28 +15,27 @@ export type UrqlClientOptionsReturned = PromiseLike<UrqlClientOptions> | UrqlCli
 /**
  * client options for multiple clients
  */
-export type UrqlMultipleClientOptions = {
-  default: ClientOptions
-  [key: string]: ClientOptions
+export type UrqlMultipleClientOptions<T extends object> = { default: UrqlClientOptions } & {
+  [K in keyof T]: K extends 'default' ? UrqlClientOptions : ClientOptions
 }
 
 /**
  * client options in multiple clients scenario
  */
-export type UrqlMultipleClientOptionsReturned = PromiseLike<UrqlMultipleClientOptions> | UrqlMultipleClientOptions
+export type UrqlMultipleClientOptionsReturned<T extends UrqlMultipleClientOptions<T>> = PromiseLike<T> | T
 
 /**
  * helper to build client options from configured ssr
  * @param ssr - exchange configured to work with nuxt payload
  */
-export type UrqlClientBuild = (ssr: SSRExchange) => UrqlClientOptionsReturned | UrqlMultipleClientOptionsReturned
+export type UrqlClientBuild<T extends UrqlMultipleClientOptions<T>> = (ssr: SSRExchange) => UrqlClientOptionsReturned | UrqlMultipleClientOptionsReturned<T>
 
 /**
  * helper to define client options
  * @param f - client build options
  * @returns client options
  */
-export const defineUrqlClient = (f: UrqlClientBuild) => f
+export const defineUrqlClient = <T extends UrqlMultipleClientOptions<T>>(f: UrqlClientBuild<T>) => f
 
 /**
  * default client options and exchanges
