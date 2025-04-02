@@ -1,5 +1,12 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## [1.11.0](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.10.0...nuxt-urql-v1.11.0) (2025-04-02)
+
+
+### Features
+
+* Multiple clients ([#355](https://github.com/gbicou/nuxt-urql/issues/355)) ([1d7c7fd](https://github.com/gbicou/nuxt-urql/commit/1d7c7fd3bea22781c5a2d416e3e0736f2860cb90))
+
 ## [1.10.0](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.9.4...nuxt-urql-v1.10.0) (2025-03-22)
 
 
