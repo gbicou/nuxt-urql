@@ -1,7 +1,7 @@
 {
   "name": "@bicou/nuxt-urql-docs",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "prepare": "nuxi prepare",

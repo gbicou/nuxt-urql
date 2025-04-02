@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.3](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-module-playground-v0.0.2...nuxt-urql-module-playground-v0.0.3) (2025-04-02)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/nuxt-urql bumped to 1.11.0
+
 ## [0.0.2](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-module-playground-v0.0.1...nuxt-urql-module-playground-v0.0.2) (2025-03-22)
 
 
