@@ -58,8 +58,8 @@ function prepareOptions<T extends UrqlMultipleClientOptions<T>>(url: string, opt
     // single client
     return {
       default: {
-        ...options as UrqlClientOptions,
         url,
+        ...options as UrqlClientOptions,
       },
     }
   }
@@ -68,8 +68,8 @@ function prepareOptions<T extends UrqlMultipleClientOptions<T>>(url: string, opt
   return {
     ...multipleClientOptions,
     default: {
-      ...multipleClientOptions.default,
       url,
+      ...multipleClientOptions.default,
     },
   }
 }
