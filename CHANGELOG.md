@@ -1,5 +1,12 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## [1.11.1](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.11.0...nuxt-urql-v1.11.1) (2025-04-08)
+
+
+### Bug Fixes
+
+* Override url from options ([#366](https://github.com/gbicou/nuxt-urql/issues/366)) ([8acfb8e](https://github.com/gbicou/nuxt-urql/commit/8acfb8e8980523885b7aef087e4de7bbfc69384d))
+
 ## [1.11.0](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.10.0...nuxt-urql-v1.11.0) (2025-04-02)
 
 
