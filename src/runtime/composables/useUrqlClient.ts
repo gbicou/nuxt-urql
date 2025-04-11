@@ -3,7 +3,7 @@ import { useNuxtApp } from '#imports'
 
 export const useUrqlClient = (clientName?: string) => {
   const nuxtApp = useNuxtApp()
-  
+
   if (!clientName) {
     return nuxtApp.$urql as Client
   }
