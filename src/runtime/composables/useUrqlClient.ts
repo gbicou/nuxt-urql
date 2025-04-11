@@ -2,11 +2,13 @@ import type { Client } from '@urql/core'
 import { useNuxtApp } from '#imports'
 
 export const useUrqlClient = (clientName?: string) => {
+  const nuxtApp = useNuxtApp()
+  
   if (!clientName) {
-    return useNuxtApp().$urql as Client
+    return nuxtApp.$urql as Client
   }
-  if (Object.keys(useNuxtApp().$urqlClients).includes(clientName)) {
-    return useNuxtApp().$urqlClients[clientName] as Client
+  if (Object.keys(nuxtApp.$urqlClients).includes(clientName)) {
+    return nuxtApp.$urqlClients[clientName] as Client
   }
   throw createError(`useUrqlClient: clientName "${clientName}" not found.`)
 }
