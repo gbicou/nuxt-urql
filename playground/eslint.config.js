@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import graphql from '@graphql-eslint/eslint-plugin'
 import withNuxt from './.nuxt/eslint.config.mjs'
 
@@ -9,6 +10,12 @@ export default withNuxt(
     files: ['**/*.graphql'],
     languageOptions: {
       parser: graphql.parser,
+      parserOptions: {
+        graphQLConfig: {
+          schema: resolve(import.meta.dirname, './gql/schema.graphql'),
+          documents: resolve(import.meta.dirname, './gql/queries/*.graphql'),
+        },
+      },
     },
     plugins: {
       '@graphql-eslint': graphql,
