@@ -134,8 +134,8 @@ importers:
         specifier: 9.25.1
         version: 9.25.1(jiti@2.4.2)
       graphql-config:
-        specifier: 5.1.4
-        version: 5.1.4(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3)
+        specifier: 5.1.5
+        version: 5.1.5(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3)
       nuxt:
         specifier: 3.17.1
         version: 3.17.1(@netlify/blobs@8.2.0)(@parcel/watcher@2.5.1)(@types/node@22.15.3)(db0@0.3.2)(eslint@9.25.1(jiti@2.4.2))(ioredis@5.6.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.1)(sass@1.87.0)(terser@5.39.0)(typescript@5.8.3)(vite@6.3.3(@types/node@22.15.3)(jiti@2.4.2)(sass@1.87.0)(terser@5.39.0)(yaml@2.7.1))(yaml@2.7.1)
@@ -3233,15 +3233,6 @@ packages:
       typescript:
         optional: true
 
-  cosmiconfig@9.0.0:
-    resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      typescript: '>=4.9.5'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   cp-file@10.0.0:
     resolution: {integrity: sha512-vy2Vi1r2epK5WqxOLnskeKeZkdZvTKfFZQCplE3XWsP+SUJyd5XAUFC9lFgTjjXJF2GMne/UML14iEmkAaDfFg==}
     engines: {node: '>=14.16'}
@@ -3620,10 +3611,6 @@ packages:
   entities@6.0.0:
     resolution: {integrity: sha512-aKstq2TDOndCn4diEyp9Uq/Flu2i1GlLkc6XIDQSDMuaFE3OPW5OphLCyQ5SpSJZTb4reN+kTcYru5yIfXoRPw==}
     engines: {node: '>=0.12'}
-
-  env-paths@2.2.1:
-    resolution: {integrity: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==}
-    engines: {node: '>=6'}
 
   env-paths@3.0.0:
     resolution: {integrity: sha512-dtJUTepzMW3Lm/NPxRf3wP4642UWhjL2sQxc+ym2YMj1m/H2zDNQOlezafzkHwn6sMstjHTwG6iQQsctDW/b1A==}
@@ -4135,8 +4122,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  graphql-config@5.1.4:
-    resolution: {integrity: sha512-ObdBeL3ycddHrNbFvhGZ12pK8jUzWvvyN2A+6ij3XrtLH/KrkXt+BboEAEgXmeUrTcD5RjJnz8IZu3Cgc/oX/w==}
+  graphql-config@5.1.5:
+    resolution: {integrity: sha512-mG2LL1HccpU8qg5ajLROgdsBzx/o2M6kgI3uAmoaXiSH9PCUbtIyLomLqUtCFaAeG2YCFsl0M5cfQ9rKmDoMVA==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       cosmiconfig-toml-loader: ^1.0.0
@@ -8100,7 +8087,7 @@ snapshots:
       debounce: 1.2.1
       detect-indent: 6.1.0
       graphql: 16.11.0
-      graphql-config: 5.1.4(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3)
+      graphql-config: 5.1.5(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3)
       inquirer: 8.2.6
       is-glob: 4.0.3
       jiti: 1.21.7
@@ -8327,7 +8314,7 @@ snapshots:
       eslint: 9.25.1(jiti@2.4.2)
       fast-glob: 3.3.3
       graphql: 16.11.0
-      graphql-config: 5.1.4(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3)
+      graphql-config: 5.1.5(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3)
       graphql-depth-limit: 1.1.0(graphql@16.11.0)
       lodash.lowercase: 4.3.0
     transitivePeerDependencies:
@@ -11010,15 +10997,6 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
 
-  cosmiconfig@9.0.0(typescript@5.8.3):
-    dependencies:
-      env-paths: 2.2.1
-      import-fresh: 3.3.1
-      js-yaml: 4.1.0
-      parse-json: 5.2.0
-    optionalDependencies:
-      typescript: 5.8.3
-
   cp-file@10.0.0:
     dependencies:
       graceful-fs: 4.2.11
@@ -11365,8 +11343,6 @@ snapshots:
   entities@4.5.0: {}
 
   entities@6.0.0: {}
-
-  env-paths@2.2.1: {}
 
   env-paths@3.0.0: {}
 
@@ -12071,7 +12047,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql-config@5.1.4(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3):
+  graphql-config@5.1.5(@types/node@22.15.3)(graphql@16.11.0)(typescript@5.8.3):
     dependencies:
       '@graphql-tools/graphql-file-loader': 8.0.19(graphql@16.11.0)
       '@graphql-tools/json-file-loader': 8.0.18(graphql@16.11.0)
@@ -12079,10 +12055,10 @@ snapshots:
       '@graphql-tools/merge': 9.0.24(graphql@16.11.0)
       '@graphql-tools/url-loader': 8.0.31(@types/node@22.15.3)(graphql@16.11.0)
       '@graphql-tools/utils': 10.8.6(graphql@16.11.0)
-      cosmiconfig: 9.0.0(typescript@5.8.3)
+      cosmiconfig: 8.3.6(typescript@5.8.3)
       graphql: 16.11.0
       jiti: 2.4.2
-      minimatch: 10.0.1
+      minimatch: 9.0.5
       string-env-interpolation: 1.0.1
       tslib: 2.8.1
     transitivePeerDependencies:

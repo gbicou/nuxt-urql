@@ -28,7 +28,7 @@
     "@types/node": "22.15.3",
     "dotenv": "16.5.0",
     "eslint": "9.25.1",
-    "graphql-config": "5.1.4",
+    "graphql-config": "5.1.5",
     "nuxt": "3.17.1",
     "sass": "1.87.0",
     "ts-node": "10.9.2",
