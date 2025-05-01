@@ -37,7 +37,7 @@
     "@urql/vue": "^1.4.3"
   },
   "devDependencies": {
-    "@bicou/countries-server-schema": "1.7.0",
+    "@bicou/countries-server-schema": "1.7.1",
     "@nuxt/kit": "3.17.1",
     "@nuxt/module-builder": "1.0.1",
     "@nuxt/schema": "3.17.1",
