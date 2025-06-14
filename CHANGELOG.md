@@ -1,5 +1,12 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## [1.11.2](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.11.1...nuxt-urql-v1.11.2) (2025-06-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql to v16.11.0 ([#383](https://github.com/gbicou/nuxt-urql/issues/383)) ([218ff68](https://github.com/gbicou/nuxt-urql/commit/218ff68c73c3f88f8b06cf3923847b40d2e067b0))
+
 ## [1.11.1](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.11.0...nuxt-urql-v1.11.1) (2025-04-08)
 
 
