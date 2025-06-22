@@ -89,8 +89,8 @@ importers:
         specifier: 5.0.7
         version: 5.0.7(@parcel/watcher@2.5.1)(@types/node@22.15.32)(crossws@0.3.5)(graphql@16.11.0)(typescript@5.8.3)
       '@graphql-codegen/near-operation-file-preset':
-        specifier: 3.0.1
-        version: 3.0.1(graphql@16.11.0)
+        specifier: 3.1.0
+        version: 3.1.0(graphql@16.11.0)
       '@graphql-codegen/schema-ast':
         specifier: 4.1.0
         version: 4.1.0(graphql@16.11.0)
@@ -1079,8 +1079,8 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  '@graphql-codegen/near-operation-file-preset@3.0.1':
-    resolution: {integrity: sha512-78eINBoKLUQlQh49R+D7RaYNyGv0fQWaLkY2PXMM4ShJqcFLxrgA68MTYX5Q4ceK/m4TDIqD6kbD62EkAGEBFQ==}
+  '@graphql-codegen/near-operation-file-preset@3.1.0':
+    resolution: {integrity: sha512-sXIIi0BPP3IcARdzSztpE51oJTcGB67hi7ddBYfLinks/R/5aFG1Ry/J61707Kt+6Q5WhTnf5XAQUAqi6200yA==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -7948,7 +7948,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@graphql-codegen/near-operation-file-preset@3.0.1(graphql@16.11.0)':
+  '@graphql-codegen/near-operation-file-preset@3.1.0(graphql@16.11.0)':
     dependencies:
       '@graphql-codegen/add': 3.2.3(graphql@16.11.0)
       '@graphql-codegen/plugin-helpers': 3.1.2(graphql@16.11.0)
@@ -8303,7 +8303,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.11.0)':
     dependencies:
       graphql: 16.11.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/prisma-loader@8.0.17(@types/node@22.15.32)(crossws@0.3.5)(graphql@16.11.0)':
     dependencies:
@@ -8349,7 +8349,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.3(graphql@16.11.0)
       '@graphql-tools/utils': 10.8.6(graphql@16.11.0)
       graphql: 16.11.0
-      tslib: 2.6.3
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
 
@@ -10609,7 +10609,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   camelcase@5.3.1: {}
 
@@ -10625,7 +10625,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   ccount@2.0.1: {}
@@ -10671,7 +10671,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   char-regex@1.0.2: {}
 
@@ -10816,7 +10816,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   convert-source-map@2.0.0: {}
@@ -11134,7 +11134,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   dot-prop@9.0.0:
     dependencies:
@@ -12005,7 +12005,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   hookable@5.5.3: {}
 
@@ -12204,7 +12204,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-module@1.0.0: {}
 
@@ -12258,7 +12258,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-url-superb@4.0.0: {}
 
@@ -12501,11 +12501,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lru-cache@10.4.3: {}
 
@@ -13117,7 +13117,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   node-addon-api@7.1.1: {}
 
@@ -13638,7 +13638,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -13708,14 +13708,14 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-browserify@1.0.1: {}
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-exists@4.0.0: {}
 
@@ -14450,7 +14450,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   serialize-javascript@6.0.2:
@@ -14589,7 +14589,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   socket.io-client@4.8.1:
     dependencies:
@@ -14645,7 +14645,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   stable-hash-x@0.1.1: {}
 
@@ -14761,7 +14761,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sync-fetch@0.6.0-2:
     dependencies:
@@ -14830,7 +14830,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   tmp-promise@3.0.3:
     dependencies:
@@ -15216,11 +15216,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   uqr@0.1.2: {}
 
