@@ -128,8 +128,8 @@ importers:
         specifier: 22.15.33
         version: 22.15.33
       dotenv:
-        specifier: 16.5.0
-        version: 16.5.0
+        specifier: 16.6.1
+        version: 16.6.1
       eslint:
         specifier: 9.29.0
         version: 9.29.0(jiti@2.4.2)
@@ -3421,8 +3421,8 @@ packages:
     resolution: {integrity: sha512-1gxPBJpI/pcjQhKgIU91II6Wkay+dLcN3M6rf2uwP8hRur3HtQXjVrdAK3sjC0piaEuxzMwjXChcETiJl47lAQ==}
     engines: {node: '>=18'}
 
-  dotenv@16.5.0:
-    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
+  dotenv@16.6.1:
+    resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
     engines: {node: '>=12'}
 
   dset@3.1.4:
@@ -8301,7 +8301,7 @@ snapshots:
       '@whatwg-node/fetch': 0.10.8
       chalk: 4.1.2
       debug: 4.4.1
-      dotenv: 16.5.0
+      dotenv: 16.6.1
       graphql: 16.11.0
       graphql-request: 6.1.0(graphql@16.11.0)
       http-proxy-agent: 7.0.2
@@ -8980,7 +8980,7 @@ snapshots:
       citty: 0.1.6
       consola: 3.4.2
       destr: 2.0.5
-      dotenv: 16.5.0
+      dotenv: 16.6.1
       git-url-parse: 16.1.0
       is-docker: 3.0.0
       ofetch: 1.4.1
@@ -10498,7 +10498,7 @@ snapshots:
       chokidar: 4.0.3
       confbox: 0.2.2
       defu: 6.1.4
-      dotenv: 16.5.0
+      dotenv: 16.6.1
       exsolve: 1.0.7
       giget: 2.0.0
       jiti: 2.4.2
@@ -11067,7 +11067,7 @@ snapshots:
     dependencies:
       type-fest: 4.41.0
 
-  dotenv@16.5.0: {}
+  dotenv@16.6.1: {}
 
   dset@3.1.4: {}
 
@@ -12286,7 +12286,7 @@ snapshots:
   lambda-local@2.2.0:
     dependencies:
       commander: 10.0.1
-      dotenv: 16.5.0
+      dotenv: 16.6.1
       winston: 3.17.0
 
   launch-editor@2.10.0:
