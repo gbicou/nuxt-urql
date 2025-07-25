@@ -128,8 +128,8 @@ importers:
         specifier: 22.16.4
         version: 22.16.4
       dotenv:
-        specifier: 16.6.1
-        version: 16.6.1
+        specifier: 17.2.1
+        version: 17.2.1
       eslint:
         specifier: 9.29.0
         version: 9.29.0(jiti@2.5.1)
@@ -3514,6 +3514,10 @@ packages:
 
   dotenv@16.6.1:
     resolution: {integrity: sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==}
+    engines: {node: '>=12'}
+
+  dotenv@17.2.1:
+    resolution: {integrity: sha512-kQhDYKZecqnM0fCnzI5eIv5L4cAe/iRI+HqMbO/hbRdTAeXDG+M9FjipUxNfbARuEg4iHIbhnhs78BCHNbSxEQ==}
     engines: {node: '>=12'}
 
   dset@3.1.4:
@@ -11356,6 +11360,8 @@ snapshots:
       type-fest: 4.41.0
 
   dotenv@16.6.1: {}
+
+  dotenv@17.2.1: {}
 
   dset@3.1.4: {}
 
