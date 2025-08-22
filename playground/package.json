@@ -27,7 +27,7 @@
     "@picocss/pico": "2.1.1",
     "@types/node": "22.16.4",
     "dotenv": "16.6.1",
-    "eslint": "9.29.0",
+    "eslint": "9.34.0",
     "graphql-config": "5.1.5",
     "nuxt": "3.17.7",
     "sass": "1.89.2",
