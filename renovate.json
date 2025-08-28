@@ -6,6 +6,12 @@
   "addLabels": ["dependencies"],
   "packageRules": [
     {
+      "groupName": "urql",
+      "matchPackageNames": [
+        "@urql/**"
+      ]
+    },
+    {
       "matchUpdateTypes": ["patch", "pin", "digest"],
       "matchDepTypes": ["devDependencies"],
       "automerge": true
