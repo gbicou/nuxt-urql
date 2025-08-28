@@ -1,5 +1,15 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## [1.11.2](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.11.1...nuxt-urql-v1.11.2) (2025-08-28)
+
+
+### Bug Fixes
+
+* Augment nuxt compatibility to version 4 ([6398b12](https://github.com/gbicou/nuxt-urql/commit/6398b1255bb7010817c24cb348947cd700ca1f59))
+* **deps:** update dependency @urql/exchange-graphcache to v7.2.4 ([#455](https://github.com/gbicou/nuxt-urql/issues/455)) ([21c49b8](https://github.com/gbicou/nuxt-urql/commit/21c49b8f0730142f186704300bc0f18f02d83d35))
+* **deps:** update dependency graphql to v16.11.0 ([#383](https://github.com/gbicou/nuxt-urql/issues/383)) ([218ff68](https://github.com/gbicou/nuxt-urql/commit/218ff68c73c3f88f8b06cf3923847b40d2e067b0))
+* **deps:** update urql ([#489](https://github.com/gbicou/nuxt-urql/issues/489)) ([9c49187](https://github.com/gbicou/nuxt-urql/commit/9c49187f3d58d84adc6bc545aacbe940a45a9dea))
+
 ## [1.11.1](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.11.0...nuxt-urql-v1.11.1) (2025-04-08)
 
 
