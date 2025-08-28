@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@urql/core": "^5.1.1",
-    "@urql/vue": "^1.4.3"
+    "@urql/vue": "^2.0.0"
   },
   "devDependencies": {
     "@bicou/countries-server-schema": "1.7.1",
