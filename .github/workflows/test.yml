@@ -16,7 +16,7 @@ jobs:
     name: Test
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Setup node and pnpm
         uses: ./.github/actions/setup-node-pnpm
