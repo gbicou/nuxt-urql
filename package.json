@@ -1,6 +1,6 @@
 {
   "name": "@bicou/nuxt-urql",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "description": "Nuxt URQL module",
   "license": "MIT",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
