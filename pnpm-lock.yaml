@@ -128,8 +128,8 @@ importers:
         specifier: 22.18.0
         version: 22.18.0
       dotenv:
-        specifier: 16.6.1
-        version: 16.6.1
+        specifier: 17.2.1
+        version: 17.2.1
       eslint:
         specifier: 9.34.0
         version: 9.34.0(jiti@2.5.1)
