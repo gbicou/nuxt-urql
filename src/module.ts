@@ -58,7 +58,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'urql',
     compatibility: {
-      nuxt: '^3',
+      nuxt: '^3 || ^4',
     },
   },
   // Default configuration options of the Nuxt module
