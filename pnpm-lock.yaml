@@ -37,8 +37,8 @@ importers:
         specifier: 22.18.0
         version: 22.18.0
       '@urql/exchange-execute':
-        specifier: 2.3.1
-        version: 2.3.1(@urql/core@5.2.0(graphql@16.11.0))(graphql@16.11.0)
+        specifier: 3.0.0
+        version: 3.0.0(@urql/core@5.2.0(graphql@16.11.0))(graphql@16.11.0)
       defu:
         specifier: 6.1.4
         version: 6.1.4
@@ -2712,10 +2712,10 @@ packages:
   '@urql/core@5.2.0':
     resolution: {integrity: sha512-/n0ieD0mvvDnVAXEQgX/7qJiVcvYvNkOHeBvkwtylfjydar123caCXcl58PXFY11oU1oquJocVXHxLAbtv4x1A==}
 
-  '@urql/exchange-execute@2.3.1':
-    resolution: {integrity: sha512-lfJO+ln85/6IHVnfp9z4XN1KpGwFrhutdb8YIr4KWQUskUlYPjfrfZMOnam4+bGBe6XFX8bTItkhOJu7u6Cbkw==}
+  '@urql/exchange-execute@3.0.0':
+    resolution: {integrity: sha512-ofs35P+95ODG5JS8ojP7WGOM+i2nkm7PsRLLU6N2tvGdqdWdBOLy5Y2m/9izaQciisn5xNnbkekl+tS23t8/8Q==}
     peerDependencies:
-      '@urql/core': ^5.0.0
+      '@urql/core': ^6.0.0
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
   '@urql/exchange-graphcache@7.2.4':
@@ -10551,7 +10551,7 @@ snapshots:
     transitivePeerDependencies:
       - graphql
 
-  '@urql/exchange-execute@2.3.1(@urql/core@5.2.0(graphql@16.11.0))(graphql@16.11.0)':
+  '@urql/exchange-execute@3.0.0(@urql/core@5.2.0(graphql@16.11.0))(graphql@16.11.0)':
     dependencies:
       '@urql/core': 5.2.0(graphql@16.11.0)
       graphql: 16.11.0
