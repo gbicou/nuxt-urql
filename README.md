@@ -5,7 +5,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-> URQL client for Nuxt v3
+> URQL client for Nuxt v3 and v4
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 - [📖 &nbsp;Documentation](https://nuxt-urql-docs.vercel.app/)
