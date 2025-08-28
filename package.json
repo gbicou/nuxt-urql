@@ -33,7 +33,7 @@
     "clean": "rimraf dist/ playground/.nuxt/ playground/.output/ playground/node_modules/.vite/"
   },
   "dependencies": {
-    "@urql/core": "^5.1.1",
+    "@urql/core": "^6.0.0",
     "@urql/vue": "^1.4.3"
   },
   "devDependencies": {
