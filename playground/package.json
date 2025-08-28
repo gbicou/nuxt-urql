@@ -23,16 +23,16 @@
     "@graphql-codegen/urql-introspection": "3.0.1",
     "@graphql-eslint/eslint-plugin": "4.4.0",
     "@graphql-typed-document-node/core": "3.2.0",
-    "@nuxt/eslint": "1.5.2",
+    "@nuxt/eslint": "1.9.0",
     "@picocss/pico": "2.1.1",
     "@types/node": "22.18.0",
-    "dotenv": "16.6.1",
+    "dotenv": "17.2.1",
     "eslint": "9.34.0",
     "graphql-config": "5.1.5",
     "nuxt": "3.17.7",
-    "sass": "1.89.2",
+    "sass": "1.91.0",
     "ts-node": "10.9.2",
-    "vue": "3.5.18",
+    "vue": "3.5.20",
     "vue-router": "4.5.1"
   }
 }
