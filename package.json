@@ -45,7 +45,7 @@
     "@types/node": "22.18.10",
     "@urql/exchange-execute": "3.0.0",
     "defu": "6.1.4",
-    "eslint": "9.34.0",
+    "eslint": "9.37.0",
     "graphql": "16.11.0",
     "nuxt": "4.0.3",
     "typescript": "5.9.3",
