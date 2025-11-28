@@ -19,8 +19,8 @@ importers:
         version: 3.5.25(typescript@5.9.3)
     devDependencies:
       '@bicou/countries-server-schema':
-        specifier: 1.7.1
-        version: 1.7.1(graphql@16.12.0)
+        specifier: 1.7.2
+        version: 1.7.2(graphql@16.12.0)
       '@nuxt/kit':
         specifier: 4.2.1
         version: 4.2.1(magicast@0.5.1)
@@ -471,8 +471,8 @@ packages:
   '@bicou/countries-server-data@1.6.0':
     resolution: {integrity: sha512-aAzHP9GHFjC1/MlUUx3iFx3oPRixkvcD422CJkb0FQHKwhfr77uF1Tjj2qvsoDyDpMBQY0hXLfLgZRIR3G1rmQ==}
 
-  '@bicou/countries-server-schema@1.7.1':
-    resolution: {integrity: sha512-TzUNdEwHOzHQeKfXi/Z59iT4s+U3RNf8kraiJ3sazAjtDWBZ7Ma9SjzxHMO8BhgT0NCNRj25Jahd/J7V2sPPnw==}
+  '@bicou/countries-server-schema@1.7.2':
+    resolution: {integrity: sha512-52io3Z7hH4DfooDA6lsCw4+M6Y1ZMtAFI9oDAg3r0iN5iyzqQ+bjaGs99Fx/iKvQrn0OUY5eHXyVCquxNq7TSA==}
     peerDependencies:
       graphql: ^16.10.0
 
@@ -8170,7 +8170,7 @@ snapshots:
 
   '@bicou/countries-server-data@1.6.0': {}
 
-  '@bicou/countries-server-schema@1.7.1(graphql@16.12.0)':
+  '@bicou/countries-server-schema@1.7.2(graphql@16.12.0)':
     dependencies:
       '@bicou/countries-server-data': 1.6.0
       '@pothos/core': 4.10.0(graphql@16.12.0)
