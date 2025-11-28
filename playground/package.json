@@ -9,7 +9,7 @@
   "dependencies": {
     "@bicou/nuxt-urql": "workspace:*",
     "@urql/exchange-graphcache": "8.1.0",
-    "graphql": "16.11.0"
+    "graphql": "16.12.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "6.1.0",
