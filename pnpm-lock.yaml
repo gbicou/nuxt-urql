@@ -95,14 +95,14 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(graphql@16.12.0)
       '@graphql-codegen/typed-document-node':
-        specifier: 6.1.4
-        version: 6.1.4(graphql@16.12.0)
+        specifier: 6.1.5
+        version: 6.1.5(graphql@16.12.0)
       '@graphql-codegen/typescript':
-        specifier: 5.0.6
-        version: 5.0.6(graphql@16.12.0)
+        specifier: 5.0.7
+        version: 5.0.7(graphql@16.12.0)
       '@graphql-codegen/typescript-operations':
-        specifier: 5.0.6
-        version: 5.0.6(graphql@16.12.0)
+        specifier: 5.0.7
+        version: 5.0.7(graphql@16.12.0)
       '@graphql-codegen/typescript-urql':
         specifier: 4.0.1
         version: 4.0.1(graphql-tag@2.12.6(graphql@16.12.0))(graphql@16.12.0)
@@ -998,14 +998,14 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  '@graphql-codegen/typed-document-node@6.1.4':
-    resolution: {integrity: sha512-ITWsA+qvT7R64z7KmYHXfgyD5ff069FAGq/hpR0EWVfzXT4RW1Xn/3Biw7/jvwMGsS1BTjo8ZLSIMNM8KjE3GA==}
+  '@graphql-codegen/typed-document-node@6.1.5':
+    resolution: {integrity: sha512-6dgEPz+YRMzSPpATj7tsKh/L6Y8OZImiyXIUzvSq/dRAEgoinahrES5y/eZQyc7CVxfoFCyHF9KMQQ9jiLn7lw==}
     engines: {node: '>=16'}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  '@graphql-codegen/typescript-operations@5.0.6':
-    resolution: {integrity: sha512-pkR/82qWO50OHWeV3BiDuVxNFxiJerpmNjFep71VlabADXiU3GIeSaDd6G9a1/SCniVTXZQk2ivCb0ZJiuwo1A==}
+  '@graphql-codegen/typescript-operations@5.0.7':
+    resolution: {integrity: sha512-5N3myNse1putRQlp8+l1k9ayvc98oq2mPJx0zN8MTOlTBxcb2grVPFRLy5wJJjuv9NffpyCkVJ9LvUaf8mqQgg==}
     engines: {node: '>=16'}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -1029,8 +1029,8 @@ packages:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       graphql-tag: ^2.0.0
 
-  '@graphql-codegen/typescript@5.0.6':
-    resolution: {integrity: sha512-rKW3wYInAnmO/DmKjhW3/KLMxUauUCZuMEPQmuoHChnwIuMjn5kVXCdArGyQqv+vVtFj55aS+sJLN4MPNNjSNg==}
+  '@graphql-codegen/typescript@5.0.7':
+    resolution: {integrity: sha512-kZwcu9Iat5RWXxLGPnDbG6qVbGTigF25/aGqCG/DCQ1Al8RufSjVXhIOkJBp7QWAqXn3AupHXL1WTMXP7xs4dQ==}
     engines: {node: '>=16'}
     peerDependencies:
       graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -1048,6 +1048,12 @@ packages:
 
   '@graphql-codegen/visitor-plugin-common@6.2.1':
     resolution: {integrity: sha512-5QT1hCV3286mrmoIC7vlFXsTlwELMexhuFIkjh+oVGGL1E8hxkIPAU0kfH/lsPbQHKi8zKmic2pl3tAdyYxNyg==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+
+  '@graphql-codegen/visitor-plugin-common@6.2.2':
+    resolution: {integrity: sha512-wEJ4zJj58PKlXISItZfr0xIHyM1lAuRfoflPegsb1L17Mx5+YzNOy0WAlLele3yzyV89WvCiprFKMcVQ7KfDXg==}
     engines: {node: '>=16'}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -8878,9 +8884,9 @@ snapshots:
       '@graphql-codegen/add': 6.0.0(graphql@16.12.0)
       '@graphql-codegen/gql-tag-operations': 5.1.1(graphql@16.12.0)
       '@graphql-codegen/plugin-helpers': 6.1.0(graphql@16.12.0)
-      '@graphql-codegen/typed-document-node': 6.1.4(graphql@16.12.0)
-      '@graphql-codegen/typescript': 5.0.6(graphql@16.12.0)
-      '@graphql-codegen/typescript-operations': 5.0.6(graphql@16.12.0)
+      '@graphql-codegen/typed-document-node': 6.1.5(graphql@16.12.0)
+      '@graphql-codegen/typescript': 5.0.7(graphql@16.12.0)
+      '@graphql-codegen/typescript-operations': 5.0.7(graphql@16.12.0)
       '@graphql-codegen/visitor-plugin-common': 6.2.1(graphql@16.12.0)
       '@graphql-tools/documents': 1.0.1(graphql@16.12.0)
       '@graphql-tools/utils': 10.11.0(graphql@16.12.0)
@@ -8948,10 +8954,10 @@ snapshots:
       graphql: 16.12.0
       tslib: 2.6.3
 
-  '@graphql-codegen/typed-document-node@6.1.4(graphql@16.12.0)':
+  '@graphql-codegen/typed-document-node@6.1.5(graphql@16.12.0)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.1.0(graphql@16.12.0)
-      '@graphql-codegen/visitor-plugin-common': 6.2.1(graphql@16.12.0)
+      '@graphql-codegen/visitor-plugin-common': 6.2.2(graphql@16.12.0)
       auto-bind: 4.0.0
       change-case-all: 1.0.15
       graphql: 16.12.0
@@ -8959,11 +8965,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@graphql-codegen/typescript-operations@5.0.6(graphql@16.12.0)':
+  '@graphql-codegen/typescript-operations@5.0.7(graphql@16.12.0)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.1.0(graphql@16.12.0)
-      '@graphql-codegen/typescript': 5.0.6(graphql@16.12.0)
-      '@graphql-codegen/visitor-plugin-common': 6.2.1(graphql@16.12.0)
+      '@graphql-codegen/typescript': 5.0.7(graphql@16.12.0)
+      '@graphql-codegen/visitor-plugin-common': 6.2.2(graphql@16.12.0)
       auto-bind: 4.0.0
       graphql: 16.12.0
       tslib: 2.6.3
@@ -8996,11 +9002,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@graphql-codegen/typescript@5.0.6(graphql@16.12.0)':
+  '@graphql-codegen/typescript@5.0.7(graphql@16.12.0)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.1.0(graphql@16.12.0)
       '@graphql-codegen/schema-ast': 5.0.0(graphql@16.12.0)
-      '@graphql-codegen/visitor-plugin-common': 6.2.1(graphql@16.12.0)
+      '@graphql-codegen/visitor-plugin-common': 6.2.2(graphql@16.12.0)
       auto-bind: 4.0.0
       graphql: 16.12.0
       tslib: 2.6.3
@@ -9032,6 +9038,22 @@ snapshots:
       - supports-color
 
   '@graphql-codegen/visitor-plugin-common@6.2.1(graphql@16.12.0)':
+    dependencies:
+      '@graphql-codegen/plugin-helpers': 6.1.0(graphql@16.12.0)
+      '@graphql-tools/optimize': 2.0.0(graphql@16.12.0)
+      '@graphql-tools/relay-operation-optimizer': 7.0.26(graphql@16.12.0)
+      '@graphql-tools/utils': 10.11.0(graphql@16.12.0)
+      auto-bind: 4.0.0
+      change-case-all: 1.0.15
+      dependency-graph: 1.0.0
+      graphql: 16.12.0
+      graphql-tag: 2.12.6(graphql@16.12.0)
+      parse-filepath: 1.0.2
+      tslib: 2.6.3
+    transitivePeerDependencies:
+      - encoding
+
+  '@graphql-codegen/visitor-plugin-common@6.2.2(graphql@16.12.0)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.1.0(graphql@16.12.0)
       '@graphql-tools/optimize': 2.0.0(graphql@16.12.0)
@@ -9334,7 +9356,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.12.0)':
     dependencies:
       graphql: 16.12.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/relay-operation-optimizer@6.5.18(graphql@16.12.0)':
     dependencies:
@@ -9351,7 +9373,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.3(graphql@16.12.0)
       '@graphql-tools/utils': 10.11.0(graphql@16.12.0)
       graphql: 16.12.0
-      tslib: 2.6.3
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
 
@@ -12461,7 +12483,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   camelcase@5.3.1: {}
 
@@ -12479,7 +12501,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   ccount@2.0.1: {}
@@ -12517,7 +12539,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   change-case@5.4.4: {}
 
@@ -12642,7 +12664,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   content-disposition@1.0.1: {}
@@ -13022,7 +13044,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   dot-prop@10.1.0:
     dependencies:
@@ -14056,7 +14078,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   hex-rgb@4.3.0: {}
 
@@ -14262,7 +14284,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-module@1.0.0: {}
 
@@ -14302,7 +14324,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-what@5.5.0: {}
 
@@ -14583,11 +14605,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lru-cache@10.4.3: {}
 
@@ -15184,7 +15206,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   node-abi@3.85.0:
     dependencies:
@@ -15670,7 +15692,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -15734,14 +15756,14 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-browserify@1.0.1: {}
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-exists@4.0.0: {}
 
@@ -16419,7 +16441,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   serialize-javascript@6.0.2:
@@ -16581,7 +16603,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   socket.io-client@4.8.1:
     dependencies:
@@ -16627,7 +16649,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   srvx@0.9.8: {}
 
@@ -16744,7 +16766,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sync-fetch@0.6.0-2:
     dependencies:
@@ -16832,7 +16854,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   to-regex-range@5.0.1:
     dependencies:
@@ -17235,11 +17257,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   uqr@0.1.2: {}
 
