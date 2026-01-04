@@ -31,8 +31,8 @@ importers:
         specifier: 4.2.2
         version: 4.2.2
       '@nuxt/test-utils':
-        specifier: 3.21.0
-        version: 3.21.0(magicast@0.5.1)(playwright-core@1.57.0)(typescript@5.9.3)(vitest@4.0.16(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))
+        specifier: 3.22.0
+        version: 3.22.0(magicast@0.5.1)(playwright-core@1.57.0)(typescript@5.9.3)(vitest@4.0.16(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))
       '@types/node':
         specifier: 24.10.4
         version: 24.10.4
@@ -1881,8 +1881,8 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  '@nuxt/test-utils@3.21.0':
-    resolution: {integrity: sha512-A6XExfgHq88+XuXAU4MMr5QBHS2mWA5qRVSvsMPP2U+YSsnk+Vt7P7dxbvJPE4+n6LHbC1IM0QjTVteo+VCxOA==}
+  '@nuxt/test-utils@3.22.0':
+    resolution: {integrity: sha512-Qo2+FKrslfOp5S0z7hrajPATIVRLokMhlVTIuhOgnowE7WdgMdLGTkDQim+p8e6COw3loLabisLG85THdLp3vQ==}
     engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
     peerDependencies:
       '@cucumber/cucumber': ^10.3.1 || >=11.0.0
@@ -8214,6 +8214,7 @@ packages:
   vue-i18n@11.2.7:
     resolution: {integrity: sha512-LPv8bAY5OA0UvFEXl4vBQOBqJzRrlExy92tWgRuwW7tbykHf7CH71G2Y4TM2OwGcIS4+hyqKHS2EVBqaYwPY9Q==}
     engines: {node: '>= 16'}
+    deprecated: This version is NOT deprecated. Previous deprecation was a mistake.
     peerDependencies:
       vue: ^3.0.0
 
@@ -10791,7 +10792,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxt/test-utils@3.21.0(magicast@0.5.1)(playwright-core@1.57.0)(typescript@5.9.3)(vitest@4.0.16(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))':
+  '@nuxt/test-utils@3.22.0(magicast@0.5.1)(playwright-core@1.57.0)(typescript@5.9.3)(vitest@4.0.16(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))':
     dependencies:
       '@nuxt/kit': 3.20.2(magicast@0.5.1)
       c12: 3.3.3(magicast@0.5.1)
@@ -18154,7 +18155,7 @@ snapshots:
 
   vitest-environment-nuxt@1.0.1(magicast@0.5.1)(playwright-core@1.57.0)(typescript@5.9.3)(vitest@4.0.16(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2)):
     dependencies:
-      '@nuxt/test-utils': 3.21.0(magicast@0.5.1)(playwright-core@1.57.0)(typescript@5.9.3)(vitest@4.0.16(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))
+      '@nuxt/test-utils': 3.22.0(magicast@0.5.1)(playwright-core@1.57.0)(typescript@5.9.3)(vitest@4.0.16(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2)(sass@1.97.1)(terser@5.44.1)(yaml@2.8.2))
     transitivePeerDependencies:
       - '@cucumber/cucumber'
       - '@jest/globals'
