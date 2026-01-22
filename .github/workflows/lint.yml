@@ -18,7 +18,7 @@ jobs:
     permissions:
       security-events: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
 
       - name: Setup node and pnpm
         uses: ./.github/actions/setup-node-pnpm
@@ -28,7 +28,7 @@ jobs:
       - run: pnpm eslint . --format @microsoft/eslint-formatter-sarif --output-file eslint-results.sarif
         continue-on-error: true
 
-      - uses: github/codeql-action/upload-sarif@v4
+      - uses: github/codeql-action/upload-sarif@cdefb33c0f6224e58673d9004f47f7cb3e328b89 # v4
         with:
           sarif_file: eslint-results.sarif
           wait-for-processing: true
