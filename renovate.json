@@ -21,5 +21,6 @@
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
-  }
+  },
+  "postUpdateOptions": ["pnpmDedupe"]
 }
