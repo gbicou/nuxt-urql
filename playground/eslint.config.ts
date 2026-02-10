@@ -32,6 +32,4 @@ export default withNuxt(
     files: ['**/gql/queries/*.graphql'],
     rules: graphql.configs['flat/operations-recommended'].rules,
   },
-).override('nuxt/disables/routes', {
-  files: ['**/pages/**/*.vue'],
-})
+)
