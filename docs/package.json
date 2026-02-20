@@ -11,7 +11,7 @@
     "preview": "nuxi preview"
   },
   "devDependencies": {
-    "docus": "5.5.1",
+    "docus": "5.6.0",
     "nuxt": "4.3.1",
     "vue": "3.5.28",
     "vue-router": "5.0.2"
