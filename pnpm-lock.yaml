@@ -61,8 +61,8 @@ importers:
   docs:
     devDependencies:
       docus:
-        specifier: 5.6.0
-        version: 5.6.0(a2d712381b180d9000a83df2838f2d0e)
+        specifier: 5.6.1
+        version: 5.6.1(a2d712381b180d9000a83df2838f2d0e)
       nuxt:
         specifier: 4.3.1
         version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@24.10.13)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@10.0.0(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.13)(jiti@2.6.1)(lightningcss@1.31.1)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
@@ -4812,8 +4812,8 @@ packages:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
     engines: {node: '>=8'}
 
-  docus@5.6.0:
-    resolution: {integrity: sha512-Fcg1Z6LPRP4KbJTw0bXUrRavwYYlI1QgRAEQA+8FjmZ/gjLsIkkhvOIqwKOHf8neAkKYxvQTDgC2/+l7WvuIKA==}
+  docus@5.6.1:
+    resolution: {integrity: sha512-ec/ndUkYKBGaZT4TIEBJ3IvD11eJgJO5GvQnxeRBTGdvWJLyHrf3gwLD53hR9UkYhtrESuYqFzgKHgZC6LUtAQ==}
     peerDependencies:
       better-sqlite3: 12.x
       nuxt: 4.x
@@ -13994,7 +13994,7 @@ snapshots:
     dependencies:
       path-type: 4.0.0
 
-  docus@5.6.0(a2d712381b180d9000a83df2838f2d0e):
+  docus@5.6.1(a2d712381b180d9000a83df2838f2d0e):
     dependencies:
       '@ai-sdk/gateway': 3.0.53(zod@4.3.6)
       '@ai-sdk/mcp': 1.0.21(zod@4.3.6)
