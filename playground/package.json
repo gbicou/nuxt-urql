@@ -23,7 +23,7 @@
     "@graphql-codegen/urql-introspection": "3.0.1",
     "@graphql-eslint/eslint-plugin": "4.4.0",
     "@graphql-typed-document-node/core": "3.2.0",
-    "@nuxt/eslint": "1.15.1",
+    "@nuxt/eslint": "1.15.2",
     "@picocss/pico": "2.1.1",
     "@types/node": "24.10.13",
     "dotenv": "17.3.1",
