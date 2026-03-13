@@ -1,5 +1,5 @@
 import { type Client, type ClientOptions, createClient, type SSRData, ssrExchange } from '@urql/core'
-import { ref } from 'vue'
+import { shallowRef } from 'vue'
 import type { UrqlClientOptions, UrqlMultipleClientOptions } from '#urql/client'
 import { defineNuxtPlugin, useRuntimeConfig, useState } from '#app'
 import NuxtUrqlClient from '#urql-client'
@@ -42,7 +42,7 @@ export default defineNuxtPlugin(async (nuxtApp) => {
   })
 
   // provide client to @urql/vue
-  const defaultClient = ref(clients.default)
+  const defaultClient = shallowRef(clients.default)
   nuxtApp.vueApp.provide('$urql', defaultClient)
 
   return {
