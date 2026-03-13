@@ -1,5 +1,14 @@
 # [1.7.0](https://github.com/gbicou/nuxt-urql/compare/v1.6.2...v1.7.0) (2023-11-20)
 
+## [1.11.4](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.11.3...nuxt-urql-v1.11.4) (2026-03-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @urql/exchange-graphcache to v9 ([#604](https://github.com/gbicou/nuxt-urql/issues/604)) ([44c05d2](https://github.com/gbicou/nuxt-urql/commit/44c05d28dfdd4560a88afe0b37623f4f490aed95))
+* **deps:** update dependency graphql to v16.13.1 ([#646](https://github.com/gbicou/nuxt-urql/issues/646)) ([12d9433](https://github.com/gbicou/nuxt-urql/commit/12d943302ffc85f00b495e85607dacbb0207d57f))
+* use shallowRef of urql client ([5fcbf1d](https://github.com/gbicou/nuxt-urql/commit/5fcbf1d08a563948d504fa77fe06a2dfa3601455))
+
 ## [1.11.3](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-v1.11.2...nuxt-urql-v1.11.3) (2025-11-28)
 
 
