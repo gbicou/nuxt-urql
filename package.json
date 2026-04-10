@@ -44,7 +44,7 @@
     "@nuxt/test-utils": "4.0.0",
     "@types/node": "24.12.2",
     "@urql/exchange-execute": "3.0.0",
-    "defu": "6.1.6",
+    "defu": "6.1.7",
     "eslint": "10.2.0",
     "graphql": "16.13.2",
     "nuxt": "4.4.2",
