@@ -40,8 +40,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0(@urql/core@6.0.1(graphql@16.13.2))(graphql@16.13.2)
       defu:
-        specifier: 6.1.6
-        version: 6.1.6
+        specifier: 6.1.7
+        version: 6.1.7
       eslint:
         specifier: 10.2.0
         version: 10.2.0(jiti@2.6.1)
@@ -4817,8 +4817,8 @@ packages:
     resolution: {integrity: sha512-N+MeXYoqr3pOgn8xfyRPREN7gHakLYjhsHhWGT3fWAiL4IkAt0iDw14QiiEm2bE30c5XX5q0FtAA3CK5f9/BUg==}
     engines: {node: '>=12'}
 
-  defu@6.1.6:
-    resolution: {integrity: sha512-f8mefEW4WIVg4LckePx3mALjQSPQgFlg9U8yaPdlsbdYcHQyj9n2zL2LJEA52smeYxOvmd/nB7TpMtHGMTHcug==}
+  defu@6.1.7:
+    resolution: {integrity: sha512-7z22QmUWiQ/2d0KkdYmANbRUVABpZ9SNYyH5vx6PZ+nE5bcC0l7uFvEfHlyld/HcGBFTL536ClDt3DEcSlEJAQ==}
 
   denque@2.1.0:
     resolution: {integrity: sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==}
@@ -10266,7 +10266,7 @@ snapshots:
       confbox: 0.2.4
       consola: 3.4.2
       debug: 4.4.3
-      defu: 6.1.6
+      defu: 6.1.7
       exsolve: 1.0.8
       fuse.js: 7.3.0
       fzf: 0.5.2
@@ -10307,7 +10307,7 @@ snapshots:
       chokidar: 5.0.0
       consola: 3.4.2
       db0: 0.3.4(better-sqlite3@12.8.0)
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       git-url-parse: 16.1.0
       hookable: 5.5.3
@@ -10505,7 +10505,7 @@ snapshots:
       '@nuxt/devtools-kit': 3.2.4(magicast@0.5.2)(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))
       '@nuxt/kit': 4.4.2(magicast@0.5.2)
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       fontless: 0.2.1(db0@0.3.4(better-sqlite3@12.8.0))(ioredis@5.10.1)(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))
       h3: 1.15.11
       magic-regexp: 0.10.0
@@ -10565,7 +10565,7 @@ snapshots:
     dependencies:
       '@nuxt/kit': 4.4.2(magicast@0.5.2)
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       h3: 1.15.11
       image-meta: 0.2.2
       knitwork: 1.3.0
@@ -10602,7 +10602,7 @@ snapshots:
     dependencies:
       c12: 3.3.4(magicast@0.5.2)
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       errx: 0.1.0
       exsolve: 1.0.8
@@ -10628,7 +10628,7 @@ snapshots:
     dependencies:
       c12: 3.3.4(magicast@0.5.2)
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       errx: 0.1.0
       exsolve: 1.0.8
@@ -10654,7 +10654,7 @@ snapshots:
       '@nuxt/cli': 3.34.0(@nuxt/schema@4.4.2)(cac@6.7.14)(magicast@0.5.2)
       citty: 0.1.6
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       jiti: 2.6.1
       magic-regexp: 0.10.0
       mkdist: 2.4.1(sass@1.99.0)(typescript@5.9.3)(vue-sfc-transformer@0.1.17(@vue/compiler-core@3.5.32)(esbuild@0.27.7)(vue@3.5.32(typescript@5.9.3)))(vue@3.5.32(typescript@5.9.3))
@@ -10680,7 +10680,7 @@ snapshots:
       '@unhead/vue': 2.1.13(vue@3.5.32(typescript@5.9.3))
       '@vue/shared': 3.5.32
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       devalue: 5.6.4
       errx: 0.1.0
@@ -10745,7 +10745,7 @@ snapshots:
   '@nuxt/schema@4.4.2':
     dependencies:
       '@vue/shared': 3.5.32
-      defu: 6.1.6
+      defu: 6.1.7
       pathe: 2.0.3
       pkg-types: 2.3.0
       std-env: 4.0.0
@@ -10766,7 +10766,7 @@ snapshots:
       '@nuxt/kit': 3.21.2(magicast@0.5.2)
       c12: 3.3.4(magicast@0.5.2)
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       estree-walker: 3.0.3
       exsolve: 1.0.8
@@ -10838,7 +10838,7 @@ snapshots:
       '@vueuse/shared': 14.2.1(vue@3.5.32(typescript@5.9.3))
       colortranslator: 5.0.0
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       embla-carousel-auto-height: 8.6.0(embla-carousel@8.6.0)
       embla-carousel-auto-scroll: 8.6.0(embla-carousel@8.6.0)
       embla-carousel-autoplay: 8.6.0(embla-carousel@8.6.0)
@@ -10922,7 +10922,7 @@ snapshots:
       autoprefixer: 10.4.27(postcss@8.5.8)
       consola: 3.4.2
       cssnano: 7.1.4(postcss@8.5.8)
-      defu: 6.1.6
+      defu: 6.1.7
       escape-string-regexp: 5.0.0
       exsolve: 1.0.8
       get-port-please: 3.2.0
@@ -10993,7 +10993,7 @@ snapshots:
       '@nuxt/kit': 4.4.2(magicast@0.5.2)
       '@rollup/plugin-yaml': 4.1.2(rollup@4.60.1)
       '@vue/compiler-sfc': 3.5.32
-      defu: 6.1.6
+      defu: 6.1.7
       devalue: 5.6.4
       h3: 1.15.11
       knitwork: 1.3.0
@@ -11068,7 +11068,7 @@ snapshots:
       '@vue/compiler-core': 3.5.32
       consola: 3.4.2
       debug: 4.4.3
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       detab: 3.0.2
       github-slugger: 2.0.0
@@ -11118,7 +11118,7 @@ snapshots:
       '@vue/compiler-core': 3.5.32
       consola: 3.4.2
       debug: 4.4.3
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       detab: 3.0.2
       github-slugger: 2.0.0
@@ -11161,7 +11161,7 @@ snapshots:
       '@nuxt/devtools-kit': 4.0.0-alpha.3(magicast@0.5.2)(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))
       '@nuxt/kit': 4.4.2(magicast@0.5.2)
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       h3: 1.15.11
       nuxt-site-config: 4.0.7(@nuxt/schema@4.4.2)(magicast@0.5.2)(nuxt@4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@parcel/watcher@2.5.6)(@types/node@24.12.2)(@vue/compiler-sfc@3.5.32)(better-sqlite3@12.8.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.8.0))(eslint@10.2.0(jiti@2.6.1))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.2)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.1))(rollup@4.60.1)(sass@1.99.0)(srvx@0.11.15)(terser@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))(yaml@2.8.3))(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))(vue@3.5.32(typescript@5.9.3))(zod@4.3.6)
       nuxtseo-layer-devtools: 0.5.1(ad970314515634b08c3708b4750e31c9)
@@ -13248,7 +13248,7 @@ snapshots:
     dependencies:
       chokidar: 5.0.0
       confbox: 0.2.4
-      defu: 6.1.6
+      defu: 6.1.7
       dotenv: 17.4.1
       exsolve: 1.0.8
       giget: 3.2.0
@@ -13681,7 +13681,7 @@ snapshots:
 
   define-lazy-prop@3.0.0: {}
 
-  defu@6.1.6: {}
+  defu@6.1.7: {}
 
   denque@2.1.0: {}
 
@@ -13739,7 +13739,7 @@ snapshots:
       '@vueuse/core': 14.2.1(vue@3.5.32(typescript@5.9.3))
       ai: 6.0.141(zod@4.3.6)
       better-sqlite3: 12.8.0
-      defu: 6.1.6
+      defu: 6.1.7
       exsolve: 1.0.8
       git-url-parse: 16.1.0
       motion-v: 2.2.0(@vueuse/core@14.2.1(vue@3.5.32(typescript@5.9.3)))(vue@3.5.32(typescript@5.9.3))
@@ -14458,7 +14458,7 @@ snapshots:
     dependencies:
       consola: 3.4.2
       css-tree: 3.2.1
-      defu: 6.1.6
+      defu: 6.1.7
       esbuild: 0.27.7
       fontaine: 0.8.0
       jiti: 2.6.1
@@ -14677,7 +14677,7 @@ snapshots:
     dependencies:
       cookie-es: 1.2.3
       crossws: 0.3.5
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       iron-webcrypto: 1.2.1
       node-mock-http: 1.0.4
@@ -14959,7 +14959,7 @@ snapshots:
       '@fastify/accept-negotiator': 2.0.1
       citty: 0.1.6
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       etag: 1.8.1
       h3: 1.15.11
@@ -15316,7 +15316,7 @@ snapshots:
       citty: 0.2.2
       consola: 3.4.2
       crossws: 0.4.4(srvx@0.11.15)
-      defu: 6.1.6
+      defu: 6.1.7
       get-port-please: 3.2.0
       h3: 1.15.11
       http-shutdown: 1.2.2
@@ -15826,7 +15826,7 @@ snapshots:
       autoprefixer: 10.4.27(postcss@8.5.8)
       citty: 0.1.6
       cssnano: 7.1.4(postcss@8.5.8)
-      defu: 6.1.6
+      defu: 6.1.7
       esbuild: 0.25.12
       jiti: 1.21.7
       mlly: 1.8.2
@@ -15912,7 +15912,7 @@ snapshots:
       croner: 10.0.1
       crossws: 0.3.5
       db0: 0.3.4(better-sqlite3@12.8.0)
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
       dot-prop: 10.1.0
       esbuild: 0.27.7
@@ -16088,7 +16088,7 @@ snapshots:
       chrome-launcher: 1.2.1
       consola: 3.4.2
       culori: 4.0.2
-      defu: 6.1.6
+      defu: 6.1.7
       devalue: 5.6.4
       exsolve: 1.0.8
       lightningcss: 1.32.0
@@ -16225,7 +16225,7 @@ snapshots:
       compatx: 0.2.0
       consola: 3.4.2
       cookie-es: 2.0.1
-      defu: 6.1.6
+      defu: 6.1.7
       devalue: 5.6.4
       errx: 0.1.0
       escape-string-regexp: 5.0.0
@@ -16483,7 +16483,7 @@ snapshots:
       '@nuxt/schema': 4.4.2
       birpc: 4.0.0
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       nuxt: 4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@parcel/watcher@2.5.6)(@types/node@24.12.2)(@vue/compiler-sfc@3.5.32)(better-sqlite3@12.8.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.8.0))(eslint@10.2.0(jiti@2.6.1))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.2)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.1))(rollup@4.60.1)(sass@1.99.0)(srvx@0.11.15)(terser@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))(yaml@2.8.3)
       ofetch: 1.5.1
       pathe: 2.0.3
@@ -16508,7 +16508,7 @@ snapshots:
       '@nuxt/schema': 4.4.2
       birpc: 4.0.0
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       nuxt: 4.4.2(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@parcel/watcher@2.5.6)(@types/node@24.12.2)(@vue/compiler-sfc@3.5.32)(better-sqlite3@12.8.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.8.0))(eslint@10.2.0(jiti@2.6.1))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.2)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.1))(rollup@4.60.1)(sass@1.99.0)(srvx@0.11.15)(terser@5.46.1)(typescript@5.9.3)(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))(yaml@2.8.3)
       ofetch: 1.5.1
       pathe: 2.0.3
@@ -17278,7 +17278,7 @@ snapshots:
 
   rc9@3.0.1:
     dependencies:
-      defu: 6.1.6
+      defu: 6.1.7
       destr: 2.0.5
 
   rc@1.2.8:
@@ -17408,7 +17408,7 @@ snapshots:
       '@vueuse/core': 14.2.1(vue@3.5.32(typescript@5.9.3))
       '@vueuse/shared': 14.2.1(vue@3.5.32(typescript@5.9.3))
       aria-hidden: 1.2.6
-      defu: 6.1.6
+      defu: 6.1.7
       ohash: 2.0.11
       vue: 3.5.32(typescript@5.9.3)
     transitivePeerDependencies:
@@ -17656,7 +17656,7 @@ snapshots:
 
   serve-placeholder@2.0.2:
     dependencies:
-      defu: 6.1.6
+      defu: 6.1.7
 
   serve-static@2.2.1:
     dependencies:
@@ -18204,7 +18204,7 @@ snapshots:
       '@rollup/pluginutils': 5.3.0(rollup@4.60.1)
       citty: 0.1.6
       consola: 3.4.2
-      defu: 6.1.6
+      defu: 6.1.7
       esbuild: 0.25.12
       fix-dts-default-cjs-exports: 1.0.1
       hookable: 5.5.3
@@ -18446,7 +18446,7 @@ snapshots:
   untyped@2.0.0:
     dependencies:
       citty: 0.1.6
-      defu: 6.1.6
+      defu: 6.1.7
       jiti: 2.6.1
       knitwork: 1.3.0
       scule: 1.3.0
