@@ -89,8 +89,8 @@ importers:
         specifier: 6.3.1
         version: 6.3.1(@parcel/watcher@2.5.6)(@types/node@24.12.2)(crossws@0.3.5)(graphql@16.13.2)(typescript@5.9.3)
       '@graphql-codegen/near-operation-file-preset':
-        specifier: 5.0.0
-        version: 5.0.0(graphql@16.13.2)
+        specifier: 5.0.1
+        version: 5.0.1(graphql@16.13.2)
       '@graphql-codegen/schema-ast':
         specifier: 5.0.2
         version: 5.0.2(graphql@16.13.2)
@@ -104,14 +104,14 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(graphql@16.13.2)
       '@graphql-codegen/typescript-urql':
-        specifier: 5.0.0
-        version: 5.0.0(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)
+        specifier: 5.0.1
+        version: 5.0.1(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)
       '@graphql-codegen/typescript-urql-graphcache':
-        specifier: 4.0.1
-        version: 4.0.1(@urql/exchange-graphcache@9.0.0(@urql/core@6.0.1(graphql@16.13.2))(graphql@16.13.2))(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)
+        specifier: 4.0.2
+        version: 4.0.2(@urql/exchange-graphcache@9.0.0(@urql/core@6.0.1(graphql@16.13.2))(graphql@16.13.2))(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)
       '@graphql-codegen/urql-introspection':
-        specifier: 4.0.0
-        version: 4.0.0(graphql@16.13.2)
+        specifier: 4.0.1
+        version: 4.0.1(graphql@16.13.2)
       '@graphql-eslint/eslint-plugin':
         specifier: 4.4.0
         version: 4.4.0(@types/node@24.12.2)(crossws@0.3.5)(eslint@10.2.1(jiti@2.6.1))(graphql@16.13.2)(typescript@5.9.3)
@@ -853,8 +853,8 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  '@graphql-codegen/near-operation-file-preset@5.0.0':
-    resolution: {integrity: sha512-Ck5jMu2izbKFwODYCM/sGWNQKN4BN4fpxr8g99fs6ESH29yfWMjA1dbUlTbtQtR7iXy39jT8451BLTG4/vOIxQ==}
+  '@graphql-codegen/near-operation-file-preset@5.0.1':
+    resolution: {integrity: sha512-ptYKV+pz9dfTvN7+i/Wqxuorj2uaikaDkGQYJBmWiJVakGawqrglbVr1PxT6/FPUZmRqpI+Zw1kW8w6Jt+RODg==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -887,16 +887,16 @@ packages:
       graphql-sock:
         optional: true
 
-  '@graphql-codegen/typescript-urql-graphcache@4.0.1':
-    resolution: {integrity: sha512-P7G9iDwkNcy5ATuvGaEz6bDtesVt8dAZBdVRbQt/nUAdGHK9KS4PsESqz9DFK++HDz7UXJzb+9cnL6Tx3uMc7A==}
+  '@graphql-codegen/typescript-urql-graphcache@4.0.2':
+    resolution: {integrity: sha512-blMkOkfvWzloDiZouOPvtiJDOGiCiE1o5e+2MAgxUMnHewHWRgj4rSB4PYE9DAxNJ9ZKSJ5a/bVXJN01XIn0VQ==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       '@urql/exchange-graphcache': ^5.2.0 || ^6.0.0 || ^7.0.0
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       graphql-tag: ^2.0.0
 
-  '@graphql-codegen/typescript-urql@5.0.0':
-    resolution: {integrity: sha512-NpNLcuvmh63EgfV5Dz4gcprcTpdAKWo0vNBk1PduXF+gJD0G7F3sufdDXJndV3QDGi83hAzqd6+JwRR1KK0csg==}
+  '@graphql-codegen/typescript-urql@5.0.1':
+    resolution: {integrity: sha512-kRxsZtkGMt2EC3itsqCwVXIgCfSnN+hDy/wSsFEi31WrbZgMVPn89Bqcv3Pel+zRxEwS5Osc9Pnl9pbVZND1fg==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -908,8 +908,8 @@ packages:
     peerDependencies:
       graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  '@graphql-codegen/urql-introspection@4.0.0':
-    resolution: {integrity: sha512-2jTWvNHOuYPS9s2+x/X1K9FzdKLLu1MmKM69IMywQHBdWUHNG+HDHiS6l5ZMi6ZGdnt8S5cyXwE6ow6OWGoVpA==}
+  '@graphql-codegen/urql-introspection@4.0.1':
+    resolution: {integrity: sha512-nDfNojYqgrKHpGeeC+3Qq/nUCgfoHD8lpjfp4ce/e55v8Go1fzuwET5glERAeUu9hvVX5pzmMlCweL07o833Qg==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -9223,7 +9223,7 @@ snapshots:
       graphql: 16.13.2
       tslib: 2.8.1
 
-  '@graphql-codegen/near-operation-file-preset@5.0.0(graphql@16.13.2)':
+  '@graphql-codegen/near-operation-file-preset@5.0.1(graphql@16.13.2)':
     dependencies:
       '@graphql-codegen/add': 6.0.1(graphql@16.13.2)
       '@graphql-codegen/plugin-helpers': 6.3.0(graphql@16.13.2)
@@ -9267,7 +9267,7 @@ snapshots:
       graphql: 16.13.2
       tslib: 2.8.1
 
-  '@graphql-codegen/typescript-urql-graphcache@4.0.1(@urql/exchange-graphcache@9.0.0(@urql/core@6.0.1(graphql@16.13.2))(graphql@16.13.2))(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)':
+  '@graphql-codegen/typescript-urql-graphcache@4.0.2(@urql/exchange-graphcache@9.0.0(@urql/core@6.0.1(graphql@16.13.2))(graphql@16.13.2))(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.3.0(graphql@16.13.2)
       '@graphql-codegen/visitor-plugin-common': 6.3.0(graphql@16.13.2)
@@ -9278,7 +9278,7 @@ snapshots:
       graphql-tag: 2.12.6(graphql@16.13.2)
       tslib: 2.8.1
 
-  '@graphql-codegen/typescript-urql@5.0.0(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)':
+  '@graphql-codegen/typescript-urql@5.0.1(graphql-tag@2.12.6(graphql@16.13.2))(graphql@16.13.2)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.3.0(graphql@16.13.2)
       '@graphql-codegen/visitor-plugin-common': 6.3.0(graphql@16.13.2)
@@ -9296,7 +9296,7 @@ snapshots:
       graphql: 16.13.2
       tslib: 2.8.1
 
-  '@graphql-codegen/urql-introspection@4.0.0(graphql@16.13.2)':
+  '@graphql-codegen/urql-introspection@4.0.1(graphql@16.13.2)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.3.0(graphql@16.13.2)
       '@urql/introspection': 0.3.3(graphql@16.13.2)
