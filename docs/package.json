@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "docus": "5.10.0",
-    "nuxt": "4.4.2",
+    "nuxt": "4.4.4",
     "vue": "3.5.33",
     "vue-router": "5.0.6"
   }
