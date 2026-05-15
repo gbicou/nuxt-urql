@@ -42,7 +42,7 @@
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "4.4.5",
     "@nuxt/test-utils": "4.0.3",
-    "@types/node": "24.12.3",
+    "@types/node": "24.12.4",
     "@urql/exchange-execute": "3.0.0",
     "defu": "6.1.7",
     "eslint": "10.3.0",
