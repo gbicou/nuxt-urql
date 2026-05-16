@@ -61,8 +61,8 @@ importers:
   docs:
     devDependencies:
       docus:
-        specifier: 5.10.1
-        version: 5.10.1(f4911f67439cc90c06b83594d37ce86c)
+        specifier: 5.11.0
+        version: 5.11.0(f4911f67439cc90c06b83594d37ce86c)
       nuxt:
         specifier: 4.4.5
         version: 4.4.5(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@parcel/watcher@2.5.6)(@types/node@24.12.4)(@vue/compiler-sfc@3.5.34)(better-sqlite3@12.9.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.9.0))(eslint@10.3.0(jiti@2.7.0))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.2)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.3))(rollup@4.60.3)(sass@1.99.0)(srvx@0.11.15)(terser@5.47.1)(typescript@5.9.3)(vite@7.3.3(@types/node@24.12.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0))(yaml@2.9.0)
@@ -4798,8 +4798,8 @@ packages:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
     engines: {node: '>=8'}
 
-  docus@5.10.1:
-    resolution: {integrity: sha512-AEC8YU8HnflHOrqmaSa1X+K5bBNeThIVowPPObZoIaTDU+Rw6mwCfcELg15xiO6TombAQ2tD2FvZ9UPdnslYdw==}
+  docus@5.11.0:
+    resolution: {integrity: sha512-4/6O+mAOmEGJsjAVJNNBm60wyYfmUoj+kv+ZjoI4p3trMpe7JShWHzXeG6NrO/WuQSrXm0ODneMs2Bg6dWQgBA==}
     peerDependencies:
       better-sqlite3: 12.x
       nuxt: 4.x
@@ -13365,7 +13365,7 @@ snapshots:
     dependencies:
       path-type: 4.0.0
 
-  docus@5.10.1(f4911f67439cc90c06b83594d37ce86c):
+  docus@5.11.0(f4911f67439cc90c06b83594d37ce86c):
     dependencies:
       '@ai-sdk/gateway': 3.0.112(zod@4.4.3)
       '@ai-sdk/mcp': 1.0.41(zod@4.4.3)
@@ -13396,6 +13396,7 @@ snapshots:
       nuxt: 4.4.5(@babel/core@7.29.0)(@babel/plugin-syntax-jsx@7.28.6(@babel/core@7.29.0))(@parcel/watcher@2.5.6)(@types/node@24.12.4)(@vue/compiler-sfc@3.5.34)(better-sqlite3@12.9.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.9.0))(eslint@10.3.0(jiti@2.7.0))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.2)(optionator@0.9.4)(rollup-plugin-visualizer@7.0.1(rollup@4.60.3))(rollup@4.60.3)(sass@1.99.0)(srvx@0.11.15)(terser@5.47.1)(typescript@5.9.3)(vite@7.3.3(@types/node@24.12.4)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0))(yaml@2.9.0)
       nuxt-llms: 0.2.0(magicast@0.5.2)
       nuxt-og-image: 6.5.0(d089f368782f19fe8c368ea8c21c1d6d)
+      pathe: 2.0.3
       pkg-types: 2.3.1
       scule: 1.3.0
       shiki-stream: 0.1.4(vue@3.5.34(typescript@5.9.3))
