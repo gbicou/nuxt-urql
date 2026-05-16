@@ -46,7 +46,7 @@
     "@urql/exchange-execute": "3.0.0",
     "defu": "6.1.7",
     "eslint": "10.3.0",
-    "graphql": "16.13.2",
+    "graphql": "16.14.0",
     "nuxt": "4.4.5",
     "typescript": "5.9.3",
     "vitest": "4.1.6"
