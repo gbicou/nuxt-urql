@@ -38,9 +38,9 @@
   },
   "devDependencies": {
     "@bicou/countries-server-schema": "1.7.2",
-    "@nuxt/kit": "4.4.5",
+    "@nuxt/kit": "4.4.6",
     "@nuxt/module-builder": "1.0.2",
-    "@nuxt/schema": "4.4.5",
+    "@nuxt/schema": "4.4.6",
     "@nuxt/test-utils": "4.0.3",
     "@types/node": "24.12.4",
     "@urql/exchange-execute": "3.0.0",
