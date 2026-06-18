@@ -49,7 +49,7 @@
     "graphql": "16.14.2",
     "nuxt": "4.4.8",
     "typescript": "5.9.3",
-    "vitest": "4.1.8"
+    "vitest": "4.1.9"
   },
   "peerDependencies": {
     "defu": "^6.1.4",
