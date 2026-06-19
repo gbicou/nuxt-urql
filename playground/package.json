@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@bicou/nuxt-urql": "workspace:*",
-    "@urql/exchange-graphcache": "9.0.0",
+    "@urql/exchange-graphcache": "9.0.1",
     "graphql": "16.14.2"
   },
   "devDependencies": {
