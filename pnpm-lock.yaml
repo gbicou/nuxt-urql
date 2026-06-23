@@ -79,8 +79,8 @@ importers:
         specifier: workspace:*
         version: link:..
       '@urql/exchange-graphcache':
-        specifier: 9.0.0
-        version: 9.0.0(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2)
+        specifier: 9.0.1
+        version: 9.0.1(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2)
       graphql:
         specifier: 16.14.2
         version: 16.14.2
@@ -108,7 +108,7 @@ importers:
         version: 5.0.1(graphql-tag@2.12.6(graphql@16.14.2))(graphql@16.14.2)
       '@graphql-codegen/typescript-urql-graphcache':
         specifier: 4.0.2
-        version: 4.0.2(@urql/exchange-graphcache@9.0.0(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2))(graphql-tag@2.12.6(graphql@16.14.2))(graphql@16.14.2)
+        version: 4.0.2(@urql/exchange-graphcache@9.0.1(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2))(graphql-tag@2.12.6(graphql@16.14.2))(graphql@16.14.2)
       '@graphql-codegen/urql-introspection':
         specifier: 4.0.1
         version: 4.0.1(graphql@16.14.2)
@@ -4116,8 +4116,8 @@ packages:
       '@urql/core': ^6.0.0
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@urql/exchange-graphcache@9.0.0':
-    resolution: {integrity: sha512-5ACktvMFdnD5JC6DaSUrlj345c1JIUi7PwgvmnkwVOWsCRt/Vo9946UaG+sg69ku8seESMBK4xkeI41M39Dd5A==}
+  '@urql/exchange-graphcache@9.0.1':
+    resolution: {integrity: sha512-22V46OIIkJTz8Ex23e95+ZmvgRWqbzH77wpNjdfMknmmhR8bjBFNd24oDoQUI4AbYUhoTKmvAZ5XOBQSsbBzaQ==}
     peerDependencies:
       '@urql/core': ^6.0.0
 
@@ -9992,11 +9992,11 @@ snapshots:
       graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-codegen/typescript-urql-graphcache@4.0.2(@urql/exchange-graphcache@9.0.0(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2))(graphql-tag@2.12.6(graphql@16.14.2))(graphql@16.14.2)':
+  '@graphql-codegen/typescript-urql-graphcache@4.0.2(@urql/exchange-graphcache@9.0.1(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2))(graphql-tag@2.12.6(graphql@16.14.2))(graphql@16.14.2)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 6.3.0(graphql@16.14.2)
       '@graphql-codegen/visitor-plugin-common': 6.3.0(graphql@16.14.2)
-      '@urql/exchange-graphcache': 9.0.0(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2)
+      '@urql/exchange-graphcache': 9.0.1(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2)
       auto-bind: 4.0.0
       change-case-all: 1.0.15
       graphql: 16.14.2
@@ -13088,7 +13088,7 @@ snapshots:
       graphql: 16.14.2
       wonka: 6.3.6
 
-  '@urql/exchange-graphcache@9.0.0(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2)':
+  '@urql/exchange-graphcache@9.0.1(@urql/core@6.0.1(graphql@16.14.2))(graphql@16.14.2)':
     dependencies:
       '@0no-co/graphql.web': 1.2.0(graphql@16.14.2)
       '@urql/core': 6.0.1(graphql@16.14.2)
