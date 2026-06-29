@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.8](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-module-playground-v0.0.7...nuxt-urql-module-playground-v0.0.8) (2026-06-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql to v16.14.0 ([#734](https://github.com/gbicou/nuxt-urql/issues/734)) ([1d44064](https://github.com/gbicou/nuxt-urql/commit/1d44064448e874664c7a43a5788ab5d659a76e1e))
+* **deps:** update dependency graphql to v16.14.1 ([#761](https://github.com/gbicou/nuxt-urql/issues/761)) ([bce44ff](https://github.com/gbicou/nuxt-urql/commit/bce44ff2264bb7eaaa96a43e104b7d7659ec93d2))
+* **deps:** update dependency graphql to v16.14.2 ([#767](https://github.com/gbicou/nuxt-urql/issues/767)) ([a742083](https://github.com/gbicou/nuxt-urql/commit/a74208369ba823cf749b51ad39b3d150c764bafa))
+* **deps:** update urql to v9.0.1 ([#776](https://github.com/gbicou/nuxt-urql/issues/776)) ([8c3d464](https://github.com/gbicou/nuxt-urql/commit/8c3d464037bdbb580fbb8108de23fba36e3d16aa))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/nuxt-urql bumped to 1.11.5
+
 ## [0.0.7](https://github.com/gbicou/nuxt-urql/compare/nuxt-urql-module-playground-v0.0.6...nuxt-urql-module-playground-v0.0.7) (2026-03-30)
 
 
