@@ -39,7 +39,7 @@
   "devDependencies": {
     "@bicou/countries-server-schema": "1.7.2",
     "@nuxt/kit": "4.4.8",
-    "@nuxt/module-builder": "1.0.2",
+    "@nuxt/module-builder": "1.0.3",
     "@nuxt/schema": "4.4.8",
     "@nuxt/test-utils": "4.0.3",
     "@types/node": "24.13.3",
